@@ -704,7 +704,7 @@ body {
   }
   .heading {
 /*    margin-top: 20px;*/
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
   .button:hover {
     opacity: 1;
@@ -874,6 +874,9 @@ body {
 #cat_cover #top_title .top_facebook {
     left: 70px;
     }
+#cat_cover #top_title .dating {
+    left: 70px;
+    }
   .header_facebook {
       display: none;   
   }
@@ -992,6 +995,7 @@ body {
   }
   .skill-text {
     margin: 0;
+    font-size: 1.6ex;
   }
 
 /*    --- about ---*/
@@ -999,7 +1003,7 @@ body {
         margin-bottom: 30px;
     }
     .about-text2{
-        font-size: 1.2rem;
+        font-size: 1.6ex;
     }
     
 /*    --- money ---*/
@@ -1017,6 +1021,12 @@ body {
         padding: none;
     }
 /*
+
+/*    --- FAQ ---*/
+    .txt{
+        font-size: 1.6ex;
+    }
+
    --- contact --- 
   .contact {
     padding-bottom: 80px;
@@ -1024,7 +1034,11 @@ body {
   .contact-form {
     width: 80%;
   }
-*/
+    
+/*    --- footer ---*/
+    .footer{
+        font-size: 1.6ex;
+    }
 }
 
 @media screen and (max-width: 376px) and (min-width: 321px){
@@ -1033,7 +1047,7 @@ body {
   }
   .heading {
 /*    margin-top: 20px;*/
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
   .button:hover {
     opacity: 1;
@@ -1140,7 +1154,7 @@ body {
     font-size: 2.5ex;
     position: absolute;
     top: 370px;
-    left: 93px;
+    left: 78px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle3 {
@@ -1189,7 +1203,7 @@ body {
     font-size: 2.5ex;
     position: absolute;
     top: 390px;
-    left: 70px;
+    left: 45px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle9 {
@@ -1201,8 +1215,13 @@ body {
     z-index: 200;
     display: none;
     }
+/*
 #cat_cover #top_title .top_facebook {
     left: 90px;
+    }
+*/
+#cat_cover #top_title .dating {
+    left: 140px;*/
     }
   .header_facebook {
       display: none;   
@@ -1257,7 +1276,6 @@ body {
   /* --- about --- */
   .about-text {
     line-height: 1.8;
-    font-size: 1.2rem;
   }
 
   /* --- works --- */
@@ -1322,6 +1340,7 @@ body {
   }
   .skill-text {
     margin: 0;
+    font-size: 1.6ex;
   }
 
 /*    --- about ---*/
@@ -1329,7 +1348,7 @@ body {
         margin-bottom: 30px;
     }
     .about-text2{
-        font-size: 1.2rem;
+        font-size: 1.6ex;
     }
     
 /*    --- money ---*/
@@ -1346,6 +1365,12 @@ body {
     .bottom_facebook{
         padding: none;
     }
+
+/*    --- FAQ ---*/
+    .txt{
+        font-size: 1.6ex;
+    }
+    
 /*
    --- contact --- 
   .contact {
@@ -1355,6 +1380,12 @@ body {
     width: 80%;
   }
 */
+    .footer{
+        font-size: 1.6ex;
+    }  
+
+/*    --- money ---*/
+    
 }
 
 @media screen and (max-width: 415px) and (min-width: 377px){
@@ -1363,7 +1394,7 @@ body {
   }
   .heading {
 /*    margin-top: 20px;*/
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
   .button:hover {
     opacity: 1;
@@ -1530,7 +1561,12 @@ body {
     z-index: 200;
     display: none;
     }
+/*
 #cat_cover #top_title .top_facebook {
+    left: 112px;
+    }
+*/
+#cat_cover #top_title .top_dating {
     left: 112px;
     }
   .header_facebook {
@@ -1651,6 +1687,7 @@ body {
   }
   .skill-text {
     margin: 0;
+    font-size: 1.6ex;
   }
 
 /*    --- about ---*/
@@ -1658,7 +1695,7 @@ body {
         margin-bottom: 30px;
     }
     .about-text2{
-        font-size: 1.2rem;
+        font-size: 1.6ex;
     }
     
 /*    --- money ---*/
@@ -1675,6 +1712,12 @@ body {
     .bottom_facebook{
         padding: none;
     }
+    
+  /*    --- FAQ ---*/
+    .txt{
+        font-size: 1.6ex;
+    }
+    
 /*
    --- contact --- 
   .contact {
@@ -1684,6 +1727,11 @@ body {
     width: 80%;
   }
 */
+    
+   /*    --- footer ---*/
+    .footer{
+        font-size: 1.6ex;
+    }
 }
 
 
@@ -1739,9 +1787,17 @@ body {
         font-size: 2.0ex;
       left: 735px;
   }
+/*
     #cat_cover #top_title .top_facebook{
         left: 165px;
   }
+*/
+    #cat_cover #top_title .top_dating{
+        left: 165px;
+  }
+    .skill #skills-wrapper #skills-box .skill-title{
+        font-size: 2.0rem;
+    }
     .money_pic{
         width: 90%;
     }
