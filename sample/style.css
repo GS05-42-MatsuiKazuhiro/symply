@@ -700,11 +700,11 @@ body {
 @media screen and (max-width: 320px) and (min-width: 1px){
   body {
 /*    font-size: 1.3rem;*/
-    font-size: 8px;
+    font-size: 16px;
   }
   .heading {
 /*    margin-top: 20px;*/
-    font-size: 2.0rem;
+    font-size: 2ex;
   }
   .button:hover {
     opacity: 1;
@@ -792,7 +792,7 @@ body {
     color: #ff99cc;
     font-size: 4ex;
     position: absolute;
-    left: 75px;
+    left: 52px;
     top: 200px;  
     z-index: 200;
     }
@@ -807,15 +807,15 @@ body {
     }
 #cat_cover #top_title .subtitle2 {
     color: lightskyblue;
-    font-size: 2.0ex;
+    font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 65px;
+    left: 60px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle3 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 1.8ex;
     position: absolute;
     top: 370px;
     left: 135px;
@@ -823,26 +823,26 @@ body {
     }
 #cat_cover #top_title .subtitle4 {
     color: greenyellow;
-    font-size: 2.0ex;
+    font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 153px;
+    left: 150px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle5 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 188px;
+    left: 185px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle6 {
     color: fuchsia;
-    font-size: 2.0ex;
+    font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 205px;
+    left: 200px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle7 {
@@ -856,10 +856,10 @@ body {
     }
 #cat_cover #top_title .subtitle8 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 1.8ex;
     position: absolute;
     top: 390px;
-    left: 45px;
+    left: 33px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle9 {
@@ -875,7 +875,7 @@ body {
     left: 70px;
     }
 #cat_cover #top_title .dating {
-    left: 70px;
+    left: 105px;
     }
   .header_facebook {
       display: none;   
@@ -995,7 +995,7 @@ body {
   }
   .skill-text {
     margin: 0;
-    font-size: 1.6ex;
+    font-size: 1.2ex;
   }
 
 /*    --- about ---*/
@@ -1003,7 +1003,7 @@ body {
         margin-bottom: 30px;
     }
     .about-text2{
-        font-size: 1.6ex;
+        font-size: 1.2ex;
     }
     
 /*    --- money ---*/
@@ -1024,7 +1024,7 @@ body {
 
 /*    --- FAQ ---*/
     .txt{
-        font-size: 1.6ex;
+        font-size: 1.2ex;
     }
 
    --- contact --- 
@@ -1037,7 +1037,7 @@ body {
     
 /*    --- footer ---*/
     .footer{
-        font-size: 1.6ex;
+        font-size: 1.2ex;
     }
 }
 
@@ -1221,7 +1221,7 @@ body {
     }
 */
 #cat_cover #top_title .dating {
-    left: 140px;*/
+    left: 140px;
     }
   .header_facebook {
       display: none;   
@@ -1561,6 +1561,9 @@ body {
     z-index: 200;
     display: none;
     }
+#cat_cover #top_title .dating {
+    left: 150px;
+    }
 /*
 #cat_cover #top_title .top_facebook {
     left: 112px;
@@ -1760,32 +1763,39 @@ body {
   }
   #cat_cover #top_title .subtitle2{
         font-size: 2.0ex;
+        left: 100px;
   }
   #cat_cover #top_title .subtitle3{
         font-size: 2.0ex;
-        left:200px;
+        left:185px;
   }
   #cat_cover #top_title .subtitle4{
         font-size: 2.0ex;
+        left:205px;
   }
   #cat_cover #top_title .subtitle5{
         font-size: 2.0ex;
-        left:275px;
+        left:245px;
   }
   #cat_cover #top_title .subtitle6{
         font-size: 2.0ex;
+        left:263px;
   }
   #cat_cover #top_title .subtitle7{
         font-size: 2.0ex;
-        left: 380px;
+        left: 335px;
   }
   #cat_cover #top_title .subtitle8{
         font-size: 2.0ex;
-        left: 440px;
+        left: 390px;
   }
   #cat_cover #top_title .subtitle9{
         font-size: 2.0ex;
       left: 735px;
+  }
+  #cat_cover #top_title .dating{
+      font-size: 2.0ex;
+      left: 190px;
   }
 /*
     #cat_cover #top_title .top_facebook{
