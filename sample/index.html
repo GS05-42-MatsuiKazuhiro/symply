@@ -1,0 +1,335 @@
+<?php
+
+require_once(__DIR__ . '/config.php');
+
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Symply | 趣味でつながるデートサービス</title>
+<!--
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+-->
+<!--  <link rel="stylesheet" href="css/reset.css">-->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/logo.jpg">
+  <script src="jquery-3.1.1.min.js"></script> 
+</head>
+<body>
+<!--Header-->
+  <header class="header">
+    <div id="header_navi">
+        <div id="header_logo">
+<!--
+            <a href="symply.jp" class="header_pic"><img src ="images/symply.png" width="180px"></a>
+           <div id="menu-box">
+-->
+              <div id="toggle"><a class="header_pic">Symply</a></div>
+                <ul id="menu" class="">
+                <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply_header.png" width="180px"></a></li>
+                <li style="display:inline"><a class ="home" href="index.html">| Home</a></li>
+<!--                <li style="display:inline"><a class ="home" href="dating.html">| デート一覧</a></li>-->
+                <li style="display:inline"><a class ="home" href="http://symply.jp/column/">| Symplyコラム</a></li>
+<!--
+                <li style="display:inline"><a class ="header_facebook" href="index2.php">
+                <div class="header_facebooklabel">Facebookで登録/ログイン</div></a></li>
+-->
+                </ul>
+        </div>
+    </div>
+      <script>
+      $(function(){
+  $("#toggle").click(function(){
+    $("#menu").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    } else {
+      $("#menu").hide();
+    }
+  });
+});
+      </script>
+<!--
+        <div id="header_facebook">
+            <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+        </div>
+-->
+        <div id="cat_cover_box">
+<div id="cat_cover">
+    <div id="slideshow">
+        <img src="images/tennis2.jpg" alt="Slideshow Image 1" class="active" />
+        <img src="images/trip3.jpg" alt="Slideshow Image 2" class="active2"/>
+        <img src="images/gurume.jpg" alt="Slideshow Image 3" class="active3"/>
+        <img src="images/kansen_baseball2.jpg"  alt="Slideshow Image 4" class="active4"/>
+    </div>
+    <script>
+            function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 4000 );
+    });
+    </script>
+    <div id="top_title">
+            <h1>趣味デート</h1>
+<!--            <a class="subtitle">—</a>-->
+            <a class="subtitle2">スポーツ</a>
+            <a class="subtitle3">・</a>
+            <a class="subtitle4">旅行</a>
+            <a class="subtitle5">・</a>
+            <a class="subtitle6">グルメ</a>
+            <a class="subtitle7">など、</a>
+            <a class="subtitle8">デート相手がきっと見つかる</a>
+<!--            <a class="subtitle9">—</a>-->
+            <a class ="dating" href="index2.php">登録/ログイン</a>
+<!--
+            <a class ="top_facebook" href="index2.php">
+                <div class="header_facebooklabel">Facebookで登録/ログイン</div>
+            </a>
+-->
+        </div>
+        </div><!--cat_cover-->
+<!--
+        <div id="cat_cover2">
+        <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+        </div>
+-->
+    </div>
+  </header>
+
+  <section class="about_symply">
+    <h2 class="heading">Symply とは？</h2>
+<!--    <img src ="images/about.png" class = "money_title">-->
+    <p class="about-text2">
+      趣味が似ている異性と実際にデートするサービスです。<br><br>
+      スポーツ・旅行・グルメなど、趣味レベルが同程度の異性とマッチングします。<br><br>
+    　従来の見た目やコミュニケーションに偏ったマッチングサービスとは異なり、<a class="bold">趣味</a>に特化しています。<br><br>
+      また、「<a class="bold">人の良さは実際に会わないと分からない！</a>」という考えのもと、デートサービスを提供しております。<br><br>
+    　たとえ恋愛に発展しなくても、異性の「<a class="bold">趣味友</a>」を作れるチャンスがSymplyにはあります。
+    </p>
+　</section>
+    
+　<section class="about_symply">
+　　 <h2 class="heading">参加条件</h2>
+     <p><img src ="images/jouken.png" class = "money_pic"></p>
+     <p class="about-text2">18～29歳で独身の方のみ、場所は東京近郊です。<br><br>
+         男性会員のみ、大学生以上が参加資格となります。<br><br>
+  </section>
+    
+<!--
+  <a class ="bottom_facebook" href="index2.php">
+        <div class="header_facebooklabel">Facebookで登録/ログイン</div>
+    </a>
+-->
+  <a class ="dating2" href="index2.php">登録/ログイン</a>
+    
+  <section class="skills">
+    <h2 class="heading">デートまでの流れ</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">  
+<!--        <i class="skill-icon fa fa-lightbulb-o"></i>-->
+        <div class="skill-title">会員登録</div><br>
+        <p><img src ="images/user.png" class = "user"></p><br>
+        <p class="skill-text">
+          Facebook登録制<br>
+          興味のあるデートを選び、スキルや好みを入力。
+        </p>
+      </div>
+      <div class="skill-box">
+<!--        <i class="skill-icon fa fa-paint-brush"></i>-->
+        <div class="skill-title">マッチング</div><br>
+        <p><img src ="images/matching.png" class = "matching"></p><br>
+        <p class="skill-text">
+          あなたの趣味に合った最適な異性を<br>
+          運営側がマッチング。<br>
+        </p>
+      </div>
+      <div class="skill-box">
+<!--        <i class="skill-icon fa fa-code"></i>-->
+        <div class="skill-title">メッセージ</div><br>
+        <p><img src ="images/mail.png" class = "mail"></p><br>
+        <p class="skill-text">
+          マッチング費を支払い後、専用チャットで<br>
+          メッセージを送り、デート日程を決めましょう。
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!--    <section class="works">
+    <h2 class="heading">選べるデート</h2>
+  <img src ="images/choice.png" class = "money_title">
+    <div class="works-wrapper">
+      <div class="work-box tree">
+        <img class="work-image" src="images/trip5.JPG" alt="制作事例1">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              テニスデート<br>
+              いつものメンバーには飽きて、違う人との練習がしたいと思っている。<br>
+            　サーブからボレーまで一通りできる中級レベルの人はいないかな？<br>
+            　相手探しにピッタリ！気軽に楽しめるテニスデート<br>
+             
+              <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box building">
+        <img class="work-image" src="images/cooking5.JPG" alt="制作事例2">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              料理デート<br>
+              食べに行くのもよし！作るのもよし！料理デート<br>
+              <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="work-box lake">
+        <img class="work-image" src="images/kansen_baseball5.JPG" alt="制作事例3">
+        <div class="work-description">
+          <div class="work-description-inner">
+
+            <p class="work-text">
+              スポーツ観戦デート<br>
+              サッカーファンのあなたは、週末はテレビで試合を応援<br>
+              今度のホーム試合こそ、誰かと見に行きたい<br>
+            　ファン同士で熱く盛り上がれ！スポーツ観戦デート<br>
+              <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="work-box sky">
+        <img class="work-image" src="images/kansen_soccer5.JPG" alt="制作事例4">
+        <div class="work-description">
+          <div class="work-description-inner">
+
+            <p class="work-text">
+              ドライブデート<br>
+            　社会人になっても、年に１回の海外旅行は絶対に欠かせない<br>
+            　美しい景色・思い出の写真を旅好きな人とシェアしたいな<br>
+            　気分転換にちょっと遠出したい人たちへ！ドライブデート<br>
+              <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+<!--
+　<section class="about">
+     <img src ="images/safety.png" class = "money_title">
+         <div class="skills-wrapper">
+      <div class="skill-box">
+        <div class="skill-title">Facebook審査</div><br>
+        <p><img src ="images/facebook_logo.png" class = "facebook_logo"></p><br>
+        <p class="skill-text">  
+          イニシャル表記で実名はでません。<br>
+          Facebook投稿なし・友達除外設定あり
+        </p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-title">年齢確認</div>
+        <p><img src ="images/card3.png" class = "card"></p>  
+        <p class="skill-text">
+          クレジットカード払いによる年齢確認。<br>
+          事前払いにより、直前のドタキャンを防止。
+        </p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-title">24時間365日監視</div>
+        <p><img src ="images/camera.png" class = "camera"></p>  
+        <p class="skill-text">
+          不適切な投稿がないように確認しています。<br>
+        </p>
+      </div>
+    </div>
+  </section>
+-->
+ <section class="money">
+    <h2 class="heading">料金</h2>
+<!--    <img src ="images/cost.png" class = "money_title">-->
+    <p><img src ="images/money2.png" class = "money_pic"></p>  
+    <p class="about-text2">
+      男性 2,980円/回(税込)・女性 980円/回(税込) となります。<br><br>
+    </p>
+<!--
+    <a class ="bottom_facebook" href="index2.php">
+        <div class="header_facebooklabel">Facebookで登録/ログイン</div>
+    </a>
+-->
+     <a class ="dating2" href="index2.php">登録/ログイン</a>
+　</section>
+　<section class="about_symply">
+　　 <h2 class="heading">FAQ</h2>
+     <div id="qa">
+        <p class="txt">Q.　Facebookを利用していないと参加できないでしょうか？<br>
+        A.　Facebook登録は必要になります。
+        <p class="txt">Q.　クレジットカード払いのみでしょうか？<br>
+        A.　年齢確認も兼ねているため、クレジットカード払いのみとさせていただいております。
+        <p class="txt">Q.　マッチングまでの期間を教えてください！<br>
+        A.　ご要望によっては、お時間を頂戴することもありますが、1週間以内のマッチングが多いです。
+        <p class="txt">Q.　ドタキャンされないか心配です。。。<br>
+        A.　事前払いにより、ドタキャンの心配はほとんどございません。
+        <p class="txt">Q.　マッチングアプリとの違いは何ですか？<br>
+        A.　実際にデートができ、趣味に特化していることです。</p>
+        <p class="txt">Q.　街コン・趣味コンとの違いは何ですか？<br>
+        A.　1対1で、同じ趣味でも自分に合ったスキルレベルの相手とデートができます。</p>
+        <p class="txt">その他、ご質問・ご要望はinfo@symply.jpまでお願いいたします。</p>
+     </div>
+  </section>   
+<!--
+  <section class="contact" id="contact">
+    <h2 class="heading">お問い合わせ</h2>
+    <img src ="images/inquiry.png">
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="名前">
+      <input type="text" name="mail" placeholder="メールアドレス">
+      <textarea name="message" placeholder="メッセージ"></textarea>
+      <input type="submit" value="送信">
+    </form>
+  </section>
+-->
+  <footer class="footer">
+    Symply © 2016 
+  </footer>
+  <script src="lib/placeholders.min.js"></script>
+</body>
+</html>
