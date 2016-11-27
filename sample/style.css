@@ -1,20 +1,32 @@
 /*@charset "UTF-8";*/
 
 /* --------------------------------
+ * パンくずリスト
+ * -------------------------------- */
+
+#breadcrumb{
+    padding-left: 60px;
+}
+#breadcrumb ol li {display: inline; }
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 7px;
+}
+#breadcrumb ol li:last-child::after { content: none; }
+
+/* --------------------------------
  * base
  * -------------------------------- */
-/*
 html {
-  font-size: 62.5%;
+  font-size: 16px;
 }
-*/
 body {
   background-size: cover;
   color: black;
   text-align: center;
+/*  font-size: 1.6rem;*/
   font-size: 16px;
-  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
-
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -27,7 +39,7 @@ body {
   background-color: #9ACD32;
   padding: 30px;
   letter-spacing: 2px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
 }
 .heading::before,
@@ -67,10 +79,11 @@ body {
  * facebook
  * -------------------------------- */
 .header_facebook {
-/*    float: right;*/
-    margin-right: 300px;
+    padding-right: 300px;
+    float: right;
+    margin-right: 20px;
     background-color: #3b5998;
-/*    top: 7px;*/
+    top: 7px;
     height: 45px;
     display: inline-block;
     position: relative;
@@ -80,12 +93,12 @@ body {
 .header_facebook:after {
     content: "";
     position: absolute;
-/*    top: 12px;*/
+    top: 12px;
     left: 12px;
     width: 20px;
     height: 20px;
     background-image: url("../images/facebook_logo.png");
-/*    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     background-size: 20px 20px;
 }
 .header_facebooklabel{
@@ -161,6 +174,8 @@ body {
     background-size: 20px 20px;
 }
 
+
+
 /* --------------------------------
  * header
  * -------------------------------- */
@@ -220,8 +235,7 @@ body {
     min-height: 590px;
 /*    background: url("../images/main_visual5.JPG") no-repeat;*/
     background-position: center center;
-/*    background-size: 100%;*/
-/*
+/*    background-size: 100%;
     -webkit-filter: brightness(0.7);
     -moz-filter: brightness(0.7);
     -o-filter: brightness(0.7);
@@ -231,13 +245,14 @@ body {
     }
 #slideshow {
     position:relative;
-    height:590px;
+    height:610px;
 }
 
 #slideshow IMG {
     position:absolute;
-    width: 1520px;
-    height: 610px;
+    width: 100%;
+/*    width: 2020px;*/
+    height: 630px;
     top:0;
     left:0;
     z-index:8;
@@ -271,7 +286,7 @@ body {
     color: #ff99cc;
     font-size: 6ex;
     position: absolute;
-    left: 320px;
+    left: 307px;
     top: 300px;  
     z-index: 200;
     }
@@ -288,7 +303,7 @@ body {
     font-size: 2.5ex;
     position: absolute;
     top: 440px;
-    left: 110px;
+    left: 100px;
     z-index: 200;
     }
 #cat_cover .subtitle3 {
@@ -353,6 +368,22 @@ body {
     left: 375px;
     z-index: 200;
     }
+#cat_cover .dating {
+    color: #fff;
+    font-size: 1.5ex;
+    position: absolute;
+    top: 490px;
+    left: 410px;
+    z-index: 200;
+    text-decoration: none;
+    background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	line-height: 50px;
+    }
+#cat_cover .dating:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
 .header {
   padding: 1px;
 }
@@ -385,6 +416,7 @@ body {
 .buttons .button {
   margin: 10px;
 }
+
 
 /* --------------------------------
  * skills
@@ -495,6 +527,7 @@ body {
 /*  opacity: 0.2;*/
 /*  transform: scaleY(-1);*/
 }
+/*
 .work-box.tree::after {
   background-image: url('../images/tennis5.JPG');
 }
@@ -507,6 +540,7 @@ body {
 .work-box.sky::after {
   background-image: url('../images/karaoke5.JPG');
 }
+*/
 /*
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
@@ -516,6 +550,19 @@ body {
   top: 0;
 }
 */
+
+/* --------------------------------
+ * dating
+ * -------------------------------- */
+.dating2 {
+    background-color: #333;
+	color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    }
+.dating2:hover {
+    background-color: #59b1eb;
+}
 
 /* --------------------------------
  * about
@@ -551,7 +598,17 @@ body {
   margin-top: 60px;
 /*  margin-bottom: 30px;*/
 }
-
+.about_symply #qa{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.about_symply .txt {
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
 /* --------------------------------
  * money
@@ -626,12 +683,13 @@ body {
 }
 */
 
+
 /* --------------------------------
  * footer
  * -------------------------------- */
 .footer {
   padding: 12px 0;
-  font-size: 1.3rem;
+  font-size: -2rem;
   background-color: #F5F5F5;
 }
 
@@ -641,7 +699,8 @@ body {
  * -------------------------------- */
 @media screen and (max-width: 320px) and (min-width: 1px){
   body {
-    font-size: 1.3rem;
+/*    font-size: 1.3rem;*/
+    font-size: 8px;
   }
   .heading {
 /*    margin-top: 20px;*/
@@ -970,7 +1029,7 @@ body {
 
 @media screen and (max-width: 376px) and (min-width: 321px){
   body {
-    font-size: 1.3rem;
+    font-size: 16px;
   }
   .heading {
 /*    margin-top: 20px;*/
@@ -1060,64 +1119,65 @@ body {
   }
   #cat_cover #top_title h1 {
     color: #ff99cc;
-    font-size: 4ex;
+    font-size: 7ex;
     position: absolute;
-    left: 95px;
+/*    left: 90px;*/
     top: 200px;  
     z-index: 200;
+    text-align: center;
     }
 #cat_cover #top_title .subtitle {
     color: #fff;
     font-size: 2.0ex;
     position: absolute;
     top: 270px;
-    left: 15px;
+    left: 12px;
     z-index: 200;
     display: none;
     }
 #cat_cover #top_title .subtitle2 {
     color: lightskyblue;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 370px;
-    left: 85px;
+    left: 93px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle3 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 370px;
-    left: 155px;
+    left: 156px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle4 {
     color: greenyellow;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 370px;
-    left: 173px;
+    left: 174px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle5 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 370px;
-    left: 208px;
+    left: 209px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle6 {
     color: fuchsia;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 370px;
-    left: 225px;
+    left: 226px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle7 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 390px;
     left: 1px;
@@ -1126,15 +1186,15 @@ body {
     }
 #cat_cover #top_title .subtitle8 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 390px;
-    left: 65px;
+    left: 70px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle9 {
     color: #fff;
-    font-size: 2.0ex;
+    font-size: 2.5ex;
     position: absolute;
     top: 390px;
     left: 50px;
@@ -1299,7 +1359,7 @@ body {
 
 @media screen and (max-width: 415px) and (min-width: 377px){
   body {
-    font-size: 1.3rem;
+    font-size: 16px;
   }
   .heading {
 /*    margin-top: 20px;*/
@@ -1628,6 +1688,9 @@ body {
 
 
 @media screen and (max-width: 772px) and (min-width: 416px) {
+    body{
+        font-size: 16px;
+    }
     /* --- header --- */
   #slideshow IMG.active {
     width: 100%;
