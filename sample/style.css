@@ -792,7 +792,7 @@ body {
     color: #ff99cc;
     font-size: 4ex;
     position: absolute;
-    left: 52px;
+    left: 77px;
     top: 200px;  
     z-index: 200;
     }
@@ -810,7 +810,7 @@ body {
     font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 60px;
+    left: 75px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle3 {
@@ -818,7 +818,7 @@ body {
     font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 135px;
+    left: 137px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle4 {
@@ -826,7 +826,7 @@ body {
     font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 150px;
+    left: 155px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle5 {
@@ -834,7 +834,7 @@ body {
     font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 185px;
+    left: 187px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle6 {
@@ -842,7 +842,7 @@ body {
     font-size: 1.8ex;
     position: absolute;
     top: 370px;
-    left: 200px;
+    left: 205px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle7 {
@@ -859,7 +859,7 @@ body {
     font-size: 1.8ex;
     position: absolute;
     top: 390px;
-    left: 33px;
+    left: 62px;
     z-index: 200;
     }
 #cat_cover #top_title .subtitle9 {
@@ -875,7 +875,7 @@ body {
     left: 70px;
     }
 #cat_cover #top_title .dating {
-    left: 105px;
+    left: 125px;
     }
   .header_facebook {
       display: none;   
