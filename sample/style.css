@@ -384,6 +384,16 @@ body {
 #cat_cover .dating:hover {
     background-color: rgba(255, 255, 255, .2);
 }
+
+#cat_cover .kiyaku{
+    color: #fff;
+    font-size: 1.2ex;
+    position: absolute;
+    top: 540px;
+    left: 320px;
+    z-index: 200;
+}
+
 .header {
   padding: 1px;
 }
@@ -874,6 +884,10 @@ body {
 #cat_cover #top_title .top_facebook {
     left: 70px;
     }
+#cat_cover #top_title .kiyaku {
+    font-size: 1.0ex;
+    left: 60px;
+    }
 #cat_cover #top_title .dating {
     left: 125px;
     }
@@ -1214,6 +1228,10 @@ body {
     left: 50px;
     z-index: 200;
     display: none;
+    }
+#cat_cover #top_title .kiyaku {
+    font-size: 1.0ex;
+    left: 74px;
     }
 /*
 #cat_cover #top_title .top_facebook {
@@ -1561,6 +1579,10 @@ body {
     z-index: 200;
     display: none;
     }
+#cat_cover #top_title .kiyaku {
+    font-size: 1.0ex;
+    left: 82px;
+    }
 #cat_cover #top_title .dating {
     left: 150px;
     }
@@ -1793,6 +1815,9 @@ body {
         font-size: 2.0ex;
       left: 735px;
   }
+  #cat_cover #top_title .kiyaku {
+    left: 115px;
+    }
   #cat_cover #top_title .dating{
       font-size: 2.0ex;
       left: 190px;
