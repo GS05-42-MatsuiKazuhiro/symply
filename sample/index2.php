@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Symply | 趣味でつながるデートサービス</title>
+  <title>ログイン | Symply</title>
 <!--
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -13,6 +13,18 @@
   <link rel="stylesheet" href="facebook.css">
   <link rel="shortcut icon" href="images/logo.jpg">
   <script src="jquery-3.1.1.min.js"></script> 
+<!--Google Analytics-->
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-88866224-1', 'auto');
+          ga('send', 'pageview');
+
+    　</script>
+<!--Google Analytics-->
 </head>
 <body>
 <!--Header-->
@@ -25,7 +37,7 @@
 -->
               <div id="toggle"><a class="header_pic">Symply</a></div>
                 <ul id="menu" class="">
-                <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply_header.png" width="180px"></a></li>
+                <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply_header.png" width="180px" alt="symplyロゴ"></a></li>
                 <li style="display:inline"><a class ="home" href="index.html">| Home</a></li>
                 <li style="display:inline"><a class ="home" href="http://www.column.symply.jp">| Symplyコラム</a></li>
 <!--
@@ -92,7 +104,7 @@ $helper = $fb->getRedirectLoginHelper();
 $permissions = [];
 $loginUrl = $helper->getLoginUrl('http://symply.jp/callback.php', $permissions);
  
-echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png"></a>';
+echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン"></a>';
 
 ?>
     

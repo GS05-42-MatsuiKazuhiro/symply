@@ -1,8 +1,3 @@
-<?php
-
-require_once(__DIR__ . '/config.php');
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,11 +5,10 @@ require_once(__DIR__ . '/config.php');
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Symply[シンプリー] | 趣味でつながるデートサービス</title>
   <meta name="description" content="男性2,980円、女性980円で同じ趣味を持った異性とデートができる！趣味デートサービスSymply[シンプリー]で理想の恋人を見つけよう！">
-  <meta name="keywords" content="趣味, デート, 趣味友, 恋活, 婚活, 東京デート,"
-<!--
+  <meta name="keywords" content="趣味, デート, 趣味デート, カップル, 趣味友, 恋活, 婚活, 東京デート">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
--->
+  <link rel="alternate" hreflang="ja" href="http://www.symply.jp">
 <!--  <link rel="stylesheet" href="css/reset.css">-->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
@@ -26,47 +20,45 @@ require_once(__DIR__ . '/config.php');
   <header class="header">
     <div id="header_navi">
         <div id="header_logo">
-<!--
-            <a href="symply.jp" class="header_pic"><img src ="images/symply.png" width="180px"></a>
-           <div id="menu-box">
--->
               <div id="toggle"><a class="header_pic">Symply</a></div>
                 <ul id="menu" class="">
                 <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply_header.png" width="180px"></a></li>
                 <li style="display:inline"><a class ="home" href="index.html">| Home</a></li>
-<!--                <li style="display:inline"><a class ="home" href="dating.html">| デート一覧</a></li>-->
                 <li style="display:inline"><a class ="home" href="http://symply.jp/column/">| Symplyコラム</a></li>
-<!--
-                <li style="display:inline"><a class ="header_facebook" href="index2.php">
-                <div class="header_facebooklabel">Facebookで登録/ログイン</div></a></li>
--->
                 </ul>
         </div>
     </div>
       <script>
-      $(function(){
-  $("#toggle").click(function(){
-    $("#menu").slideToggle();
-    return false;
-  });
-  $(window).resize(function(){
-    var win = $(window).width();
-    var p = 480;
-    if(win > p){
-      $("#menu").show();
-    } else {
-      $("#menu").hide();
-    }
-  });
-});
+              $(function(){
+          $("#toggle").click(function(){
+            $("#menu").slideToggle();
+            return false;
+          });
+          $(window).resize(function(){
+            var win = $(window).width();
+            var p = 480;
+            if(win > p){
+              $("#menu").show();
+            } else {
+              $("#menu").hide();
+            }
+          });
+        });
       </script>
-<!--
-        <div id="header_facebook">
-            <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
-        </div>
--->
+<!--Google Analytics-->
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-88866224-1', 'auto');
+          ga('send', 'pageview');
+
+    　</script>
+<!--Google Analytics-->
         <div id="cat_cover_box">
-<div id="cat_cover">
+   <div id="cat_cover">
     <div id="slideshow">
         <img src="images/tennis2.jpg" alt="Slideshow Image 1" class="active" />
         <img src="images/trip3.jpg" alt="Slideshow Image 2" class="active2"/>
@@ -76,36 +68,27 @@ require_once(__DIR__ . '/config.php');
     <script>
             function slideSwitch() {
         var $active = $('#slideshow IMG.active');
-
         if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
-
         // use this to pull the images in the order they appear in the markup
         var $next =  $active.next().length ? $active.next()
             : $('#slideshow IMG:first');
-
         // uncomment the 3 lines below to pull the images in random order
-
         // var $sibs  = $active.siblings();
         // var rndNum = Math.floor(Math.random() * $sibs.length );
         // var $next  = $( $sibs[ rndNum ] );
-
-
         $active.addClass('last-active');
-
         $next.css({opacity: 0.0})
             .addClass('active')
             .animate({opacity: 1.0}, 1000, function() {
                 $active.removeClass('active last-active');
             });
     }
-
     $(function() {
         setInterval( "slideSwitch()", 4000 );
     });
     </script>
     <div id="top_title">
             <h1>趣味デート</h1>
-<!--            <a class="subtitle">—</a>-->
             <a class="subtitle2">スポーツ</a>
             <a class="subtitle3">・</a>
             <a class="subtitle4">旅行</a>
@@ -113,23 +96,12 @@ require_once(__DIR__ . '/config.php');
             <a class="subtitle6">グルメ</a>
             <a class="subtitle7">など、</a>
             <a class="subtitle8">デート相手がきっと見つかる</a>
-<!--            <a class="subtitle9">—</a>-->
             <a class ="dating" href="index2.php">登録/ログイン</a>
             <p class="kiyaku">
             <a href="kiyaku.html">利用規約</a>および<a href="privacy.html">プライバシーポリシー</a>に同意して
             </p>
-<!--
-            <a class ="top_facebook" href="index2.php">
-                <div class="header_facebooklabel">Facebookで登録/ログイン</div>
-            </a>
--->
         </div>
-        </div><!--cat_cover-->
-<!--
-        <div id="cat_cover2">
-        <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
         </div>
--->
     </div>
   </header>
 
@@ -139,9 +111,9 @@ require_once(__DIR__ . '/config.php');
     <p class="about-text2">
       趣味が似ている異性と実際にデートするサービスです。<br><br>
       スポーツ・旅行・グルメなど、趣味レベルが同程度の異性とマッチングします。<br><br>
-    　従来の見た目やコミュニケーションに偏ったマッチングサービスとは異なり、<a class="bold">趣味</a>に特化しています。<br><br>
+    　従来の見た目やコミュニケーションに偏ったマッチングサービスとは異なり、<a class="bold"><strong>趣味</strong></a>に特化しています。<br><br>
       また、「<a class="bold">人の良さは実際に会わないと分からない！</a>」という考えのもと、デートサービスを提供しております。<br><br>
-    　たとえ恋愛に発展しなくても、異性の「<a class="bold">趣味友</a>」を作れるチャンスが趣味デートにはあります。
+    　たとえ恋愛に発展しなくても、異性の「<a class="bold"><strong>趣味友</strong></a>」を作れるチャンスが<strong>趣味デート</strong>にはあります。
     </p>
 　</section>
     
@@ -220,7 +192,6 @@ require_once(__DIR__ . '/config.php');
               食べに行くのもよし！作るのもよし！料理デート<br>
               <a href="#" class="button button-ghost">READ MORE</a>
             </p>
-
           </div>
         </div>
       </div>
@@ -228,7 +199,6 @@ require_once(__DIR__ . '/config.php');
         <img class="work-image" src="images/kansen_baseball5.JPG" alt="制作事例3">
         <div class="work-description">
           <div class="work-description-inner">
-
             <p class="work-text">
               スポーツ観戦デート<br>
               サッカーファンのあなたは、週末はテレビで試合を応援<br>
@@ -236,7 +206,6 @@ require_once(__DIR__ . '/config.php');
             　ファン同士で熱く盛り上がれ！スポーツ観戦デート<br>
               <a href="#" class="button button-ghost">READ MORE</a>
             </p>
-
           </div>
         </div>
       </div>
@@ -244,7 +213,6 @@ require_once(__DIR__ . '/config.php');
         <img class="work-image" src="images/kansen_soccer5.JPG" alt="制作事例4">
         <div class="work-description">
           <div class="work-description-inner">
-
             <p class="work-text">
               ドライブデート<br>
             　社会人になっても、年に１回の海外旅行は絶対に欠かせない<br>
