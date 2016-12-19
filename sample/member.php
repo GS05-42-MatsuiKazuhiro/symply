@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+ 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -128,10 +133,29 @@
    </section>
 </body>
 
-<?php
-session_start();
+
  
-header("Content-type: text/html; charset=utf-8");
+<!--#_=_を排除する-->
+<script type="text/javascript">
+if (window.location.hash && window.location.hash == '#_=_') {
+  if (window.history && history.pushState) {
+      window.history.pushState("", document.title, window.location.pathname);
+  } else {
+    // Prevent scrolling by storing the page's current scroll offset
+    var scroll = {
+        top: document.body.scrollTop,
+      left: document.body.scrollLeft
+    };
+    window.location.hash = '';
+    // Restore the scroll offset, should be flicker free
+    document.body.scrollTop = scroll.top;
+    document.body.scrollLeft = scroll.left;
+  }
+}
+</script>
+    
+<?php
+//header("Content-type: text/html; charset=utf-8");
  
 //設定ファイル
 require_once("config.php");
@@ -186,22 +210,3 @@ if (isset($_SESSION['facebook_access_token'])) {
 	exit();
 }
 ?>
- 
-<!--#_=_を排除する-->
-<script type="text/javascript">
-if (window.location.hash && window.location.hash == '#_=_') {
-  if (window.history && history.pushState) {
-      window.history.pushState("", document.title, window.location.pathname);
-  } else {
-    // Prevent scrolling by storing the page's current scroll offset
-    var scroll = {
-        top: document.body.scrollTop,
-      left: document.body.scrollLeft
-    };
-    window.location.hash = '';
-    // Restore the scroll offset, should be flicker free
-    document.body.scrollTop = scroll.top;
-    document.body.scrollLeft = scroll.left;
-  }
-}
-</script>

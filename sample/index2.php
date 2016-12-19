@@ -1,3 +1,9 @@
+<?php
+session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -47,6 +53,8 @@
                 </ul>
                </div>
             </div>
+      
+
     
       <script>
       $(function(){
@@ -84,10 +92,8 @@ ini_set("display_errors", On);
 error_reporting(E_ALL);
 ?>
 
-<?php
-session_start();
- 
-header("Content-type: text/html; charset=utf-8");
+    <?php
+//header("Content-type: text/html; charset=utf-8");
  
 //設定ファイル
 require_once("config.php");
@@ -107,6 +113,7 @@ $loginUrl = $helper->getLoginUrl('http://symply.jp/callback.php', $permissions);
 echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン"></a>';
 
 ?>
+
     
 <footer class="footer">
     Symply © 2016 
