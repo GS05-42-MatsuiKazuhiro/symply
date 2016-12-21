@@ -32,6 +32,9 @@ body {
   box-sizing: border-box;
 }
 
+.about_symply a {
+text-decoration: none;
+}
 /* --------------------------------
  * parts
  * -------------------------------- */
@@ -250,14 +253,14 @@ body {
     }
 #slideshow {
     position:relative;
-    height:500px;
+    height:520px;
 }
 
 #slideshow IMG {
     position:absolute;
     width: 100%;
 /*    width: 2020px;*/
-    height: 500px;
+    height: 520px;
     top:0;
     left:0;
     z-index:8;
@@ -299,7 +302,7 @@ body {
     z-index: 200;
     }
 #cat_cover .subtitle {
-    top: 170px;
+    top: 200px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -310,7 +313,7 @@ body {
     color: white;
     font-size: 2ex;
     position: absolute;
-    top: 120px;
+    top: 130px;
     left: 0;
     right: 0;
     bottom: 0;
