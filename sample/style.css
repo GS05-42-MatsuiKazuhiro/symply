@@ -36,7 +36,7 @@ body {
  * parts
  * -------------------------------- */
 .heading {
-  background-color: #9ACD32;
+  background-color: #4B99B5;
   padding: 30px;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -194,8 +194,7 @@ body {
 #menu li a{
 /*  display: block;*/
   padding: 12px 0 10px;
-  color: gray;
-  text-align: center;
+  color: white;
   text-decoration: none;
 }
 /*
@@ -219,20 +218,26 @@ body {
 }
 #header_navi{
     margin-bottom: 80px;
+    background-color: #4B99B5;
 }
 #header_logo {
     float: left;
     padding-left: 60px;
-    padding-top: 10px;
+    padding-top: 20px;
+    background-color: #4B99B5;
+    width: 100%;
 }
 #header_logo ul li{
     padding-bottom: 5px;
 }
 #cat_cover_box {
+    opacity: 0.8;
 /*    border-top:1px solid #CCC;*/
     width: 100%;
+/*
     min-width: 320px;
     min-height: 590px;
+*/
 /*    background: url("../images/main_visual5.JPG") no-repeat;*/
     background-position: center center;
 /*    background-size: 100%;
@@ -245,14 +250,14 @@ body {
     }
 #slideshow {
     position:relative;
-    height:610px;
+    height:500px;
 }
 
 #slideshow IMG {
     position:absolute;
     width: 100%;
 /*    width: 2020px;*/
-    height: 630px;
+    height: 500px;
     top:0;
     left:0;
     z-index:8;
@@ -268,8 +273,9 @@ body {
     z-index:9;
 }
 #cat_cover #top_title{
-    background-color: darkgray;
+/*    background-color: darkgray;*/
     z-index: 200;
+    text-align: center;
 }
 #cat_cover {
     width: 100%;
@@ -282,36 +288,40 @@ body {
     top: 590px;
     position: absolute;
     }
-#cat_cover h1 {
-    color: #ff99cc;
-    font-size: 6ex;
+#cat_cover #top_title .main {
+    color: white;
+    font-size: 3ex;
     position: absolute;
-    left: 307px;
-    top: 300px;  
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 200;
     }
 #cat_cover .subtitle {
-    color: #fff;
-    font-size: 2.5ex;
+    top: 170px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    top: 440px;
-    left: 70px;
     z-index: 200;
     }
 #cat_cover .subtitle2 {
-    color: lightskyblue;
-    font-size: 2.5ex;
+    color: white;
+    font-size: 2ex;
     position: absolute;
-    top: 440px;
-    left: 100px;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 200;
     }
 #cat_cover .subtitle3 {
-    color: #fff;
-    font-size: 2.5ex;
+    top: 210px;
+    left: 50%;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    top: 440px;
-    left: 210px;
     z-index: 200;
     }
 #cat_cover .subtitle4 {
@@ -389,8 +399,10 @@ body {
     color: #fff;
     font-size: 1.2ex;
     position: absolute;
-    top: 540px;
-    left: 320px;
+    top: 410px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 200;
 }
 
@@ -432,17 +444,17 @@ body {
  * skills
  * -------------------------------- */
 .skills {
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #fff;
   color: #333;
-  margin-bottom: 50px;
+
 }
 .skill .heading h2{
   color: #fff;
 }
 .skills-wrapper {
   display: table;
-  width: 80%;
+  width: 60%;
   margin: 50px auto 0;
   table-layout: fixed;
 }
@@ -461,11 +473,11 @@ body {
 }
 .skill-title {
   margin: 0 20px 20px;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
 }
 .skill-text {
   margin: 0 20px;
-  line-height: 2;
+  font-size: 1.0rem;
 }
 .user{
   width: 50%;    
@@ -635,7 +647,6 @@ body {
     padding-top: 30px;
 }
 .about-text {
-  margin: 30px 0;
   line-height: 2.5;
   color:black;
 }
