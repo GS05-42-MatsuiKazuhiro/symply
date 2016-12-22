@@ -455,11 +455,13 @@ text-decoration: none;
   }
   #menu li{
     width: 100%;
+    font-size: 1.1ex;
   }
   #menu li .home{
     display: block;
     background-color: #4B99B5;
     color: white;
+    border-bottom: 1px solid #EEEEEE;
   }
   #toggle{
     display: block;
@@ -470,8 +472,8 @@ text-decoration: none;
   #toggle a{
     display: block;
     position: relative;
-    padding: 12px 0 10px;
-    border-bottom: 1px solid #444;
+    padding: 8px 0 2px;
+    border-bottom: 1px solid #EEEEEE;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -728,6 +730,7 @@ text-decoration: none;
     display: block;
     background-color: #4B99B5;
     color: white;
+    border-bottom: 1px solid #EEEEEE;
   }
   #toggle{
     display: block;
@@ -738,8 +741,8 @@ text-decoration: none;
   #toggle a{
     display: block;
     position: relative;
-    padding: 12px 0 10px;
-    border-bottom: 1px solid #444;
+    padding: 8px 0 2px;
+    border-bottom: 1px solid #EEEEEE;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -830,7 +833,6 @@ text-decoration: none;
 #slideshow IMG {
     position:absolute;
     width: 100%;
-/*    width: 2020px;*/
     height: 280px;
     top:0;
     left:0;
@@ -847,10 +849,6 @@ text-decoration: none;
       font-size: 1.7rem;
       left:60px;
       top: 370px;
-  }
-  #cat_cover .top_facebook{
-      left: 92px;
-      top: 430px;
   }
   .header {
   margin-bottom: 1px;
