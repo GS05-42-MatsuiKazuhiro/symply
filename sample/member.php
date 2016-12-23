@@ -70,7 +70,7 @@ session_start();
      <tr><th><div class="trip">
         <a href="http://symply.jp/trip.php"><img class="trip_image" src="images/trip2.jpg" alt="">
             <p class="trip_text">
-              プチ旅行デート<br>
+              プチ観光デート<br>
             　湘南・鎌倉・浅草・横浜中華街など、近場でプチ旅行デート<br></p>
             <p class="trip_text2">
               ※東京・神奈川・千葉・埼玉限定</p>

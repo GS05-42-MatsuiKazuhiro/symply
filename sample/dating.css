@@ -459,7 +459,7 @@ a:active { color:black;  }
   }
   th,td {
 	width: 100%;
-	display: block;
+    display: inherit;
 }
   .dating{
     padding: 0px 0px 0px 0px;

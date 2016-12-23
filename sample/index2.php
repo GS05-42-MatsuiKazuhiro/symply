@@ -9,16 +9,42 @@ session_start();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ログイン | Symply</title>
-<!--
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
--->
-<!--  <link rel="stylesheet" href="css/reset.css">-->
+  <title>Facebookログイン | Symply</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="facebook.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/logo.jpg">
   <script src="jquery-3.1.1.min.js"></script> 
+<!--Header-->
+  <header class="header">
+    <div id="header_navi">
+        <div id="header_logo">
+            <div id="toggle"><a class="header_pic"><center><img src ="images/symply.png" width="110px"></center></a></div>
+                <ul id="menu" class="">
+                <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply.png" width="180px"></a></li>
+                <li style="display:inline"><a class ="home" href="index.html">&nbsp;&nbsp;&nbsp;HOME&nbsp;</a></li>
+                <li style="display:inline"><a class ="home" href="http://symply.jp/column/">|&nbsp;&nbsp;Symplyコラム&nbsp;</a></li>
+                <li style="display:inline"><a class ="home" href="difference.html">|&nbsp;&nbsp;『趣味デート』と『きっかけデート』の違いとは？&nbsp;</a></li>
+                </ul>
+        </div>
+    </div>
+      <script>
+              $(function(){
+          $("#toggle").click(function(){
+            $("#menu").slideToggle();
+            return false;
+          });
+          $(window).resize(function(){
+            var win = $(window).width();
+            var p = 480;
+            if(win > p){
+              $("#menu").show();
+            } else {
+              $("#menu").hide();
+            }
+          });
+        });
+      </script>
 <!--Google Analytics-->
       <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,60 +57,6 @@ session_start();
 
     　</script>
 <!--Google Analytics-->
-</head>
-<body>
-<!--Header-->
-  <header class="header">
-    <div id="header_navi">
-        <div id="header_logo">
-<!--
-            <a href="symply.jp" class="header_pic"><img src ="images/symply.png" width="180px"></a>
-           <div id="menu-box">
--->
-              <div id="toggle"><a class="header_pic">Symply</a></div>
-                <ul id="menu" class="">
-                <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply_header.png" width="180px" alt="symplyロゴ"></a></li>
-                <li style="display:inline"><a class ="home" href="index.html">| Home</a></li>
-                <li style="display:inline"><a class ="home" href="http://www.column.symply.jp">| Symplyコラム</a></li>
-<!--
-                <li style="display:inline"><a class ="header_facebook" href="index2.php">
-                <div class="header_facebooklabel">Facebookで登録/ログイン</div></a></li>
--->
-                </ul>
-               </div>
-            </div>
-      
-
-    
-      <script>
-      $(function(){
-  $("#toggle").click(function(){
-    $("#menu").slideToggle();
-    return false;
-  });
-  $(window).resize(function(){
-    var win = $(window).width();
-    var p = 480;
-    if(win > p){
-      $("#menu").show();
-    } else {
-      $("#menu").hide();
-    }
-  });
-});
-      </script>
-
-  </header>
-
-<!--
-<div id="breadcrumb">
-    <ol>
-      <li><a href="./index.html">HOME</a></li>
-      <li>facebookログイン</li>
-    </ol>      
-</div>
--->
-
 
 
 <?php 
