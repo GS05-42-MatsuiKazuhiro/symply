@@ -301,8 +301,24 @@ text-decoration: none;
   margin: 50px auto 0;
   table-layout: fixed;
 }
+.skills-wrapper_c {
+  display: table;
+  width: 90%;
+  margin: 0px auto 0px;
+  table-layout: fixed;
+}
+.skills-wrapper_d {
+  display: table;
+  width: 100%;
+  margin: 0px auto 0px;
+  table-layout: fixed;
+}
 .skill-box {
   display: table-cell;
+}
+.skill-box_a {
+  display: table-cell;
+  padding: 30px;
 }
 .skill-icon {
   width: 150px;
@@ -381,6 +397,15 @@ text-decoration: none;
   color: black
 }
 
+.about_symply h3 {
+    color: white;
+    background-color: #4B99B5;
+/*    width: 30%;*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 40px;
+  }
+
 .about_symply #qa{
     max-width: 600px;
     margin: 0 auto;
@@ -389,6 +414,20 @@ text-decoration: none;
 }
 .about_symply .txt {
     text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+.about_symply .txt2 {
+    text-align: left;
+/*    width: 30%;*/
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 20px;
+  }
+
+.about_symply .txt3 {
+    text-align: center;
     margin-left:auto;
     margin-right:auto;
   }
@@ -404,6 +443,7 @@ text-decoration: none;
      display:block;
     　width:100%;
     　height:100%; 
+    vertical-align:middle;
 }
 
 .table td a:hover{
@@ -419,6 +459,15 @@ text-decoration: none;
     padding-top: 15px;
 }
 
+.icon3{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.table td label{
+    float: left;
+    padding-left: 20px;
+}
 
 /* --------------------------------
  * money
@@ -645,12 +694,13 @@ text-decoration: none;
   }
   .skills-wrapper_a,
   .skills-wrapper_b,
-  .skill-box {
+  .skills-wrapper_c,
+  .skill-box,
+  .skill-box_a{
     display: block;
+    width: 100%;
   }
-  .skill-box {
-    margin: 40px auto;
-  }
+
     
 /*--- dating ---*/
 .dating2 {
@@ -689,6 +739,21 @@ text-decoration: none;
         font-size: 1.2ex;
         padding-top: 50px;
     }
+    .table td{
+        font-size: 0.8em;
+    }
+    .table td label{
+    float: none;
+    padding-left: 10px;
+    }
+    .icon{
+    padding-left: 10px;
+    padding-top: 5px;
+    }
+    .icon3{
+    padding-left: 10px;
+    padding-top: 15px;
+    }   
     
 /*    --- money ---*/
     .money_title{
@@ -717,6 +782,12 @@ text-decoration: none;
     
 /*    --- FAQ ---*/
     .txt{
+        font-size: 1.2ex;
+    }
+    .txt2{
+        font-size: 1.2ex;
+    }
+    .txt3{
         font-size: 1.2ex;
     }
 
@@ -918,7 +989,9 @@ text-decoration: none;
   }
   .skills-wrapper_a,
   .skills-wrapper_b,
-  .skill-box {
+  .skills-wrapper_c,
+  .skill-box,
+  .skill-box_a{
     width: 100%;
   }
   .skill-box {
@@ -963,6 +1036,7 @@ text-decoration: none;
         padding-top: 50px;
     }
     
+ 
 /*    --- money ---*/
     .money_title{
         width: 180px;
@@ -990,6 +1064,9 @@ text-decoration: none;
     
 /*    --- FAQ ---*/
     .txt{
+        font-size: 1.4ex;
+    }
+    .txt2{
         font-size: 1.4ex;
     }
 
