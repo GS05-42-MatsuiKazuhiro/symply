@@ -38,7 +38,7 @@ text-decoration: none;
  * parts
  * -------------------------------- */
 .heading {
-  background-color: #4B99B5;
+  background-color: #B0C4DE;
   padding: 20px;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -83,18 +83,20 @@ text-decoration: none;
  * -------------------------------- */
 #menu{
   width: 100%;
-  max-width: 960px;
+  width: 860px;
   margin: 0;
   padding: 0;
 }
+
 #menu li{
 /*  display: block;*/
 /*  float: left;*/
-  width: 25%;
+  width: 100%;
   margin: 0;
   padding: 0; }
 #menu li a{
 /*  display: block;*/
+  width: 100%;
   padding: 12px 0 10px;
   color: white;
   text-decoration: none;
@@ -110,6 +112,10 @@ text-decoration: none;
 .header_pic{
     padding-bottom: 30px;
 }
+.header_pic2{
+    width: 200px;
+    height: 200px;  
+}
 .home{
     color:gray;
     text-decoration: none;
@@ -118,15 +124,15 @@ text-decoration: none;
     color:gray;
     text-decoration: none;
 }
+
 #header_navi{
-    margin-bottom: 80px;
-    background-color: #4B99B5;
+    margin-bottom: 70px;
+    background-color: #B0C4DE;
 }
 #header_logo {
     float: left;
-    padding-left: 60px;
-    padding-top: 20px;
-    background-color: #4B99B5;
+    padding-top: 10px;
+    background-color: #B0C4DE;
     width: 100%;
 }
 #header_logo ul li{
@@ -213,6 +219,7 @@ text-decoration: none;
     height: 200px;
     margin-right: 30px;
     }
+
 #cat_cover .subtitle .choice_b{
     width: 200px;
     height: 200px;
@@ -239,9 +246,35 @@ text-decoration: none;
     z-index: 200;
 }
 
+.header_table{
+    margin-left: auto;
+    margin-right: auto;
+    width="80%"
+    font-size: 1.0ex;
+}
+.header_table_pc{
+    margin-left: auto;
+    margin-right: auto;
+    width="80%"
+}
+.header_table_pc .txt{
+    font-size: 1.0ex;
+}
+
 .header {
   padding: 1px;
 }
+
+@media screen and (min-width: 1025px){
+.header_sp{
+    display: none;
+}
+}
+
+.header_table h1{
+    font-size: 4.5ex;
+}
+
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
@@ -277,6 +310,81 @@ text-decoration: none;
 .iphone{
     float: right; margin-right:250px; margin-top: 30px;
 }
+.about_symply .subtitle .choice_a{
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    }
+/*
+h2{
+    position: relative;
+    padding: 0 .4em .1em;
+}
+h2::after{
+position: absolute;
+	bottom: 0;
+	left:32.5%;
+
+	z-index: -1;
+	content: '';
+	width: 35%;
+	height: 10px;
+	background-color: #b6f0fc;
+    }
+*/
+/* --------------------------------
+ * skills仮
+ * -------------------------------- */
+.skills {
+  padding: 40px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skill .heading h2{
+  color: #fff;
+}
+.skills-wrapper_sp {
+  display: table;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+.skills-wrapper_sp2 {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.skill-box_sp {
+  display: table-cell;
+}
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+/*  color: #f1b400;*/
+  font-size: 8rem;
+  line-height: 142px;
+}
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2.0rem;
+}
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+.user{
+  width: 50%;    
+}
+.mail{
+  width: 48%;    
+}
+.matching{
+  width: 50%;    
+}
 
 /* --------------------------------
  * skills
@@ -286,19 +394,26 @@ text-decoration: none;
   background-color: #fff;
   color: #333;
 }
+@media screen and (min-width: 1025px){
+.skills_sp{
+    display: none;
+}
+}
 .skills h1{
   color: black;
 }
+
 .skills-wrapper_a {
   display: table;
-  width: 70%;
-  margin: 50px auto 70px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   table-layout: fixed;
 }
 .skills-wrapper_b {
   display: table;
-  width: 70%;
-  margin: 50px auto 0;
+  width: 90%;
+  margin: 50px auto 70px;
   table-layout: fixed;
 }
 .skills-wrapper_c {
@@ -315,6 +430,7 @@ text-decoration: none;
 }
 .skill-box {
   display: table-cell;
+  padding: 20px;
 }
 .skill-box_a {
   display: table-cell;
@@ -342,10 +458,13 @@ text-decoration: none;
   width: 50%;    
 }
 .mail{
-  width: 48%;    
+  width: 50%;    
 }
 .matching{
   width: 50%;    
+}
+.matching2{
+  width: 80%;    
 }
 
 
@@ -397,9 +516,9 @@ text-decoration: none;
   color: black
 }
 
+
 .about_symply h3 {
-    color: white;
-    background-color: #4B99B5;
+    color: black;
 /*    width: 30%;*/
     margin-left:auto;
     margin-right:auto;
@@ -432,6 +551,22 @@ text-decoration: none;
     margin-right:auto;
   }
 
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table2 td{
+      line-height: 2em;
+    　text-align: center;
+    　vertical-align:middle;
+    　color: #404040;
+}
+
+.table2 tr td{
+      width: 200px;
+}
+
 .table td{
       line-height: 4em;
     　text-align: center;
@@ -454,6 +589,120 @@ text-decoration: none;
     color: black;
 }
 
+.item{
+    color: white;
+    background-color: #B0E0E6;
+    padding: 10px;
+}
+
+.answer{
+    padding: 10px;
+}
+
+#ansdiv #ans1{
+display:none;
+}
+
+#ansdiv #ans2{
+display:none;
+}
+
+#ansdiv #ans3{
+width: 100%;
+
+display:none;
+}
+
+#ansdiv #ans4{
+display:none;
+}
+
+#ansdiv #ans5{
+display:none;
+}
+
+#ansdiv #ans6{
+display:none;
+}
+
+#ansdiv #ans7{
+display:none;
+}
+
+#ansdiv #ans8{
+display:none;
+}
+
+#ansdiv #ans9{
+display:none;
+}
+
+#ansdiv #ans10{
+display:none;
+}
+
+#ansdiv #ans11{
+display:none;
+}
+
+#ansdiv #ans12{
+display:none;
+}
+
+#ansdiv #ans13{
+display:none;
+}
+
+#ansdiv #ans2{
+display:none;
+}
+
+#ansdiv #ans3{
+width: 100%;
+
+display:none;
+}
+
+#ansdiv #ans4{
+display:none;
+}
+
+#ansdiv #ans5{
+display:none;
+}
+
+#ansdiv #ans6{
+display:none;
+}
+
+#ansdiv #ans7{
+display:none;
+}
+
+#ansdiv #ans8{
+display:none;
+}
+
+#ansdiv #ans9{
+display:none;
+}
+
+#ansdiv #ans10{
+display:none;
+}
+
+#ansdiv #ans11{
+display:none;
+}
+
+#ansdiv #ans12{
+display:none;
+}
+
+#ansdiv #ans13{
+display:none;
+}
+
 .icon{
     padding-left: 20px;
     padding-top: 15px;
@@ -463,6 +712,12 @@ text-decoration: none;
     padding-left: 20px;
     padding-top: 15px;
 }
+
+.icon4{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
 
 .table td label{
     float: left;
@@ -493,6 +748,102 @@ text-decoration: none;
 
 
 /* --------------------------------
+ * form
+ * -------------------------------- */
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.jumbotron dl {
+/*    background: #4B99B5;*/
+    background: #B0E0E6;
+    border: 1px solid #ddd;
+    border-top: 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron dl dt,
+.jumbotron dl dd {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.jumbotron dl dt {
+    width: 13em;
+    float: left;
+    clear: both;
+    color: white;
+}
+.jumbotron dl dd {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    margin-left: 13em;
+}
+.jumbotron #name{
+    width: 15em;
+/*    padding: 3px;*/
+}
+.jumbotron #email{
+    width: 25em;
+/*    padding: 3px;*/
+}
+.jumbotron #email2{
+    width: 25em;
+/*    padding: 3px;*/
+}
+.jumbotron #college{
+    width: 15em;
+/*    padding: 3px;*/
+}
+
+.jumbotron #submit{
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .jumbotron dl{
+    margin-left: inherit;
+    margin-right: inherit; 
+    }  
+/*
+  .jumbotron #partner_level{
+    width:15%;
+  }
+*/
+  .jumbotron dl dd {
+    width: 8em; 
+    margin-left: 10em;
+    }
+.jumbotron #name{
+    width: 5em;
+/*    padding: 3px;*/
+}
+.jumbotron #email{
+    width: 5em;
+/*    padding: 3px;*/
+}
+.jumbotron #email2{
+    width: 5em;
+/*    padding: 3px;*/
+}
+.jumbotron #college{
+    width: 5em;
+/*    padding: 3px;*/
+}
+}
+
+/* --------------------------------
+ * facebook
+ * -------------------------------- */
+
+.txt7{
+    font-size: 1.0px;
+}
+
+/* --------------------------------
  * smart phone
  * -------------------------------- */
 @media screen and (max-width: 479px) and (min-width: 320px){
@@ -506,8 +857,9 @@ text-decoration: none;
     opacity: 1;
   }
   /* --- header --- */
-  #slideshow IMG.active {
-    width: 100%;
+  .slideshow {
+    width: 80%;
+    height: auto;
     opacity: 0.9;
   }
 
@@ -518,19 +870,36 @@ text-decoration: none;
       margin-bottom: 1px;
       background-color: white;
   }
+  .header_table_pc{
+        display: none;
+    }
   .header_pic{
       display: none;
+  }
+  .header_pic2{
+      width: 50px;
+      height: 50px;
+  }
+  .header_pic3{
+      width: 100%;
+  }
+  .shuku{
+      width: 20px;
   }
   #menu{
     display: none;
   }
+  #menu{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
   #menu li{
     width: 100%;
-    font-size: 1.1ex;
   }
   #menu li .home{
     display: block;
-    background-color: #4B99B5;
+    background-color: #B0C4DE;
     color: white;
     border-bottom: 1px solid #EEEEEE;
   }
@@ -538,7 +907,7 @@ text-decoration: none;
     display: block;
     position: relative;
     width: 100%;
-    background: #4B99B5;
+    background: #B0C4DE;
   }
   #toggle a{
     display: block;
@@ -568,7 +937,7 @@ text-decoration: none;
     right: 10px;
     width: 20px;
     height: 4px;
-    background: #4B99B5;
+    background: #B0C4DE;
   }
   #toggle a:before{
     margin-top: -6px;
@@ -576,16 +945,6 @@ text-decoration: none;
   #toggle a:after{
     margin-top: 2px;
   }
-  #cat_cover #top_title .main{
-    color: white;
-    font-size: 2.3ex;
-    position: absolute;
-    top: 20px; 
-    right: 0;
-    bottom: 0;
-    left: 0; 
-    z-index: 200;
-    }
 #cat_cover #top_title .subtitle {
     color: #fff;
     font-size: 2.0ex;
@@ -683,24 +1042,54 @@ text-decoration: none;
 
   /* --- skills --- */
   
+    .skills_pc{
+        display: none;
+    }
   .skills h1{
    font-size: 2.1ex;     
   }  
-  .skills .skill-title{
-   font-size: 1.6ex;     
+   .skill-title{
+   font-size: 1.4ex;     
   } 
   .skill-text {
-    font-size: 1.2ex;
+    font-size: 1.4ex;
   }
+    .skills-wrapper_d{
+        display: block;
+    }
   .skills-wrapper_a,
   .skills-wrapper_b,
   .skills-wrapper_c,
   .skill-box,
   .skill-box_a{
-    display: block;
+      margin-top: 30px;
+      margin-bottom: 1px;
     width: 100%;
   }
+    
+    .skill-box{
+        padding: 10px;
+    }
+  
 
+/* --- skills --- */
+  .skills-wrapper_sp,
+  .skill-box_sp {
+    display: block;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-text {
+    margin: 0;
+
+  }
+    .content{
+        width: 70%;
+    }
     
 /*--- dating ---*/
 .dating2 {
@@ -727,16 +1116,16 @@ text-decoration: none;
 /*    --- about ---*/
     
   .about-text {
-    font-size: 1.2ex;
+    font-size: 1.6ex;
   }
     .about{
         margin-bottom: 30px;
     }
     .about-text2{
-        font-size: 1.2ex;
+        font-size: 1.4ex;
     }
     .about-text3{
-        font-size: 1.2ex;
+        font-size: 1.4ex;
         padding-top: 50px;
     }
     .table td{
@@ -753,7 +1142,35 @@ text-decoration: none;
     .icon3{
     padding-left: 10px;
     padding-top: 15px;
-    }   
+    }  
+    
+    .about_symply h1 {
+    color: black;
+/*    width: 30%;*/
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 2.1ex;
+  }
+    .about_symply #qa .table tr td{
+    color: black;
+/*    width: 30%;*/
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.6ex;
+  }
+    .about_symply #ansdiv .table tr td{
+    color: black;
+/*    width: 30%;*/
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.6ex;
+  }
+    .about_symply .table tr td{
+/*    width: 30%;*/
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.6ex;
+  }
     
 /*    --- money ---*/
     .money_title{
@@ -778,22 +1195,36 @@ text-decoration: none;
         width: 90%;
         font-size: 1.0ex;
     }
+    
+    .table tr td{
+        font-size: 0.5ex;
+    }
 /*
     
 /*    --- FAQ ---*/
     .txt{
-        font-size: 1.2ex;
+        font-size: 1.0ex;
     }
     .txt2{
-        font-size: 1.2ex;
+        font-size: 0.8ex;
     }
     .txt3{
-        font-size: 1.2ex;
+        font-size: 1.6ex;
+    }
+    .txt4{
+        font-size: 1.3ex;
+    }
+    .txt7{
+        font-size: 0.8ex;
     }
 
+.facebook{
+    width: 60%;
+}
+    
 /*    --- footer ---*/
     .footer{
-        font-size: 1.2ex;
+        font-size: 1.0ex;
     }
 }
 
@@ -801,8 +1232,9 @@ text-decoration: none;
   body {
     font-size: 16px;
   }
-  .heading {
+  .heading{
     font-size: 3ex;
+    width: 100%;
   }
   .button:hover {
     opacity: 1;
@@ -820,18 +1252,33 @@ text-decoration: none;
       margin-bottom: 1px;
       background-color: white;
   }
+  .header_table_pc{
+        display: none;
+    }
   .header_pic{
       display: none;
+  }
+  .header_pic2{
+      width: 120px;
+      height: 120px;
+  }
+  .shuku{
+      width: 40px;
   }
   #menu{
     display: none;
   }
+  #menu{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
   #menu li{
     width: 100%;
   }
   #menu li .home{
     display: block;
-    background-color: #4B99B5;
+    background-color: #B0C4DE;
     color: white;
     border-bottom: 1px solid #EEEEEE;
   }
@@ -839,7 +1286,7 @@ text-decoration: none;
     display: block;
     position: relative;
     width: 100%;
-    background: #4B99B5;
+    background: #B0C4DE;
   }
   #toggle a{
     display: block;
@@ -869,7 +1316,7 @@ text-decoration: none;
     right: 10px;
     width: 20px;
     height: 4px;
-    background: #4B99B5;
+    background: #B0C4DE;
   }
   #toggle a:before{
     margin-top: -6px;
@@ -977,6 +1424,10 @@ text-decoration: none;
    }
 
   /* --- skills --- */
+   
+  .skills_pc{
+        display: none;
+  }
   
   .skills h1{
    font-size: 2.5ex;     
@@ -1068,6 +1519,9 @@ text-decoration: none;
     }
     .txt2{
         font-size: 1.4ex;
+    }
+    .txt4{
+        font-size: 3.0ex;
     }
 
 /*    --- footer ---*/

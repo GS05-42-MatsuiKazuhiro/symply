@@ -8,10 +8,10 @@ session_start();
 <head>
       <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>デート一覧 | Symply</title>   
+  <title>趣味デート一覧 | Symply[シンプリー]</title>   
   <link rel="shortcut icon" href="images/logo.jpg">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="dating.css">
+  <link rel="stylesheet" href="style.css">
 <!--Google Analytics-->
       <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,116 +26,191 @@ session_start();
 <!--Google Analytics-->
 </head>
 <body>
- 　<header class="header">     
-      <h2 class="heading">デート一覧</h2>
-   </header>
-    <p id="text">現在開催中のデート一覧になります。</p>
-    <p id="text">興味のあるデートをクリックし、ご希望条件の入力をお願いします(複数選択可)。</p>
-   <section class="dating">
-       <table>
-<!--    <table border=1>-->
-     <th>
-      <div class="tennis_group">
-        <a href="http://symply.jp/tennis.php"><img class="tennis_image" src="images/tennis.jpg" alt="">
-            <p class="tennis_text">
-              テニスデート<br>
-              相手探しにピッタリ！気軽に楽しめるテニスデート<br>
-            </p></a>
-      </div>
-     </th>
-     <th><div class="cooking">
-      <div class="cooking_group">
-        <a href="http://symply.jp/cooking.php"><img class="cooking_image" src="images/cooking.jpg" alt="">
-            <p class="cooking_text">
-              料理デート<br>
-              得意料理を一緒に作ろう！料理デート<br>
-            </p></a>
-      </div>
-     </div></th>
-     <tr><th><div class="kansen_baseball">
-         <a href="http://symply.jp/kansen_baseball.php"><img class="kansen_baseball_image" src="images/kansen_baseball.jpg" alt="">
-            <p class="kansen_baseball_text">
-              プロ野球観戦デート<br>
-            　ファン同士で熱く盛り上がれ！プロ野球観戦デート<br>
-            </p></a>
-     </div></th>
-     <th><div class="kansen_soccer">
-        <a href="http://symply.jp/kansen_soccer.php"><img class="kansen_soccer_image" src="images/kansen_soccer.jpg" alt="">
-            <p class="kansen_soccer_text">
-              Jリーグ観戦デート<br>
-            　ユニフォームを着て熱くなれ！Jリーグ観戦デート<br>
-            </p></a>
-     </div></th>
-     </tr>
-     <tr><th><div class="trip">
-        <a href="http://symply.jp/trip.php"><img class="trip_image" src="images/trip2.jpg" alt="">
-            <p class="trip_text">
-              プチ観光デート<br>
-            　湘南・鎌倉・浅草・横浜中華街など、近場でプチ旅行デート<br></p>
-            <p class="trip_text2">
-              ※東京・神奈川・千葉・埼玉限定</p>
-            </a>
-     </div></th>
-     <th><div class="bowling">
-        <a href="http://symply.jp/bowling.php"><img class="bowling_image" src="images/bowling.jpg" alt="">
-            <p class="bowling_text">
-              ボーリングデート<br>
-            　競い合うのも教わるのもOK！ボーリングデート<br>
-            </p></a>
-     </div></th>
-     </tr>
-     <tr><th><div class="gurume">
-        <a href="http://symply.jp/gurume.php"><img class="gurume_image" src="images/gurume2.jpg" alt="">
-            <p class="gurume_text">
-              グルメデート<br>
-            　1人では行きづらいレストランへ！グルメデート<br>
-            </p></a>
-     </div></th>
-     <th><div class="karaoke">
-        <a href="http://symply.jp/karaoke.php"><img class="karaoke_image" src="images/karaoke.jpg" alt="">
-            <p class="karaoke_text">
-              カラオケデート<br>
-            　練習相手探し、一緒に盛り上がるのもあり！カラオケデート<br>
-            </p></a>
-     </div></th>
-     </tr>
-　　　<tr><th><div class="run">
-        <a href="http://symply.jp/run.php"><img class="run_image" src="images/run.jpg" alt="">
-            <p class="run_text">
-              ランニングデート<br>
-            　リフレッシュも兼ねて！ランニングデート<br>
-            </p></a>
-     </div></th>
-     <th><div class="movie">
-        <a href="http://symply.jp/movie.php"><img class="movie_image" src="images/movie.jpg" alt="">
-            <p class="movie_text">
-              映画デート<br>
-            　流行りの作品を2人で見に行こう！映画デート<br>
-            </p></a>
-     </div></th>
-     </tr>
-     <tr><th><div class="drive">
-        <a href="http://symply.jp/drive.php"><img class="drive_image" src="images/drive.jpg" alt="">
-            <p class="drive_text">
-              ドライブデート<br>
-            　気分転換にちょっと遠出したい人たちへ！ドライブデート<br>
-            </p></a>
-     </div></th>
-     <th><div class="golf">
-        <a href="http://symply.jp/golf.php"><img class="golf_image" src="images/golf.jpg" alt="">
-            <p class="golf_text">
-              ゴルフデート<br>
-            　シミュレーションゴルフや打ちっぱなしから！ゴルフデート<br>
-            </p></a>
-     </div></th>
-     </tr>
-    </table>
-   </section>
-</body>
+   <section class="about_symply"> 
+    <h1>趣味デート一覧</h1>
 
+    <section class="skills_pc">
+    <h2 class="heading">スポーツ</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box">  
+        <h3>テニス</h3>
+       <img src="images/tennis_icon2.png">
+       <p class="txt2">テニスデートでは、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>。※お相手と日程調整後、運営事務局で電話予約代行【変更不可】。テニスコート代は当日払いなります。</p>
+      </div>
+     <div class="skill-box">
+        <h3>ランニング</h3>
+       <img src="images/run_icon2.png">
+       <p class="txt2">ランニングデートでは、駒沢オリンピック公園(2km)・皇居(5km)からランニングコースを選択。</p>
+      </div>
+      <div class="skill-box">
+       <h3>ボーリング</h3>
+       <img src="images/bowling_icon2.png">
+       <p class="txt2">ボーリングデートでは、渋谷で実際に1ゲーム～2ゲーム、プレイします。場所は、渋谷駅宮益坂口から徒歩1分の<a href="http://www.shibuyaest.co.jp/bowling/">『EST』</a>になります。</p> 
+      </div>
+      <div class="skill-box">
+        <h3>ゴルフ</h3>
+       <img src="images/golf_icon2.png">
+       <p class="txt2">ゴルフデートでは、新宿で1時間プレイします。場所は、新宿駅東口から徒歩6分の<a href="http://www.bagus-99.com/shops/b_shinjuku/simulation_golf/">『バグース新宿店』</a>になります。</p>
+      </div>
+         </div>
+  </section>
+       
+       <section class="skills_sp">     
+    <h2 class="heading">スポーツ</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box">  
+          <h3>テニス</h3>
+       <img src="images/tennis_icon2.png" class="content">
+       <p class="txt2">テニスデートでは、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>。※お相手と日程調整後、運営事務局で電話予約代行(変更不可)。</p>
+      </div>
+     <div class="skill-box">
+         <h3>ランニング</h3>
+       <img src="images/run_icon2.png" class="content">
+       <p class="txt2">ランニングデートでは、駒沢オリンピック公園(2km)・皇居(5km)からランニングコースを選択。</p>
+      </div>
+        </div>
+       <div class="skills-wrapper_a">
+      <div class="skill-box">
+          <h3>ボーリング</h3>
+       <img src="images/bowling_icon2.png" class="content">
+       <p class="txt2">ボーリングデートでは、渋谷で実際に1ゲーム～2ゲーム、プレイします。場所は、渋谷駅宮益坂口から徒歩1分の<a href="http://www.shibuyaest.co.jp/bowling/">『EST』</a>になります。</p> 
+      </div>
+      <div class="skill-box">
+          <h3>ゴルフ</h3>
+       <img src="images/golf_icon2.png" class="content">
+       <p class="txt2">ゴルフデートでは、新宿で1時間プレイします。場所は、新宿駅東口から徒歩6分の<a href="http://www.bagus-99.com/shops/b_shinjuku/simulation_golf/">『バグース新宿店』</a>になります。※お相手と日程調整後、運営事務局側で電話予約代行【変更不可】。</p>
+      </div>
+         </div>
+  </section>
+       
+    <section class="skills">     
+    <h2 class="heading">料理・グルメ</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box">  
+          <h3>料理</h3>
+       <img src="images/cooking_icon2.png" class="content">
+          <center><p class="txt2">料理デートでは、お好み焼き・餃子の2つから選択(複数選択可)。※実際に料理する食材・場所は、運営事務局側で用意(お一人様3,000円)。</p></center>
+      </div>
+     <div class="skill-box">
+         <h3>グルメ</h3>
+       <img src="images/gurume_icon2.png" class="content">
+       <p class="txt2">グルメデートでは、都内でランチ(お一人様3,000円以内)になります。肉料理・中華・イタリアン・フレンチから選択。※実際にランチする場所は、運営事務局側で用意。</p>
+      </div>
+        </div>
+       </section>
+       
+　　<section class="skills_pc">
+    <h2 class="heading">観光</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box">  
+        <h3>プチ旅行</h3>
+       <img src="images/trip_icon2.png">
+       <p class="txt2">プチ旅行デートでは、『お台場』・『浅草・東京スカイツリー』・『横浜中華街』・『鎌倉・江ノ島』の4つから、行きたい場所を選択(複数選択可)。</p>
+      </div>
+     <div class="skill-box">
+        <h3>水族館</h3>
+       <img src="images/aqua_icon2.png">
+       <p class="txt2">水族館デートでは、『サンシャイン水族館』・『アクアパーク品川』・『八景島シーパラダイス』『新・江ノ島水族館』の4つから、行きたい場所を選択(複数選択可)。</p>
+      </div>
+      <div class="skill-box">
+       <h3>野球観戦デート</h3>
+       <img src="images/kansen_baseball_icon2.png">
+       <p class="txt2">野球観戦デートでは、東京ドーム開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様C席2,300円・D席1,700円)追加で発生。</p>  
+      </div>
+      <div class="skill-box">
+        <h3>Jリーグ観戦デート</h3>
+       <img src="images/kansen_soccer_icon2.png">
+       <p class="txt2">Jリーグ観戦デートでは、埼玉スタジアム2002開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様ビジター指定席大人3,000円)追加で発生。</p> 
+      </div>
+         </div>
+  </section>
+       
+  <section class="skills_sp">     
+    <h2 class="heading">観光</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box">  
+          <h3>プチ旅行</h3>
+       <img src="images/trip_icon2.png" class="content">
+       <p class="txt2">プチ旅行デートでは、『お台場』・『浅草・東京スカイツリー』・『横浜中華街』・『鎌倉・江ノ島』の4つから、行きたい場所を選択(複数選択可)。</p>
+      </div>
+     <div class="skill-box">
+         <h3>水族館</h3>
+       <img src="images/aqua_icon2.png" class="content">
+       <p class="txt2">水族館デートでは、『サンシャイン水族館』・『アクアパーク品川』・『八景島シーパラダイス』『新・江ノ島水族館』の4つから、行きたい場所を選択(複数選択可)。</p>
+      </div>
+        </div>
+       <div class="skills-wrapper_a">
+      <div class="skill-box">
+          <h3>野球観戦デート</h3>
+       <img src="images/kansen_baseball_icon2.png" class="content">
+       <p class="txt2">野球観戦デートでは、東京ドーム開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様C席2,300円・D席1,700円)追加で発生。</p> 
+      </div>
+      <div class="skill-box">
+          <h3>Jリーグ観戦デート</h3>
+       <img src="images/kansen_soccer_icon2.png" class="content">
+       <p class="txt2">Jリーグ観戦デートでは、埼玉スタジアム2002開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様ビジター指定席大人3,000円)追加で発生。</p> 
+      </div>
+         </div>
+  </section>
+       
+     
+       <section class="skills_pc">
+         <h2 class="heading">文化</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box"> 
+       <h3>映画</h3>
+       <img src="images/movie_icon2.png">
+       <p class="txt2">映画デートでは、新宿で上映中の映画を選択(複数選択可)。見たいタイトルを選択(常に更新)。</p>
+      </div>
+       
+      <div class="skill-box"> 
+       <h3>カラオケ</h3>
+       <img src="images/karaoke_icon2.png">
+       <p class="txt2">カラオケデートでは、渋谷で『邦楽』『洋楽』『アニソン』の3つから、歌いたいジャンルを選択(複数選択可)。</p> 
+      </div>
+        
+        <div class="skill-box"> 
+       <h3>ウォーキング</h3>
+       <img src="images/walking_icon2.png">
+       <p class="txt2">ウォーキングデートでは、『下町散歩(上野～お茶の水)』『伝統×モダン散歩(神楽坂)』『自然癒し系散歩(吉祥寺)』の3つから、歩きたいコースを選択(複数選択可)。</p>
+      </div>
+     </div>
+           <center><a class ="dating2" href="member2.php">申し込み画面</a></center> 
+       </section>
+       
+  <section class="skills_sp">     
+    <h2 class="heading">文化</h2>
+    <div class="skills-wrapper_a">
+      <div class="skill-box">  
+          <h3>映画</h3>
+       <img src="images/movie_icon2.png">
+       <p class="txt2">映画デートでは、新宿で上映中の映画を選択(複数選択可)。見たいタイトルを選択(常に更新)。</p>
+      </div>
+        
+     <div class="skill-box"> 
+       <h3>カラオケ</h3>
+       <img src="images/karaoke_icon2.png">
+       <p class="txt2">カラオケデートでは、渋谷で『邦楽』『洋楽』『アニソン』の3つから、歌いたいジャンルを選択(複数選択可)。場所は、JR渋谷駅ハチ公口から徒歩3分の<a href="http://big-echo.jp/shop_info/%E3%83%93%E3%83%83%E3%82%B0%E3%82%A8%E3%82%B3%E3%83%BC%E6%B8%8B%E8%B0%B7%E9%A7%85%E5%89%8D%E5%BA%97/">『ビッグエコー渋谷駅前店』</a>になります。</p> 
+      </div>
+        </div>
+      
+       <div class="skills-wrapper_a">
+      <div class="skill-box"> 
+       <h3>ウォーキング</h3>
+       <img src="images/walking_icon2.png">
+       <p class="txt2">ウォーキングデートでは、『下町散歩(上野～お茶の水)』『伝統×モダン散歩(神楽坂)』『自然癒し系散歩(吉祥寺)』の3つから、歩きたいコースを選択(複数選択可)。</p>
+      </div>
+      <div class="skill-box">
+      </div>
+         </div>
+      <center><a class ="dating2" href="member2.php">申し込み画面</a></center>
+  </section>
+    </section>
 
+  <script src="lib/placeholders.min.js"></script>
  
 <!--#_=_を排除する-->
+
 <script type="text/javascript">
 if (window.location.hash && window.location.hash == '#_=_') {
   if (window.history && history.pushState) {
@@ -154,59 +229,3 @@ if (window.location.hash && window.location.hash == '#_=_') {
 }
 </script>
     
-<?php
-//header("Content-type: text/html; charset=utf-8");
- 
-//設定ファイル
-require_once("config.php");
- 
-if (isset($_SESSION['facebook_access_token'])) {
-	
-	$accessToken = $_SESSION['facebook_access_token'];
- 
-	$fb->setDefaultAccessToken($accessToken);
-	
-	try {
-		//取得するユーザ情報の指定
-		$response = $fb->get('/me?fields=id,name,first_name,last_name,email,gender');
-		$profile = $response->getGraphUser();
-		
-		//ユーザ画像取得
-		$UserPicture = $fb->get('/me/picture?redirect=false&height=200');
-		$picture = $UserPicture->getGraphUser();
-		
-	} catch(Facebook\Exceptions\FacebookResponseException $e) {
-		// When Graph returns an error
-		echo 'Graph returned an error: ' . $e->getMessage();
-		exit;
-	} catch(Facebook\Exceptions\FacebookSDKException $e) {
-		// When validation fails or other local issues
-		echo 'Facebook SDK returned an error: ' . $e->getMessage();
-		exit;
-	}
-	
-	$id=$profile['id'];
-	$name=$profile['name'];
-	$first_name=(isset($profile['first_name'])) ? $profile['first_name'] : '';
-	$last_name=(isset($profile['last_name'])) ? $profile['last_name'] : '';
-	$email=$profile['email'];
-	$gender=(isset($profile['gender'])) ? $profile['gender'] : '';
-	$picture_url = $picture['url'];
-    
-   
-//	echo "<p>アクセストークン：".$accessToken."</p>";
-//	echo "<p>ID：".$id."</p>";
-//	echo "<p>名前：".$name."</p>";
-//	echo "<p>性別：".$gender."</p>";
-//	echo "<p>ファーストネーム：".$first_name."</p>";
-//	echo "<p>ラストネーム：".$last_name."</p>";
-//	echo "<p>メール：".$email."</p>";//ユーザが未公開・未設定の場合は表示されない
-//	echo "<p><img src=".$picture_url."></p>";
-	
-	echo "<p><a href='logout.php'>ログアウト</a></p>";
- 
-}else{
-	header('Location: index.php');
-	exit();
-}
-?>

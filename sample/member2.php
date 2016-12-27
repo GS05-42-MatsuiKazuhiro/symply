@@ -80,7 +80,7 @@ session_start();
              </tr>
              
             <tr>
-                <td height=40><input type="checkbox" name="dating[]" value="13" id="chk13" onclick="chkdisp(this,'ans13')" /><label for="chk13"></label><img src="images/walking_icon.png" class="icon3">&nbsp;&nbsp;ウォーキング</td>
+            <td height=40><input type="checkbox" name="dating[]" value="13" id="chk13" onclick="chkdisp(this,'ans13')" /><label for="chk13"></label><img src="images/walking_icon.png" class="icon3">&nbsp;&nbsp;ウォーキング</td>
             </tr>
             </table></center>
        </div>
@@ -179,9 +179,9 @@ session_start();
                 <td colspan=3 align=center height=40 style="color:white">カラオケ</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="karaoke[]" value="1"></label>&nbsp;&nbsp;邦楽</td>
-                 <td height=40><label><input type="checkbox" name="karaoke[]" value="2"></label>&nbsp;&nbsp;洋楽</td>
-                 <td height=40><label><input type="checkbox" name="karaoke[]" value="3"></label>&nbsp;&nbsp;アニソン</td>
+                 <td height=40><label><input type="checkbox" name="karaoke[]" value="1" checked></label>&nbsp;&nbsp;邦楽</td>
+                 <td height=40><label><input type="checkbox" name="karaoke[]" value="2" checked></label>&nbsp;&nbsp;洋楽</td>
+                 <td height=40><label><input type="checkbox" name="karaoke[]" value="3" checked></label>&nbsp;&nbsp;アニソン</td>
              </tr>　　
             </table><br><br> 
           </div>
@@ -193,13 +193,13 @@ session_start();
                 <td colspan=3 align=center width=500 height=40 style="color:white">ウォーキング</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="walking[]" value="1"></label>&nbsp;&nbsp;下町散歩(上野～お茶の水)</td>
+                 <td height=40><label><input type="checkbox" name="walking[]" value="1" checked></label>&nbsp;&nbsp;下町散歩(上野～お茶の水)</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="walking[]" value="2"></label>&nbsp;&nbsp;伝統×モダン散歩(神楽坂)</td>
+                 <td height=40><label><input type="checkbox" name="walking[]" value="2" checked></label>&nbsp;&nbsp;伝統×モダン散歩(神楽坂)</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="walking[]" value="3"></label>&nbsp;&nbsp;自然癒し系散歩(吉祥寺)</td>
+                 <td height=40><label><input type="checkbox" name="walking[]" value="3" checked></label>&nbsp;&nbsp;自然癒し系散歩(吉祥寺)</td>
              </tr>　　
             </table><br><br> 
            </div>
@@ -211,13 +211,13 @@ session_start();
                 <td colspan=3 align=center width=500 height=40 style="color:white">映画</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="movie[]" value="1"></label>&nbsp;&nbsp;バイオハザード　ザ・ファイナル</td>
+                 <td height=40><label><input type="checkbox" name="movie[]" value="1" checked></label>&nbsp;&nbsp;バイオハザード　ザ・ファイナル</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="movie[]" value="2"></label>&nbsp;&nbsp;ローグ・ワン　スター・ウォーズ・ストーリー</td>
+                 <td height=40><label><input type="checkbox" name="movie[]" value="2" checked></label>&nbsp;&nbsp;ローグ・ワン　スター・ウォーズ・ストーリー</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="movie[]" value="3"></label>&nbsp;&nbsp;ファンタスティック・ビーストと魔法使いの旅</td>
+                 <td height=40><label><input type="checkbox" name="movie[]" value="3" checked></label>&nbsp;&nbsp;ファンタスティック・ビーストと魔法使いの旅</td>
              </tr>　　
             </table><br><br> 
              </div>
@@ -291,7 +291,6 @@ session_start();
                  <td height=40 class="item">電話番号</td>
                  <td height=40 class="answer"><input type="text" id="college" name="number"></td>
              </tr>　
-            
             </table></center>
          <center><p id="submit"><input type="submit" value="送信"></p></center>
     </section>

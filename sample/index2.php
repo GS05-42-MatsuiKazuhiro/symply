@@ -10,11 +10,13 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Facebookログイン | Symply</title>
-  <link rel="stylesheet" href="css/reset.css">
+<!--  <link rel="stylesheet" href="css/reset.css">-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/logo.jpg">
   <script src="jquery-3.1.1.min.js"></script> 
+</head>
+<body>
 <!--Header-->
   <header class="header">
     <div id="header_navi">
@@ -24,7 +26,7 @@ session_start();
                 <li style="display:inline"><a href="index.html" class="header_pic"><img src ="images/symply.png" width="180px"></a></li>
                 <li style="display:inline"><a class ="home" href="index.html">&nbsp;&nbsp;&nbsp;HOME&nbsp;</a></li>
                 <li style="display:inline"><a class ="home" href="http://symply.jp/column/">|&nbsp;&nbsp;Symplyコラム&nbsp;</a></li>
-                <li style="display:inline"><a class ="home" href="difference.html">|&nbsp;&nbsp;『趣味デート』と『きっかけデート』の違いとは？&nbsp;</a></li>
+                <li style="display:inline"><a class ="home" href="http://symply.jp/index2.php">|&nbsp;&nbsp;Facebookで登録/ログイン&nbsp;</a></li>
                 </ul>
         </div>
     </div>
@@ -57,8 +59,15 @@ session_start();
 
     　</script>
 <!--Google Analytics-->
+</header>
 
-
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+    
 <?php 
 ini_set("display_errors", On);
 error_reporting(E_ALL);
@@ -82,15 +91,22 @@ $helper = $fb->getRedirectLoginHelper();
 $permissions = [];
 $loginUrl = $helper->getLoginUrl('http://symply.jp/callback.php', $permissions);
  
-echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン"></a>';
+echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
 
 ?>
 
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
     
 <footer class="footer">
     Symply © 2016 
   </footer>
   <script src="lib/placeholders.min.js"></script>
+
 </body>
 </html>
 
