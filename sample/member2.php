@@ -45,10 +45,11 @@ session_start();
 　　 <h2 class="heading">デート内容</h2>
     <section class="about_symply">
      <div id="qa">
-    <p class="txt3">興味のあるデートにチェックをつけてください。</p><br>
+    <p class="txt3">興味のあるデートにチェックをつけてください。<br><br>
+         複数選択の場合、どれか1つマッチングした相手と趣味デートを行っていただきます。</p><br>
         <center><table border=1 class="table" width="80%">
              <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=2 align=center style="color:white">趣味デート一覧</td>　 
+                <td colspan=2 align=center style="color:black">趣味デート一覧</td>　 
              </tr>　
             <tr>
                  <td height=40><input type="checkbox" name="dating[]" value="1" id="chk1" onclick="chkdisp(this,'ans1')" /><label for="chk1"></label><img src="images/tennis_icon.png" class="icon3">&nbsp;&nbsp;テニス</td>
@@ -86,15 +87,15 @@ session_start();
        </div>
       
        <div id="qa">
-       <p class="txt2">選んだ趣味デートのうち、希望する条件がございましたら、チェックをお願いします。<br><br>
-       テニス・プロ野球観戦・サッカー観戦・ゴルフ・ボーリングは選択しても、希望条件は表示されませんので、ご注意ください。</p>
+           <p class="txt3">選んだ趣味デートのうち、希望する条件がございましたら、チェックをお願いします。</p>
+       <p class="txt2">テニス・プロ野球観戦・サッカー観戦・ゴルフ・ボーリングは選択しても、希望条件は表示されませんので、ご注意ください。</p><br>
        </div>
 <!--     <div class="skills-wrapper_c"> -->
     <div id="ansdiv">
         <div id="ans5">
             <table border=1 class="table" width="40%">
              <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=2 align=center height=40 style="color:white">料理</td>　 
+                <td colspan=2 align=center height=40 style="color:black">料理</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="cooking[]" value="1" checked></label>&nbsp;&nbsp;お好み焼き</td>
@@ -108,7 +109,7 @@ session_start();
         <div id="ans2">
             <table border=1 class="table" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=3 align=center height=40 style="color:white">ランニング</td>　 
+                <td colspan=3 align=center height=40 style="color:black">ランニング</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="run[]" value="1" checked></label>&nbsp;&nbsp;駒沢オリンピック公園(2km)</td>
@@ -122,7 +123,7 @@ session_start();
         <div id="ans6">
             <table border=1 class="table" width="40%">
              <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=2 align=center height=40 style="color:white">グルメ</td>　 
+                <td colspan=2 align=center height=40 style="color:black">グルメ</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="gurume[]" value="1" checked></label>&nbsp;&nbsp;肉料理</td>
@@ -141,7 +142,7 @@ session_start();
         <div id="ans7"> 
             <table border=1 class="table" width="40%">
              <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=2 align=center height=40 style="color:white">プチ観光</td>　 
+                <td colspan=2 align=center height=40 style="color:black">プチ観光</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="trip[]" value="1" checked></label>&nbsp;&nbsp;お台場</td>
@@ -158,7 +159,7 @@ session_start();
          <div id="ansdiv">
         <div id="ans8"> <table border=1 class="table" width="40%">
              <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=2 align=center width=500 height=40 style="color:white">水族館</td>　 
+                <td colspan=2 align=center width=500 height=40 style="color:black">水族館</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="aqua[]" value="1" checked></label>&nbsp;&nbsp;サンシャイン水族館</td>
@@ -176,7 +177,7 @@ session_start();
         <div id="ansdiv">
         <div id="ans12"> <table border=1 class="table" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=3 align=center height=40 style="color:white">カラオケ</td>　 
+                <td colspan=3 align=center height=40 style="color:black">カラオケ</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="karaoke[]" value="1" checked></label>&nbsp;&nbsp;邦楽</td>
@@ -190,7 +191,7 @@ session_start();
        <div id="ansdiv">
         <div id="ans13"> <table border=1 class="table" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=3 align=center width=500 height=40 style="color:white">ウォーキング</td>　 
+                <td colspan=3 align=center width=500 height=40 style="color:black">ウォーキング</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="walking[]" value="1" checked></label>&nbsp;&nbsp;下町散歩(上野～お茶の水)</td>
@@ -208,7 +209,7 @@ session_start();
         <div id="ansdiv">
         <div id="ans11"> <table border=1 class="table" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=3 align=center width=500 height=40 style="color:white">映画</td>　 
+                <td colspan=3 align=center width=500 height=40 style="color:black">映画</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="movie[]" value="1" checked></label>&nbsp;&nbsp;バイオハザード　ザ・ファイナル</td>
@@ -233,19 +234,19 @@ session_start();
              </tr>　
 -->
              <tr>
-                 <td height=40 class="item">姓</td>
+                 <td height=40 class="item" style="color:black">姓</td>
                  <td height=40 class="answer"><input type="text" id="name" name = "lastname"></td>
              </tr>　
              <tr>
-                 <td height=40 class="item">名</td>
+                 <td height=40 class="item" style="color:black">名</td>
                  <td height=40 class="answer"><input type="text" id="name" name = "firstname"></td>
              </tr>
              <tr>
-                 <td height=40 class="item">性別</td>
+                 <td height=40 class="item" style="color:black">性別</td>
                  <td height=40 class="answer"><input type="radio" name="sex" value="1" checked>男性&nbsp;&nbsp;<input type="radio" name="sex" value="2">女性</td>
              </tr>　
              <tr>
-                 <td height=40 class="item">年齢</td>
+                 <td height=40 class="item" style="color:black">年齢</td>
                  <td height=40 class="answer">
                    <select name="age">
                     <option>18歳</option>
@@ -264,31 +265,31 @@ session_start();
              </tr>　
              <!-- ▼郵便番号入力フィールド(3桁+4桁) -->
             <tr>
-                <td height=40 class="item">郵便番号</td>
+                <td height=40 class="item" style="color:black">郵便番号</td>
                 <td height=40 class="answer"><input type="text" name="zip31" size="4" maxlength="3"> － <input type="text" name="zip32" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip31','zip32','pref31','addr31','addr31');"></td>
             </tr>
             <!-- ▼住所入力フィールド(都道府県) -->
             <tr>
-                <td height=40 class="item">都道府県</td><td height=40 class="answer"><input type="text" name="pref31" size="20"></td>
+                <td height=40 class="item" style="color:black">都道府県</td><td height=40 class="answer"><input type="text" name="pref31" size="20"></td>
             </tr>
             <!-- ▼住所入力フィールド(都道府県以降の住所) -->
             <tr>
-                <td height=40 class="item">都道府県以降の住所</td><td height=40 class="answer"><input type="text" name="addr31" size="40"></td>
+                <td height=40 class="item" style="color:black">都道府県以降の住所</td><td height=40 class="answer"><input type="text" name="addr31" size="40"></td>
             </tr>
              <tr>
-                 <td height=40 class="item">大学名（男性のみ）</td>
+                 <td height=40 class="item" style="color:black">大学名（男性のみ）</td>
                  <td height=40 class="answer"><input type="text" id="college" name="college"></td>
              </tr>　
             <tr>
-                 <td height=40 class="item">Email</td>
+                 <td height=40 class="item" style="color:black">Email</td>
                  <td height=40 class="answer"><input type="text" id="email" size="35" name="email"></td>
              </tr>　
             <tr>
-                 <td height=40 class="item">Email（確認用）</td>
+                 <td height=40 class="item" style="color:black">Email（確認用）</td>
                  <td height=40 class="answer"><input type="text" id="email" size="35" name="email2"></td>
              </tr>　
              <tr>
-                 <td height=40 class="item">電話番号</td>
+                 <td height=40 class="item" style="color:black">電話番号</td>
                  <td height=40 class="answer"><input type="text" id="college" name="number"></td>
              </tr>　
             </table></center>

@@ -35,22 +35,22 @@ session_start();
       <div class="skill-box">  
         <h3>テニス</h3>
        <img src="images/tennis_icon2.png">
-       <p class="txt2">テニスデートでは、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>。※お相手と日程調整後、運営事務局で電話予約代行【変更不可】。テニスコート代は当日払いなります。</p>
+       <p class="skill-text">テニスデートでは、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>。※お相手と日程調整後、運営事務局で電話予約代行【変更不可】。テニスコート代は当日払いなります。</p>
       </div>
      <div class="skill-box">
         <h3>ランニング</h3>
        <img src="images/run_icon2.png">
-       <p class="txt2">ランニングデートでは、駒沢オリンピック公園(2km)・皇居(5km)からランニングコースを選択。</p>
+       <p class="skill-text">ランニングデートでは、駒沢オリンピック公園(2km)・皇居(5km)からランニングコースを選択。</p>
       </div>
       <div class="skill-box">
        <h3>ボーリング</h3>
        <img src="images/bowling_icon2.png">
-       <p class="txt2">ボーリングデートでは、渋谷で実際に1ゲーム～2ゲーム、プレイします。場所は、渋谷駅宮益坂口から徒歩1分の<a href="http://www.shibuyaest.co.jp/bowling/">『EST』</a>になります。</p> 
+       <p class="skill-text">ボーリングデートでは、渋谷で実際に1ゲーム～2ゲーム、プレイします。場所は、渋谷駅宮益坂口から徒歩1分の<a href="http://www.shibuyaest.co.jp/bowling/">『EST』</a>になります。</p> 
       </div>
       <div class="skill-box">
         <h3>ゴルフ</h3>
        <img src="images/golf_icon2.png">
-       <p class="txt2">ゴルフデートでは、新宿で1時間プレイします。場所は、新宿駅東口から徒歩6分の<a href="http://www.bagus-99.com/shops/b_shinjuku/simulation_golf/">『バグース新宿店』</a>になります。</p>
+       <p class="skill-text">ゴルフデートでは、新宿で1時間プレイします。場所は、新宿駅東口から徒歩6分の<a href="http://www.bagus-99.com/shops/b_shinjuku/simulation_golf/">『バグース新宿店』</a>になります。</p>
       </div>
          </div>
   </section>
@@ -61,24 +61,24 @@ session_start();
       <div class="skill-box">  
           <h3>テニス</h3>
        <img src="images/tennis_icon2.png" class="content">
-       <p class="txt2">テニスデートでは、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>。※お相手と日程調整後、運営事務局で電話予約代行(変更不可)。</p>
+       <p class="skill-text">テニスデートでは、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>。※お相手と日程調整後、運営事務局で電話予約代行(変更不可)。</p>
       </div>
      <div class="skill-box">
          <h3>ランニング</h3>
        <img src="images/run_icon2.png" class="content">
-       <p class="txt2">ランニングデートでは、駒沢オリンピック公園(2km)・皇居(5km)からランニングコースを選択。</p>
+       <p class="skill-text">ランニングデートでは、駒沢オリンピック公園(2km)・皇居(5km)からランニングコースを選択。</p>
       </div>
         </div>
        <div class="skills-wrapper_a">
       <div class="skill-box">
           <h3>ボーリング</h3>
        <img src="images/bowling_icon2.png" class="content">
-       <p class="txt2">ボーリングデートでは、渋谷で実際に1ゲーム～2ゲーム、プレイします。場所は、渋谷駅宮益坂口から徒歩1分の<a href="http://www.shibuyaest.co.jp/bowling/">『EST』</a>になります。</p> 
+       <p class="skill-text">ボーリングデートでは、渋谷で実際に1ゲーム～2ゲーム、プレイします。場所は、渋谷駅宮益坂口から徒歩1分の<a href="http://www.shibuyaest.co.jp/bowling/">『EST』</a>になります。</p> 
       </div>
       <div class="skill-box">
           <h3>ゴルフ</h3>
        <img src="images/golf_icon2.png" class="content">
-       <p class="txt2">ゴルフデートでは、新宿で1時間プレイします。場所は、新宿駅東口から徒歩6分の<a href="http://www.bagus-99.com/shops/b_shinjuku/simulation_golf/">『バグース新宿店』</a>になります。※お相手と日程調整後、運営事務局側で電話予約代行【変更不可】。</p>
+       <p class="skill-text">ゴルフデートでは、新宿で1時間プレイします。場所は、新宿駅東口から徒歩6分の<a href="http://www.bagus-99.com/shops/b_shinjuku/simulation_golf/">『バグース新宿店』</a>になります。※お相手と日程調整後、運営事務局側で電話予約代行【変更不可】。</p>
       </div>
          </div>
   </section>
@@ -89,12 +89,12 @@ session_start();
       <div class="skill-box">  
           <h3>料理</h3>
        <img src="images/cooking_icon2.png" class="content">
-          <center><p class="txt2">料理デートでは、お好み焼き・餃子の2つから選択(複数選択可)。※実際に料理する食材・場所は、運営事務局側で用意(お一人様3,000円)。</p></center>
+          <center><p class="skill-text">料理デートでは、お好み焼き・餃子の2つから選択(複数選択可)。※実際に料理する食材・場所は、運営事務局側で用意(お一人様3,000円)。</p></center>
       </div>
      <div class="skill-box">
          <h3>グルメ</h3>
        <img src="images/gurume_icon2.png" class="content">
-       <p class="txt2">グルメデートでは、都内でランチ(お一人様3,000円以内)になります。肉料理・中華・イタリアン・フレンチから選択。※実際にランチする場所は、運営事務局側で用意。</p>
+       <p class="skill-text">グルメデートでは、都内でランチ(お一人様3,000円以内)になります。肉料理・中華・イタリアン・フレンチから選択。※実際にランチする場所は、運営事務局側で用意。</p>
       </div>
         </div>
        </section>
@@ -105,22 +105,22 @@ session_start();
       <div class="skill-box">  
         <h3>プチ旅行</h3>
        <img src="images/trip_icon2.png">
-       <p class="txt2">プチ旅行デートでは、『お台場』・『浅草・東京スカイツリー』・『横浜中華街』・『鎌倉・江ノ島』の4つから、行きたい場所を選択(複数選択可)。</p>
+       <p class="skill-text">プチ旅行デートでは、『お台場』・『浅草・東京スカイツリー』・『横浜中華街』・『鎌倉・江ノ島』の4つから、行きたい場所を選択(複数選択可)。</p>
       </div>
      <div class="skill-box">
         <h3>水族館</h3>
        <img src="images/aqua_icon2.png">
-       <p class="txt2">水族館デートでは、『サンシャイン水族館』・『アクアパーク品川』・『八景島シーパラダイス』『新・江ノ島水族館』の4つから、行きたい場所を選択(複数選択可)。</p>
+       <p class="skill-text">水族館デートでは、『サンシャイン水族館』・『アクアパーク品川』・『八景島シーパラダイス』『新・江ノ島水族館』の4つから、行きたい場所を選択(複数選択可)。</p>
       </div>
       <div class="skill-box">
        <h3>野球観戦デート</h3>
        <img src="images/kansen_baseball_icon2.png">
-       <p class="txt2">野球観戦デートでは、東京ドーム開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様C席2,300円・D席1,700円)追加で発生。</p>  
+       <p class="skill-text">野球観戦デートでは、東京ドーム開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様C席2,300円・D席1,700円)追加で発生。</p>  
       </div>
       <div class="skill-box">
         <h3>Jリーグ観戦デート</h3>
        <img src="images/kansen_soccer_icon2.png">
-       <p class="txt2">Jリーグ観戦デートでは、埼玉スタジアム2002開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様ビジター指定席大人3,000円)追加で発生。</p> 
+       <p class="skill-text">Jリーグ観戦デートでは、埼玉スタジアム2002開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様ビジター指定席大人3,000円)追加で発生。</p> 
       </div>
          </div>
   </section>
@@ -131,24 +131,24 @@ session_start();
       <div class="skill-box">  
           <h3>プチ旅行</h3>
        <img src="images/trip_icon2.png" class="content">
-       <p class="txt2">プチ旅行デートでは、『お台場』・『浅草・東京スカイツリー』・『横浜中華街』・『鎌倉・江ノ島』の4つから、行きたい場所を選択(複数選択可)。</p>
+       <p class="skill-text">プチ旅行デートでは、『お台場』・『浅草・東京スカイツリー』・『横浜中華街』・『鎌倉・江ノ島』の4つから、行きたい場所を選択(複数選択可)。</p>
       </div>
      <div class="skill-box">
          <h3>水族館</h3>
        <img src="images/aqua_icon2.png" class="content">
-       <p class="txt2">水族館デートでは、『サンシャイン水族館』・『アクアパーク品川』・『八景島シーパラダイス』『新・江ノ島水族館』の4つから、行きたい場所を選択(複数選択可)。</p>
+       <p class="skill-text">水族館デートでは、『サンシャイン水族館』・『アクアパーク品川』・『八景島シーパラダイス』『新・江ノ島水族館』の4つから、行きたい場所を選択(複数選択可)。</p>
       </div>
         </div>
        <div class="skills-wrapper_a">
       <div class="skill-box">
           <h3>野球観戦デート</h3>
        <img src="images/kansen_baseball_icon2.png" class="content">
-       <p class="txt2">野球観戦デートでは、東京ドーム開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様C席2,300円・D席1,700円)追加で発生。</p> 
+       <p class="skill-text">野球観戦デートでは、東京ドーム開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様C席2,300円・D席1,700円)追加で発生。</p> 
       </div>
       <div class="skill-box">
           <h3>Jリーグ観戦デート</h3>
        <img src="images/kansen_soccer_icon2.png" class="content">
-       <p class="txt2">Jリーグ観戦デートでは、埼玉スタジアム2002開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様ビジター指定席大人3,000円)追加で発生。</p> 
+       <p class="skill-text">Jリーグ観戦デートでは、埼玉スタジアム2002開催の試合のみとなります。※お相手と日程調整後、運営事務局側でチケット(C席orD席)予約代行【変更不可】。料金に関しては、チケット代のみ(お一人様ビジター指定席大人3,000円)追加で発生。</p> 
       </div>
          </div>
   </section>
@@ -160,22 +160,22 @@ session_start();
       <div class="skill-box"> 
        <h3>映画</h3>
        <img src="images/movie_icon2.png">
-       <p class="txt2">映画デートでは、新宿で上映中の映画を選択(複数選択可)。見たいタイトルを選択(常に更新)。</p>
+       <p class="skill-text">映画デートでは、新宿で上映中の映画を選択(複数選択可)。見たいタイトルを選択(常に更新)。</p>
       </div>
        
       <div class="skill-box"> 
        <h3>カラオケ</h3>
        <img src="images/karaoke_icon2.png">
-       <p class="txt2">カラオケデートでは、渋谷で『邦楽』『洋楽』『アニソン』の3つから、歌いたいジャンルを選択(複数選択可)。</p> 
+       <p class="skill-text">カラオケデートでは、渋谷で『邦楽』『洋楽』『アニソン』の3つから、歌いたいジャンルを選択(複数選択可)。</p> 
       </div>
         
         <div class="skill-box"> 
        <h3>ウォーキング</h3>
        <img src="images/walking_icon2.png">
-       <p class="txt2">ウォーキングデートでは、『下町散歩(上野～お茶の水)』『伝統×モダン散歩(神楽坂)』『自然癒し系散歩(吉祥寺)』の3つから、歩きたいコースを選択(複数選択可)。</p>
+       <p class="skill-text">ウォーキングデートでは、『下町散歩(上野～お茶の水)』『伝統×モダン散歩(神楽坂)』『自然癒し系散歩(吉祥寺)』の3つから、歩きたいコースを選択(複数選択可)。</p>
       </div>
      </div>
-           <center><a class ="dating2" href="member2.php">申し込み画面</a></center> 
+           <br><center><a class ="dating2" href="member2.php">申し込み画面</a></center><br><br><br>
        </section>
        
   <section class="skills_sp">     
@@ -184,13 +184,13 @@ session_start();
       <div class="skill-box">  
           <h3>映画</h3>
        <img src="images/movie_icon2.png">
-       <p class="txt2">映画デートでは、新宿で上映中の映画を選択(複数選択可)。見たいタイトルを選択(常に更新)。</p>
+       <p class="skill-text">映画デートでは、新宿で上映中の映画を選択(複数選択可)。見たいタイトルを選択(常に更新)。</p>
       </div>
         
      <div class="skill-box"> 
        <h3>カラオケ</h3>
        <img src="images/karaoke_icon2.png">
-       <p class="txt2">カラオケデートでは、渋谷で『邦楽』『洋楽』『アニソン』の3つから、歌いたいジャンルを選択(複数選択可)。場所は、JR渋谷駅ハチ公口から徒歩3分の<a href="http://big-echo.jp/shop_info/%E3%83%93%E3%83%83%E3%82%B0%E3%82%A8%E3%82%B3%E3%83%BC%E6%B8%8B%E8%B0%B7%E9%A7%85%E5%89%8D%E5%BA%97/">『ビッグエコー渋谷駅前店』</a>になります。</p> 
+       <p class="skill-text">カラオケデートでは、渋谷で『邦楽』『洋楽』『アニソン』の3つから、歌いたいジャンルを選択(複数選択可)。場所は、JR渋谷駅ハチ公口から徒歩3分の<a href="http://big-echo.jp/shop_info/%E3%83%93%E3%83%83%E3%82%B0%E3%82%A8%E3%82%B3%E3%83%BC%E6%B8%8B%E8%B0%B7%E9%A7%85%E5%89%8D%E5%BA%97/">『ビッグエコー渋谷駅前店』</a>になります。</p> 
       </div>
         </div>
       
@@ -198,12 +198,12 @@ session_start();
       <div class="skill-box"> 
        <h3>ウォーキング</h3>
        <img src="images/walking_icon2.png">
-       <p class="txt2">ウォーキングデートでは、『下町散歩(上野～お茶の水)』『伝統×モダン散歩(神楽坂)』『自然癒し系散歩(吉祥寺)』の3つから、歩きたいコースを選択(複数選択可)。</p>
+       <p class="skill-text">ウォーキングデートでは、『下町散歩(上野～お茶の水)』『伝統×モダン散歩(神楽坂)』『自然癒し系散歩(吉祥寺)』の3つから、歩きたいコースを選択(複数選択可)。</p>
       </div>
       <div class="skill-box">
       </div>
          </div>
-      <center><a class ="dating2" href="member2.php">申し込み画面</a></center>
+      <br><center><a class ="dating2" href="member2.php">申し込み画面</a></center><br><br><br>
   </section>
     </section>
 

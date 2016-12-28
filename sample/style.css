@@ -83,7 +83,7 @@ text-decoration: none;
  * -------------------------------- */
 #menu{
   width: 100%;
-  width: 860px;
+  width: 720px;
   margin: 0;
   padding: 0;
 }
@@ -345,7 +345,7 @@ position: absolute;
 }
 .skills-wrapper_sp {
   display: table;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   table-layout: fixed;
@@ -373,18 +373,11 @@ position: absolute;
   font-size: 2.0rem;
 }
 .skill-text {
-  margin: 0 20px;
+  
   line-height: 2;
 }
-.user{
-  width: 50%;    
-}
-.mail{
-  width: 48%;    
-}
-.matching{
-  width: 50%;    
-}
+
+
 
 /* --------------------------------
  * skills
@@ -477,6 +470,7 @@ position: absolute;
 	color: #fff;
     text-decoration: none;
     padding: 10px;
+    margin: 20px;
     }
 .dating2:hover {
     background-color: #59b1eb;
