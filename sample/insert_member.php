@@ -20,6 +20,7 @@ $aqua = @implode(",", $_POST["aqua"]);
 $karaoke = @implode(",", $_POST["karaoke"]);
 $walking = @implode(",", $_POST["walking"]);
 $movie = @implode(",", $_POST["movie"]);
+$date = @implode(",", $_POST["date"]);
 $lastname   = $_POST["lastname"];
 $firstname = $_POST["firstname"];
 $sex = $_POST["sex"];
@@ -41,7 +42,7 @@ try {
 }
 
 //３．データ登録SQL作成
-$stmt = $pdo->prepare("INSERT INTO member(id, dating, cooking, run, gurume, trip, aqua, karaoke, walking, movie, lastname, firstname, sex, age, zip31, zip32, pref31, addr31, college, email, email2, number, indate)VALUES(NULL, :a1, :a2, :a3, :a4, :a5, :a6, :a7, :a8, :a9, :a10, :a11, :a12, :a13, :a14, :a15, :a16, :a17, :a18, :a19, :a20, :a21, sysdate())");
+$stmt = $pdo->prepare("INSERT INTO member(id, dating, cooking, run, gurume, trip, aqua, karaoke, walking, movie, date, lastname, firstname, sex, age, zip31, zip32, pref31, addr31, college, email, email2, number, indate)VALUES(NULL, :a1, :a2, :a3, :a4, :a5, :a6, :a7, :a8, :a9, :a10, :a11, :a12, :a13, :a14, :a15, :a16, :a17, :a18, :a19, :a20, :a21, :a22, sysdate())");
 $stmt->bindValue(':a1', $dating, PDO::PARAM_STR);
 $stmt->bindValue(':a2', $cooking, PDO::PARAM_STR);
 $stmt->bindValue(':a3', $run, PDO::PARAM_STR);
@@ -51,18 +52,19 @@ $stmt->bindValue(':a6', $aqua, PDO::PARAM_STR);
 $stmt->bindValue(':a7', $karaoke, PDO::PARAM_STR);
 $stmt->bindValue(':a8', $walking, PDO::PARAM_STR);
 $stmt->bindValue(':a9', $movie, PDO::PARAM_STR);
-$stmt->bindValue(':a10', $lastname, PDO::PARAM_STR);
-$stmt->bindValue(':a11', $firstname, PDO::PARAM_STR);
-$stmt->bindValue(':a12', $sex, PDO::PARAM_INT);
-$stmt->bindValue(':a13', $age, PDO::PARAM_INT);
-$stmt->bindValue(':a14', $zip31, PDO::PARAM_STR);
-$stmt->bindValue(':a15', $zip32, PDO::PARAM_STR);
-$stmt->bindValue(':a16', $pref31, PDO::PARAM_STR);
-$stmt->bindValue(':a17', $addr31, PDO::PARAM_STR);
-$stmt->bindValue(':a18', $college, PDO::PARAM_STR);
-$stmt->bindValue(':a19', $email, PDO::PARAM_STR);
-$stmt->bindValue(':a20', $email2, PDO::PARAM_STR);
-$stmt->bindValue(':a21', $number, PDO::PARAM_STR);
+$stmt->bindValue(':a10', $date, PDO::PARAM_STR);
+$stmt->bindValue(':a11', $lastname, PDO::PARAM_STR);
+$stmt->bindValue(':a12', $firstname, PDO::PARAM_STR);
+$stmt->bindValue(':a13', $sex, PDO::PARAM_INT);
+$stmt->bindValue(':a14', $age, PDO::PARAM_INT);
+$stmt->bindValue(':a15', $zip31, PDO::PARAM_STR);
+$stmt->bindValue(':a16', $zip32, PDO::PARAM_STR);
+$stmt->bindValue(':a17', $pref31, PDO::PARAM_STR);
+$stmt->bindValue(':a18', $addr31, PDO::PARAM_STR);
+$stmt->bindValue(':a19', $college, PDO::PARAM_STR);
+$stmt->bindValue(':a20', $email, PDO::PARAM_STR);
+$stmt->bindValue(':a21', $email2, PDO::PARAM_STR);
+$stmt->bindValue(':a22', $number, PDO::PARAM_STR);
 $status = $stmt->execute();
 
     
@@ -162,7 +164,7 @@ if (isset($_POST['lastname'])){
     <p>迅速な対応を心がけておりますが、条件次第によってはご連絡までお時間がかかる場合がございます。</p>
     <p>予めご了承ください。</p>
     
-  <form method="POST" action="index.html">
+  <form method="POST" action="http://www.symply.jp">
     <input type="submit" value="TOPに戻る">
   </form>
   </div>

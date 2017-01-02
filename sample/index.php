@@ -113,32 +113,55 @@ session_start();
     <table cellpadding="0" cellspacing="0" class="header_table_pc" width="80%"><tbody>
         <tr><td><img src="images/header_couple4.jpg"></td>
             <td><h2><font color="pink"><img src="images/shuku.jpg" width="7%">リリース1ヵ月でデート開催数100回突破</font></h2>
-                <h1><font color="#9966CC">13の趣味でつながるデートサービス</font></h1><br><p class="txt"><a href="kiyaku.html">利用規約</a>および<a href="privacy.html">プライバシーポリシー</a>に同意して<br><?php 
-ini_set("display_errors", On);
-error_reporting(E_ALL);
-?>
+                <h1><font color="#9966CC">13の趣味でつながるデートサービス</font></h1><br><p class="txt"><a href="kiyaku.html">利用規約</a>および<a href="privacy.html">プライバシーポリシー</a>に同意して<br>
+                
+                <?php
 
-    <?php
-//header("Content-type: text/html; charset=utf-8");
- 
-//設定ファイル
-require_once("config.php");
- 
-$helper = $fb->getRedirectLoginHelper();
- 
-//オプションによって認証画面の文言が変わる
-//$permissions = ['email', 'user_likes','user_posts']; あなたの公開プロフィール、メールアドレス、タイムライン投稿、いいね！。
-//$permissions = ['email', 'user_likes']; あなたの公開プロフィール、メールアドレス、いいね！。
-//$permissions = ['email', 'user_posts'];あなたのタイムライン投稿。
-//$permissions = ['email','user_friends'];あなたの公開プロフィール、友達リスト、メールアドレス。
-//$permissions = ['email'];あなたの公開プロフィール、メールアドレス。
-//あなたの公開プロフィール。
-$permissions = [];
-$loginUrl = $helper->getLoginUrl('http://symply.jp/callback.php', $permissions);
- 
-echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
+// composerで生成されたオートロドファイル読み込み
+require_once( 'vendor/autoload.php' );
 
-?><br>Facebookには一切投稿されません。<br>18歳未満の方や独身でない方はご登録いただけません</p><br></td></tr></tbody>
+// DBと接続
+require_once( 'dbconnect.php' );
+
+// Facebookログインしたユーザー情報をDBに保存するPHPスクリプト
+require_once( 'checkuser.php' );
+
+// 訪問者がすでにFacebookログインしているかどうかを確認
+if (isset($_SESSION['facebook_access_token'])) {
+
+	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
+	// 参考： https://developers.facebook.com/docs/php/gettingstarted
+	$response = $fb->get('/me');
+	$user = $response->getGraphObject();
+
+	// 下記のような感じで情報を取り出せます。
+	$fid = $user['id']; // ID
+	$fname = $user['name']; // 名前
+	$femail = $user['email'];// Email
+	$fphoto = "http://graph.facebook.com/" . $user['id'] . "/picture?type=large"; // 顔写真のURL
+
+//	echo $fid;
+//	echo $fname;
+
+	// ログイン済み、かつ新規ユーザーの場合は、DBに会員情報を保存する関数読み込み
+	checkuser($fid, $fname, $femail, $fphoto, $mysqli); ?>
+
+<!--
+	<p>ログインしました</p>
+-->
+<?php } else {
+	// ログインしていないユーザーには、Facebookログインリンクを表示する
+	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
+	$helper = $fb->getRedirectLoginHelper();
+	$permissions = ['email'];
+
+	// 下記のURL部分を環境にあわせて変更してください
+	$loginUrl = $helper->getLoginUrl('http://www.symply.jp/login-callback.php', $permissions);
+	echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
+}
+  ?>
+                
+<br>Facebookには一切投稿されません。<br>18歳未満の方や独身でない方はご登録いただけません。</p><br></td></tr></tbody>
     </table>
     
 <div class="header_sp">
@@ -147,26 +170,51 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
     <h2><p class ="txt4"><font color="#9966CC"><strong>13の趣味でつながるデートサービス</strong></font></p></h2><p class ="txt2"><a href="kiyaku.html">利用規約</a>および<a href="privacy.html">プライバシーポリシー</a>に同意して<br>
     
     <?php
-//header("Content-type: text/html; charset=utf-8");
- 
-//設定ファイル
-require_once("config.php");
- 
-$helper = $fb->getRedirectLoginHelper();
- 
-//オプションによって認証画面の文言が変わる
-//$permissions = ['email', 'user_likes','user_posts']; あなたの公開プロフィール、メールアドレス、タイムライン投稿、いいね！。
-//$permissions = ['email', 'user_likes']; あなたの公開プロフィール、メールアドレス、いいね！。
-//$permissions = ['email', 'user_posts'];あなたのタイムライン投稿。
-//$permissions = ['email','user_friends'];あなたの公開プロフィール、友達リスト、メールアドレス。
-//$permissions = ['email'];あなたの公開プロフィール、メールアドレス。
-//あなたの公開プロフィール。
-$permissions = [];
-$loginUrl = $helper->getLoginUrl('http://symply.jp/callback.php', $permissions);
- 
-echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
 
-?>
+// composerで生成されたオートロドファイル読み込み
+require_once( 'vendor/autoload.php' );
+
+// DBと接続
+require_once( 'dbconnect.php' );
+
+// Facebookログインしたユーザー情報をDBに保存するPHPスクリプト
+require_once( 'checkuser.php' );
+
+// 訪問者がすでにFacebookログインしているかどうかを確認
+if (isset($_SESSION['facebook_access_token'])) {
+
+	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
+	// 参考： https://developers.facebook.com/docs/php/gettingstarted
+	$response = $fb->get('/me');
+	$user = $response->getGraphObject();
+
+	// 下記のような感じで情報を取り出せます。
+	$fid = $user['id']; // ID
+	$fname = $user['name']; // 名前
+	$femail = $user['email'];// Email
+	$fphoto = "http://graph.facebook.com/" . $user['id'] . "/picture?type=large"; // 顔写真のURL
+
+//	echo $fid;
+//	echo $fname;
+
+	// ログイン済み、かつ新規ユーザーの場合は、DBに会員情報を保存する関数読み込み
+	checkuser($fid, $fname, $femail, $fphoto, $mysqli); ?>
+
+<!--
+	<p>ログインしました</p>
+-->
+
+<?php } else {
+	// ログインしていないユーザーには、Facebookログインリンクを表示する
+	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
+	$helper = $fb->getRedirectLoginHelper();
+	$permissions = ['email'];
+
+	// 下記のURL部分を環境にあわせて変更してください
+	$loginUrl = $helper->getLoginUrl('http://www.symply.jp/login-callback.php', $permissions);
+	echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
+}
+  ?>
     <br>Facebookには一切投稿されません。</p></div>
 
 <!--        <img src="images/header_lady.jpg"><br>
@@ -186,7 +234,7 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
         <tr><td><img src="images/run.jpg" class="header_pic2"></td><td><img src="images/golf.jpg" class="header_pic2"></td><td><img src="images/trip2.jpg" class="header_pic2"></td><td><img src="images/kansen_baseball2.jpg" class="header_pic2"></td><td><img src="images/cooking.jpg" class="header_pic2"></td><td><img src="images/movie.jpg" class="header_pic2"></td>
 <!--            <td><img src="images/borudaring.jpg" class="header_pic2"></td>--></tr></tbody></table>
         
-    <section class="skills">
+    
     <h2>おすすめポイント</h2>
     <div class="skills-wrapper_sp">
       <div class="skill-box_sp">  
@@ -194,14 +242,14 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
         <p><img src ="images/dating_mono.png" class ="user"></p>
         <p class="skill-text">
           マッチングアプリや街コンと違い、二人でデートするまでの駆け引き不要。まずは、会って相性を確かめましょう
-        </p><br><br>
+        </p>
       </div>
       <div class="skill-box_sp">
           <h2><img style="vertical-align:top;" src="images/two.png" width="10%"/><span style="display:inline-block;">趣味つながり</span></h2><br>
         <p><img src ="images/ban5.png" class = "matching2"></p><br>
         <p class="skill-text">
           見た目やトーク力ではなく、趣味つながりで気軽に異性とデート
-        </p><br><br>
+        </p>
       </div>
       <div class="skill-box_sp">
           <h2><img style="vertical-align:top;" src="images/three.png" width="10%"/><span style="display:inline-block;">告白不要</span></h2><p><img src ="images/couple_mono.png" class = "user"></p>
@@ -210,7 +258,6 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
         </p>
       </div>
     </div>
-  </section>
 
 　　<section class="about_symply">
 　　 <h2 class="heading">デート内容</h2>           
@@ -321,7 +368,7 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
     <h2 class="heading">付き合うまでのステップ</h2>
     <div class="skills-wrapper_a">
       <div class="skill-box">  
-          <div class="skill-title"><img style="vertical-align:top;" src="images/one.png" width="15%"/><span style="display:inline-block;">趣味デート登録</span>
+          <div class="skill-title"><img style="vertical-align:top;" src="images/one.png" width="10%"/><span style="display:inline-block;">趣味デート登録</span>
         <p><img src ="images/user.png" class = "user"></p>
         <p class="skill-text">
           Facebookログイン後、興味のある趣味デートを選ぶ
@@ -329,7 +376,7 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
       </div>
         </div>
      <div class="skill-box">
-         <div class="skill-title"><img style="vertical-align:top;" src="images/two.png" width="15%" /><span style="display:inline-block;">いきなりデート</span>
+         <div class="skill-title"><img style="vertical-align:top;" src="images/two.png" width="10%" /><span style="display:inline-block;">いきなりデート</span>
         <p><img src ="images/dating_skill.png" class = "matching"></p>
         <p class="skill-text">
           1時間限定で同じ趣味を選んだ人とデート
@@ -337,7 +384,7 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
       </div>
           </div>
       <div class="skill-box">
-        <div class="skill-title"><img style="vertical-align:top;" src="images/three.png" width="15%" /><span style="display:inline-block;">2ndデート</span>
+        <div class="skill-title"><img style="vertical-align:top;" src="images/three.png" width="10%" /><span style="display:inline-block;">2ndデート</span>
         <p><img src ="images/2nd.png" class = "user"></p>
         <p class="skill-text">
           デート後に「もう一度会いたいか」回答。両想い限定でセカンドデート
@@ -345,7 +392,7 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
       </div>
          </div>
       <div class="skill-box">
-          <div class="skill-title"><img style="vertical-align:top;" src="images/four.png" width="15%" /><span style="display:inline-block;">カップル誕生</span>
+          <div class="skill-title"><img style="vertical-align:top;" src="images/four.png" width="10%" /><span style="display:inline-block;">カップル誕生</span>
         <p><img src ="images/valuation.png" class = "mail"></p>
         <p class="skill-text">
           セカンドデート後に「付き合いたいか」を回答。両想いでカップル誕生
@@ -411,27 +458,52 @@ echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="face
         <center><p class ="txt7"><a href="kiyaku.html">利用規約</a>および<a href="privacy.html">プライバシーポリシー</a>に同意して<br><a href="index2.php">
 
     <?php
-//header("Content-type: text/html; charset=utf-8");
- 
-//設定ファイル
-require_once("config.php");
- 
-$helper = $fb->getRedirectLoginHelper();
- 
-//オプションによって認証画面の文言が変わる
-//$permissions = ['email', 'user_likes','user_posts']; あなたの公開プロフィール、メールアドレス、タイムライン投稿、いいね！。
-//$permissions = ['email', 'user_likes']; あなたの公開プロフィール、メールアドレス、いいね！。
-//$permissions = ['email', 'user_posts'];あなたのタイムライン投稿。
-//$permissions = ['email','user_friends'];あなたの公開プロフィール、友達リスト、メールアドレス。
-//$permissions = ['email'];あなたの公開プロフィール、メールアドレス。
-//あなたの公開プロフィール。
-$permissions = [];
-$loginUrl = $helper->getLoginUrl('http://symply.jp/callback.php', $permissions);
- 
-echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
 
-?>
-            </a><br>Facebookには一切投稿されません。</p></center><br><br>
+// composerで生成されたオートロドファイル読み込み
+require_once( 'vendor/autoload.php' );
+
+// DBと接続
+require_once( 'dbconnect.php' );
+
+// Facebookログインしたユーザー情報をDBに保存するPHPスクリプト
+require_once( 'checkuser.php' );
+
+// 訪問者がすでにFacebookログインしているかどうかを確認
+if (isset($_SESSION['facebook_access_token'])) {
+
+	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
+	// 参考： https://developers.facebook.com/docs/php/gettingstarted
+	$response = $fb->get('/me');
+	$user = $response->getGraphObject();
+
+	// 下記のような感じで情報を取り出せます。
+	$fid = $user['id']; // ID
+	$fname = $user['name']; // 名前
+	$femail = $user['email'];// Email
+	$fphoto = "http://graph.facebook.com/" . $user['id'] . "/picture?type=large"; // 顔写真のURL
+
+//	echo $fid;
+//	echo $fname;
+
+	// ログイン済み、かつ新規ユーザーの場合は、DBに会員情報を保存する関数読み込み
+	checkuser($fid, $fname, $femail, $fphoto, $mysqli); ?>
+
+<!--
+	<p>ログインしました</p>
+-->
+
+<?php } else {
+	// ログインしていないユーザーには、Facebookログインリンクを表示する
+	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
+	$helper = $fb->getRedirectLoginHelper();
+	$permissions = ['email'];
+
+	// 下記のURL部分を環境にあわせて変更してください
+	$loginUrl = $helper->getLoginUrl('http://www.symply.jp/login-callback.php', $permissions);
+	echo '<a href="' . $loginUrl . '"><img src="images/facebook_login.png" alt="facebookログイン" class="facebook"></a>';
+}
+  ?>
+            </a><br>Facebookには一切投稿されません。<br>18歳未満の方や独身でない方はご登録いただけません。</p></center><br><br>
 
   <footer class="footer">
     Symply © 2016 

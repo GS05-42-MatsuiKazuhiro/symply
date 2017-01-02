@@ -1,23 +1,6 @@
 <?php
+session_start();
+session_destroy();
 
-require_once(__DIR__ . '/config2.php');
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-  try {
-    MyApp\Token::validate('token');
-  } catch (Exception $e) {
-    echo $e->getMessage();
-    exit;
-  }
-
-  $_SESSION = [];
-
-  if (isset($_COOKIE[session_name()])) {
-    setcookie(session_name(), '', time() - 86400, '/');
-  }
-
-  session_destroy();
-}
-
-goHome();
+echo "<p>ログアウトしました。</p>";
+echo "<a href='index.php'>トップページに戻る</a>";

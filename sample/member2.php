@@ -45,7 +45,7 @@ session_start();
 　　 <h2 class="heading">デート内容</h2>
     <section class="about_symply">
      <div id="qa">
-    <p class="txt3">興味のあるデートにチェックをつけてください。<br><br>
+    <p class="txt3">興味のあるデートにチェックをつけてください(複数チェック可)。<br><br>
          複数選択の場合、どれか1つマッチングした相手と趣味デートを行っていただきます。</p><br>
         <center><table border=1 class="table" width="80%">
              <tr bgcolor = #B0E0E6>　　　　　　　
@@ -69,11 +69,13 @@ session_start();
                  
                  <td height=40><input type="checkbox" name="dating[]" value="8" id="chk8" onclick="chkdisp(this,'ans8')" /><label for="chk8"></label><img src="images/aqua_icon.png" class="icon3">&nbsp;&nbsp;水族館</td>
              </tr>　
+<!--
             <tr>
                  <td height=40><input type="checkbox" name="dating[]" value="9" id="chk9" onclick="chkdisp(this,'ans9')" /><label for="chk9"></label><img src="images/baseball_icon.png" class="icon3">&nbsp;&nbsp;プロ野球観戦</td>
                 
                  <td height=40><input type="checkbox" name="dating[]" value="10" id="chk10" onclick="chkdisp(this,'ans10')" /><label for="chk10"></label><img src="images/kansen_soccer_icon.png" class="icon3">&nbsp;&nbsp;Jリーグ観戦</td>
              </tr>　
+-->
             <tr>
                 <td height=40><input type="checkbox" name="dating[]" value="11" id="chk11" onclick="chkdisp(this,'ans11')" /><label for="chk11"></label><img src="images/movie_icon.png" class="icon3">&nbsp;&nbsp;映画</td>
                  
@@ -87,7 +89,7 @@ session_start();
        </div>
       
        <div id="qa">
-           <p class="txt3">選んだ趣味デートのうち、希望する条件がございましたら、チェックをお願いします。</p>
+           <p class="txt3">選んだ趣味デートのうち、希望する条件がございましたら、下記よりチェックをお願いします。</p>
        <p class="txt2">テニス・プロ野球観戦・サッカー観戦・ゴルフ・ボーリングは選択しても、希望条件は表示されませんので、ご注意ください。</p><br>
        </div>
 <!--     <div class="skills-wrapper_c"> -->
@@ -224,10 +226,37 @@ session_start();
              </div>
          </div>   
     
-     
+    <h2 class="heading">希望日時</h2>
+        
+        <div id="qa">
+        <p class="txt3">希望日時のチェックをお願いします。空いている日はすべて選択でお願いします。</p>
+        <p class="txt2">デートの時間帯は、すべて10時～18時までの間で1時間になります。(野球観戦・Jリーグ観戦を除く)※予約日変更不可</p>
+       </div>
+        
+        <center><table border=1 class="table" width="30%">
+             
+            <tr bgcolor = #B0E0E6>　　　　　　　
+                <td colspan=2 align=center style="color:black">日程一覧</td>　 
+            </tr>　
+            <tr>
+                <td height=40><input type="checkbox" name="date[]" value="0114" checked><label for="chk1"></label>&nbsp;&nbsp;1月14日&nbsp;(<font color="blue">土</font>)</td>
+                 
+                <td height=40><input type="checkbox" name="date[]" value="0115" checked><label for="chk2"></label>&nbsp;&nbsp;1月15日&nbsp;(<font color="red">日</font>)</td>
+            </tr>
+            <tr>
+                <td height=40><input type="checkbox" name="date[]" value="0121" checked><label for="chk1"></label>&nbsp;&nbsp;1月21日&nbsp;(<font color="blue">土</font>)</td>
+                 
+                <td height=40><input type="checkbox" name="date[]" value="0122" checked><label for="chk2"></label>&nbsp;&nbsp;1月22日&nbsp;(<font color="red">日</font>)</td>
+            </tr>
+            <tr>
+                <td height=40><input type="checkbox" name="date[]" value="0128" checked><label for="chk1"></label>&nbsp;&nbsp;1月28日&nbsp;(<font color="blue">土</font>)</td>
+                 
+                <td height=40><input type="checkbox" name="date[]" value="0129" checked><label for="chk2"></label>&nbsp;&nbsp;1月29日&nbsp;(<font color="red">日</font>)</td>
+            </tr>        
+        </table></center><br><br> 
          
     <h2 class="heading">ユーザー登録</h2>
-        <center><table border=1 class="table" width="40%">
+        <center><table border=1 class="table" width="55%">
 <!--
              <tr bgcolor = #4B99B5>　　　　　　　
                 <td colspan=2 align=center style="color:white">きっかけデート一覧</td>　 
@@ -274,7 +303,7 @@ session_start();
             </tr>
             <!-- ▼住所入力フィールド(都道府県以降の住所) -->
             <tr>
-                <td height=40 class="item" style="color:black">都道府県以降の住所</td><td height=40 class="answer"><input type="text" name="addr31" size="40"></td>
+                <td height=40 class="item" style="color:black">都道府県以降の住所</td><td height=40 class="answer"><input type="text" name="addr31" size="30"></td>
             </tr>
              <tr>
                  <td height=40 class="item" style="color:black">大学名（男性のみ）</td>
@@ -282,11 +311,11 @@ session_start();
              </tr>　
             <tr>
                  <td height=40 class="item" style="color:black">Email</td>
-                 <td height=40 class="answer"><input type="text" id="email" size="35" name="email"></td>
+                 <td height=40 class="answer"><input type="text" id="email" size="30" name="email"></td>
              </tr>　
             <tr>
                  <td height=40 class="item" style="color:black">Email（確認用）</td>
-                 <td height=40 class="answer"><input type="text" id="email" size="35" name="email2"></td>
+                 <td height=40 class="answer"><input type="text" id="email" size="30" name="email2"></td>
              </tr>　
              <tr>
                  <td height=40 class="item" style="color:black">電話番号</td>
