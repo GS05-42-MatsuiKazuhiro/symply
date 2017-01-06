@@ -3,6 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
+<!-- microdata マークアップを Google 構造化データ マークアップ支援ツールで追加 -->
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -20,6 +21,8 @@ session_start();
   <script src="jquery-3.1.1.min.js"></script> 
 </head>
 <body>
+<span itemscope itemtype="http://schema.org/Product">
+<meta itemprop="image" content="http://www.symply.jp/images/tennis.jpg">
 <!--Header-->
   <header class="header">
     <div id="header_navi">
@@ -235,7 +238,7 @@ if (isset($_SESSION['facebook_access_token'])) {
 <!--            <td><img src="images/borudaring.jpg" class="header_pic2"></td>--></tr></tbody></table>
         
     
-    <h2>おすすめポイント</h2>
+    <span itemprop="description"><h2>おすすめポイント</h2>
     <div class="skills-wrapper_sp">
       <div class="skill-box_sp">  
           <h2><img style="vertical-align:top;" src="images/one.png" width="10%"/><span style="display:inline-block;">いきなりデート</span></h2>
@@ -257,7 +260,7 @@ if (isset($_SESSION['facebook_access_token'])) {
             デート後に「もう一度会いたい」「付き合いたい」などの評価を導入。両思いでカップル誕生
         </p>
       </div>
-    </div>
+        </div></span>
 
 　　<section class="about_symply">
 　　 <h2 class="heading">デート内容</h2>           
@@ -346,7 +349,7 @@ if (isset($_SESSION['facebook_access_token'])) {
  <section class="money">
     <h2 class="heading">料金</h2>
       <p class="about-text2">
-      男性 2,980円/回(税込)・女性 980円/回(税込) となります。<br><br>
+          男性 2,980円/回(税込)・女性 980円/回(税込) となります。<br><br>
     </p>
     <center><table border=1 class="table2" width="20%">
              <tr bgcolor = #B0E0E6>　　　　　　　
@@ -506,8 +509,20 @@ if (isset($_SESSION['facebook_access_token'])) {
             </a><br>Facebookには一切投稿されません。<br>18歳未満の方や独身でない方はご登録いただけません。</p></center><br><br>
 
   <footer class="footer">
-    Symply © 2016 
-  </footer>
+    <span itemprop="name">Symply</span> © 2016 
+  </footer></span>
   <script src="lib/placeholders.min.js"></script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nw1ss');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+    
 </body>
 </html>

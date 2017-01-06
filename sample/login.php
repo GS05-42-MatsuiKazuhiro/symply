@@ -15,7 +15,7 @@ if (isset($_SESSION['facebook_access_token'])) {
 
 	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
 	// 参考： https://developers.facebook.com/docs/php/gettingstarted
-	$response = $fb->get('/me');
+	$response = $fb->get('/me?fields=name,email');
 	$user = $response->getGraphObject();
 
 	// 下記のような感じで情報を取り出せます。
@@ -65,7 +65,7 @@ if (isset($_SESSION['facebook_access_token'])) {
       <div class="skill-box">  
         <h3>テニス</h3>
        <img src="images/tennis_icon2.png">
-       <p class="skill-text">テニスデートの場所は、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>になります。テニスコート代は当日払いなります。(お一人様 1番コート3,100円・2番～5番コート3,600円)※コート予約はSymply運営事務局で予約代行。</p>
+       <p class="skill-text">テニスデートの場所は、<a href="http://www.meijijingugaien.jp/sports/baseball-ground/tennis-court.html">『明治神宮外苑｜テニスコート』</a>になります。テニスコート代は当日払いなります。(お一人様 1番コート3,100円・2番～5番コート3,600円)※コート予約はSymply運営事務局で代行。</p>
       </div>
      <div class="skill-box">
         <h3>ランニング</h3>
@@ -258,13 +258,26 @@ if (window.location.hash && window.location.hash == '#_=_') {
   }
 }
 </script>
+    
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nw1ss');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
 
+</body>
+</html>
 
 <?php } else {
 	// ログインしていないユーザーには、Facebookログインリンクを表示する
 	// このあたりはFacebookディベロッパーマニュアルをほぼコピペしただけです
 	$helper = $fb->getRedirectLoginHelper();
-	$permissions = ['email', 'user_likes'];
+	$permissions = ['email'];
 
 	// 下記のURL部分を環境にあわせて変更してください
 	$loginUrl = $helper->getLoginUrl('http://symply.jp/login-callback.php', $permissions);

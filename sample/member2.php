@@ -52,38 +52,38 @@ session_start();
                 <td colspan=2 align=center style="color:black">趣味デート一覧</td>　 
              </tr>　
             <tr>
-                 <td height=40><input type="checkbox" name="dating[]" value="1" id="chk1" onclick="chkdisp(this,'ans1')" /><label for="chk1"></label><img src="images/tennis_icon.png" class="icon3">&nbsp;&nbsp;テニス</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="テニス" id="chk1" onclick="chkdisp(this,'ans1')" /><label for="chk1"></label><img src="images/tennis_icon.png" class="icon3">&nbsp;&nbsp;テニス</td>
                  
-                 <td height=40><input type="checkbox" name="dating[]" value="2" id="chk2" onclick="chkdisp(this,'ans2')" /><label for="chk2"></label><img src="images/run_icon.png" class="icon3">&nbsp;&nbsp;ランニング</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="ランニング" id="chk2" onclick="chkdisp(this,'ans2')" /><label for="chk2"></label><img src="images/run_icon.png" class="icon3">&nbsp;&nbsp;ランニング</td>
              </tr>　
              <tr>
-                 <td height=40><input type="checkbox" name="dating[]" value="3" id="chk3" onclick="chkdisp(this,'ans3')" /><label for="chk3"></label><img src="images/bowling_icon.png" class="icon3">&nbsp;&nbsp;ボーリング</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="ボーリング" id="chk3" onclick="chkdisp(this,'ans3')" /><label for="chk3"></label><img src="images/bowling_icon.png" class="icon3">&nbsp;&nbsp;ボーリング</td>
                 
-                 <td height=40><input type="checkbox" name="dating[]" value="4" id="chk4" onclick="chkdisp(this,'ans4')" /><label for="chk4"></label><img src="images/golf_icon.png" class="icon3">&nbsp;&nbsp;ゴルフ</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="ゴルフ" id="chk4" onclick="chkdisp(this,'ans4')" /><label for="chk4"></label><img src="images/golf_icon.png" class="icon3">&nbsp;&nbsp;ゴルフ</td>
              </tr>　
-                 <td height=40><input type="checkbox" name="dating[]" value="5" id="chk5" onclick="chkdisp(this,'ans5')" /><label for="chk5"></label><img src="images/cooking_icon.png" class="icon3">&nbsp;&nbsp;料理</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="料理" id="chk5" onclick="chkdisp(this,'ans5')" /><label for="chk5"></label><img src="images/cooking_icon.png" class="icon3">&nbsp;&nbsp;料理</td>
             
-                 <td height=40><input type="checkbox" name="dating[]" value="6" id="chk6" onclick="chkdisp(this,'ans6')" /><label for="chk6"></label><img src="images/gurume_icon.png" class="icon3">&nbsp;&nbsp;グルメ</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="グルメ" id="chk6" onclick="chkdisp(this,'ans6')" /><label for="chk6"></label><img src="images/gurume_icon.png" class="icon3">&nbsp;&nbsp;グルメ</td>
             <tr>
-                 <td height=40><input type="checkbox" name="dating[]" value="7" id="chk7" onclick="chkdisp(this,'ans7')" /><label for="chk7"></label><img src="images/trip_icon.png" class="icon3">&nbsp;&nbsp;プチ旅行</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="プチ旅行" id="chk7" onclick="chkdisp(this,'ans7')" /><label for="chk7"></label><img src="images/trip_icon.png" class="icon3">&nbsp;&nbsp;プチ旅行</td>
                  
-                 <td height=40><input type="checkbox" name="dating[]" value="8" id="chk8" onclick="chkdisp(this,'ans8')" /><label for="chk8"></label><img src="images/aqua_icon.png" class="icon3">&nbsp;&nbsp;水族館</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="水族館" id="chk8" onclick="chkdisp(this,'ans8')" /><label for="chk8"></label><img src="images/aqua_icon.png" class="icon3">&nbsp;&nbsp;水族館</td>
              </tr>　
 <!--
             <tr>
-                 <td height=40><input type="checkbox" name="dating[]" value="9" id="chk9" onclick="chkdisp(this,'ans9')" /><label for="chk9"></label><img src="images/baseball_icon.png" class="icon3">&nbsp;&nbsp;プロ野球観戦</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="プロ野球観戦" id="chk9" onclick="chkdisp(this,'ans9')" /><label for="chk9"></label><img src="images/baseball_icon.png" class="icon3">&nbsp;&nbsp;プロ野球観戦</td>
                 
-                 <td height=40><input type="checkbox" name="dating[]" value="10" id="chk10" onclick="chkdisp(this,'ans10')" /><label for="chk10"></label><img src="images/kansen_soccer_icon.png" class="icon3">&nbsp;&nbsp;Jリーグ観戦</td>
+                 <td height=40><input type="checkbox" name="dating[]" value="Jリーグ観戦" id="chk10" onclick="chkdisp(this,'ans10')" /><label for="chk10"></label><img src="images/kansen_soccer_icon.png" class="icon3">&nbsp;&nbsp;Jリーグ観戦</td>
              </tr>　
 -->
             <tr>
-                <td height=40><input type="checkbox" name="dating[]" value="11" id="chk11" onclick="chkdisp(this,'ans11')" /><label for="chk11"></label><img src="images/movie_icon.png" class="icon3">&nbsp;&nbsp;映画</td>
+                <td height=40><input type="checkbox" name="dating[]" value="映画" id="chk11" onclick="chkdisp(this,'ans11')" /><label for="chk11"></label><img src="images/movie_icon.png" class="icon3">&nbsp;&nbsp;映画</td>
                  
-                <td height=40><input type="checkbox" name="dating[]" value="12" id="chk12" onclick="chkdisp(this,'ans12')" /><label for="chk12"></label><img src="images/karaoke_icon.png" class="icon3">&nbsp;&nbsp;カラオケ</td>
+                <td height=40><input type="checkbox" name="dating[]" value="カラオケ" id="chk12" onclick="chkdisp(this,'ans12')" /><label for="chk12"></label><img src="images/karaoke_icon.png" class="icon3">&nbsp;&nbsp;カラオケ</td>
              </tr>
              
             <tr>
-            <td height=40><input type="checkbox" name="dating[]" value="13" id="chk13" onclick="chkdisp(this,'ans13')" /><label for="chk13"></label><img src="images/walking_icon.png" class="icon3">&nbsp;&nbsp;ウォーキング</td>
+            <td height=40><input type="checkbox" name="dating[]" value="ウォーキング" id="chk13" onclick="chkdisp(this,'ans13')" /><label for="chk13"></label><img src="images/walking_icon.png" class="icon3">&nbsp;&nbsp;ウォーキング</td>
             </tr>
             </table></center>
        </div>
@@ -100,8 +100,8 @@ session_start();
                 <td colspan=2 align=center height=40 style="color:black">料理</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="cooking[]" value="1" checked></label>&nbsp;&nbsp;お好み焼き</td>
-                 <td height=40><label><input type="checkbox" name="cooking[]" value="2" checked></label>&nbsp;&nbsp;餃子</td>
+                 <td height=40><label><input type="checkbox" name="cooking[]" value="お好み焼き" checked></label>&nbsp;&nbsp;お好み焼き</td>
+                 <td height=40><label><input type="checkbox" name="cooking[]" value="餃子" checked></label>&nbsp;&nbsp;餃子</td>
              </tr>　
              </table><br><br> 
         </div>
@@ -114,8 +114,8 @@ session_start();
                 <td colspan=3 align=center height=40 style="color:black">ランニング</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="run[]" value="1" checked></label>&nbsp;&nbsp;駒沢オリンピック公園(2km)</td>
-                 <td height=40><label><input type="checkbox" name="run[]" value="2" checked></label>&nbsp;&nbsp;皇居(5km)</td>
+                 <td height=40><label><input type="checkbox" name="run[]" value="駒沢オリンピック公園" checked></label>&nbsp;&nbsp;駒沢オリンピック公園(2km)</td>
+                 <td height=40><label><input type="checkbox" name="run[]" value="皇居" checked></label>&nbsp;&nbsp;皇居(5km)</td>
                </tr>  
             </table><br><br> 
         </div>
@@ -128,12 +128,8 @@ session_start();
                 <td colspan=2 align=center height=40 style="color:black">グルメ</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="gurume[]" value="1" checked></label>&nbsp;&nbsp;肉料理</td>
-                 <td height=40><label><input type="checkbox" name="gurume[]" value="2" checked></label>&nbsp;&nbsp;中華</td>
-             </tr>　
-             <tr>
-                 <td height=40><label><input type="checkbox" name="gurume[]" value="3" checked></label>&nbsp;&nbsp;イタリアン</td>
-                 <td height=40><label><input type="checkbox" name="gurume[]" value="4" checked></label>&nbsp;&nbsp;フレンチ</td>
+                 <td height=40><label><input type="checkbox" name="gurume[]" value="肉料理" checked></label>&nbsp;&nbsp;肉料理</td>
+                 <td height=40><label><input type="checkbox" name="gurume[]" value="イタリアン" checked></label>&nbsp;&nbsp;イタリアン</td>
              </tr>　　
              </table><br><br>  
         </div>
@@ -147,12 +143,12 @@ session_start();
                 <td colspan=2 align=center height=40 style="color:black">プチ観光</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="trip[]" value="1" checked></label>&nbsp;&nbsp;お台場</td>
-                 <td height=40><label><input type="checkbox" name="trip[]" value="2" checked></label>&nbsp;&nbsp;浅草・東京スカイツリー</td>
+                 <td height=40><label><input type="checkbox" name="trip[]" value="お台場" checked></label>&nbsp;&nbsp;お台場</td>
+                 <td height=40><label><input type="checkbox" name="trip[]" value="浅草・東京スカイツリー" checked></label>&nbsp;&nbsp;浅草・東京スカイツリー</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="trip[]" value="3" checked></label>&nbsp;&nbsp;横浜中華街</td>
-                 <td height=40><label><input type="checkbox" name="trip[]" value="4" checked></label>&nbsp;&nbsp;鎌倉・江ノ島</td>
+                 <td height=40><label><input type="checkbox" name="trip[]" value="横浜中華街" checked></label>&nbsp;&nbsp;横浜中華街</td>
+                 <td height=40><label><input type="checkbox" name="trip[]" value="鎌倉・江ノ島" checked></label>&nbsp;&nbsp;鎌倉・江ノ島</td>
              </tr>　　
              </table><br><br> 
           </div>
@@ -164,12 +160,12 @@ session_start();
                 <td colspan=2 align=center width=500 height=40 style="color:black">水族館</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="aqua[]" value="1" checked></label>&nbsp;&nbsp;サンシャイン水族館</td>
-                 <td height=40><label><input type="checkbox" name="aqua[]" value="2" checked></label>&nbsp;&nbsp;アクアパーク品川</td>
+                 <td height=40><label><input type="checkbox" name="aqua[]" value="サンシャイン" checked></label>&nbsp;&nbsp;サンシャイン水族館</td>
+                 <td height=40><label><input type="checkbox" name="aqua[]" value="アクアパーク" checked></label>&nbsp;&nbsp;アクアパーク品川</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="aqua[]" value="3" checked></label>&nbsp;&nbsp;八景島シーパラダイス</td>
-                 <td height=40><label><input type="checkbox" name="aqua[]" value="4" checked></label>&nbsp;&nbsp;新・江ノ島水族館</td>
+                 <td height=40><label><input type="checkbox" name="aqua[]" value="シーパラ" checked></label>&nbsp;&nbsp;八景島シーパラダイス</td>
+                 <td height=40><label><input type="checkbox" name="aqua[]" value="江ノ水" checked></label>&nbsp;&nbsp;新・江ノ島水族館</td>
              </tr>　　
              </table><br><br> 
              </div>
@@ -182,9 +178,9 @@ session_start();
                 <td colspan=3 align=center height=40 style="color:black">カラオケ</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="karaoke[]" value="1" checked></label>&nbsp;&nbsp;邦楽</td>
-                 <td height=40><label><input type="checkbox" name="karaoke[]" value="2" checked></label>&nbsp;&nbsp;洋楽</td>
-                 <td height=40><label><input type="checkbox" name="karaoke[]" value="3" checked></label>&nbsp;&nbsp;アニソン</td>
+                 <td height=40><label><input type="checkbox" name="karaoke[]" value="邦楽" checked></label>&nbsp;&nbsp;邦楽</td>
+                 <td height=40><label><input type="checkbox" name="karaoke[]" value="洋楽" checked></label>&nbsp;&nbsp;洋楽</td>
+                 <td height=40><label><input type="checkbox" name="karaoke[]" value="アニソン" checked></label>&nbsp;&nbsp;アニソン</td>
              </tr>　　
             </table><br><br> 
           </div>
@@ -196,13 +192,13 @@ session_start();
                 <td colspan=3 align=center width=500 height=40 style="color:black">ウォーキング</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="walking[]" value="1" checked></label>&nbsp;&nbsp;下町散歩(上野～お茶の水)</td>
+                 <td height=40><label><input type="checkbox" name="walking[]" value="下町散歩" checked></label>&nbsp;&nbsp;下町散歩(上野～お茶の水)</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="walking[]" value="2" checked></label>&nbsp;&nbsp;伝統×モダン散歩(神楽坂)</td>
+                 <td height=40><label><input type="checkbox" name="walking[]" value="伝統×モダン散歩" checked></label>&nbsp;&nbsp;伝統×モダン散歩(神楽坂)</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="walking[]" value="3" checked></label>&nbsp;&nbsp;自然癒し系散歩(吉祥寺)</td>
+                 <td height=40><label><input type="checkbox" name="walking[]" value="自然癒し系散歩" checked></label>&nbsp;&nbsp;自然癒し系散歩(吉祥寺)</td>
              </tr>　　
             </table><br><br> 
            </div>
@@ -214,13 +210,13 @@ session_start();
                 <td colspan=3 align=center width=500 height=40 style="color:black">映画</td>　 
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="movie[]" value="1" checked></label>&nbsp;&nbsp;バイオハザード　ザ・ファイナル</td>
+                 <td height=40><label><input type="checkbox" name="movie[]" value="バイオハザード" checked></label>&nbsp;&nbsp;バイオハザード　ザ・ファイナル</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="movie[]" value="2" checked></label>&nbsp;&nbsp;ローグ・ワン　スター・ウォーズ・ストーリー</td>
+                 <td height=40><label><input type="checkbox" name="movie[]" value="スター・ウォーズ" checked></label>&nbsp;&nbsp;ローグ・ワン　スター・ウォーズ・ストーリー</td>
              </tr>　
              <tr>
-                 <td height=40><label><input type="checkbox" name="movie[]" value="3" checked></label>&nbsp;&nbsp;ファンタスティック・ビーストと魔法使いの旅</td>
+                 <td height=40><label><input type="checkbox" name="movie[]" value="ファンタビ" checked></label>&nbsp;&nbsp;ファンタスティック・ビーストと魔法使いの旅</td>
              </tr>　　
             </table><br><br> 
              </div>
@@ -239,19 +235,19 @@ session_start();
                 <td colspan=2 align=center style="color:black">日程一覧</td>　 
             </tr>　
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="0114" checked><label for="chk1"></label>&nbsp;&nbsp;1月14日&nbsp;(<font color="blue">土</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月14日" checked><label for="chk1"></label>&nbsp;&nbsp;1月14日&nbsp;(<font color="blue">土</font>)</td>
                  
-                <td height=40><input type="checkbox" name="date[]" value="0115" checked><label for="chk2"></label>&nbsp;&nbsp;1月15日&nbsp;(<font color="red">日</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月15日" checked><label for="chk2"></label>&nbsp;&nbsp;1月15日&nbsp;(<font color="red">日</font>)</td>
             </tr>
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="0121" checked><label for="chk1"></label>&nbsp;&nbsp;1月21日&nbsp;(<font color="blue">土</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月21日" checked><label for="chk1"></label>&nbsp;&nbsp;1月21日&nbsp;(<font color="blue">土</font>)</td>
                  
-                <td height=40><input type="checkbox" name="date[]" value="0122" checked><label for="chk2"></label>&nbsp;&nbsp;1月22日&nbsp;(<font color="red">日</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月22日" checked><label for="chk2"></label>&nbsp;&nbsp;1月22日&nbsp;(<font color="red">日</font>)</td>
             </tr>
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="0128" checked><label for="chk1"></label>&nbsp;&nbsp;1月28日&nbsp;(<font color="blue">土</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月28日" checked><label for="chk1"></label>&nbsp;&nbsp;1月28日&nbsp;(<font color="blue">土</font>)</td>
                  
-                <td height=40><input type="checkbox" name="date[]" value="0129" checked><label for="chk2"></label>&nbsp;&nbsp;1月29日&nbsp;(<font color="red">日</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月29日" checked><label for="chk2"></label>&nbsp;&nbsp;1月29日&nbsp;(<font color="red">日</font>)</td>
             </tr>        
         </table></center><br><br> 
          
@@ -272,7 +268,7 @@ session_start();
              </tr>
              <tr>
                  <td height=40 class="item" style="color:black">性別</td>
-                 <td height=40 class="answer"><input type="radio" name="sex" value="1" checked>男性&nbsp;&nbsp;<input type="radio" name="sex" value="2">女性</td>
+                 <td height=40 class="answer"><input type="radio" name="sex" value="男性" checked>男性&nbsp;&nbsp;<input type="radio" name="sex" value="女性">女性</td>
              </tr>　
              <tr>
                  <td height=40 class="item" style="color:black">年齢</td>
@@ -326,5 +322,17 @@ session_start();
     </section>
     </form>
 <!-- Main[End] -->
-    
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nw1ss');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
 </body>
+</html>

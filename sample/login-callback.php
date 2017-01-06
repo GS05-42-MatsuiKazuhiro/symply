@@ -21,6 +21,23 @@ try {
 	exit;
 }
 
+try {
+  // Get the Facebook\GraphNodes\GraphUser object for the current user.
+  // If you provided a 'default_access_token', the '{access-token}' is optional.
+  $response = $fb->get('/me?fields=id,name,email', $accessToken->getValue());
+//  print_r($response);
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+  // When Graph returns an error
+  echo 'ERROR: Graph ' . $e->getMessage();
+  exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+  // When validation fails or other local issues
+  echo 'ERROR: validation fails ' . $e->getMessage();
+  exit;
+}
+$me = $response->getGraphUser();
+
+
 if (isset($accessToken)) {
 	// Logged in!
 	$_SESSION['facebook_access_token'] = (string) $accessToken;

@@ -1,10 +1,16 @@
+<?php
+session_start();
+session_destroy();
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>送信完了</title>
-  <link href="css/thanks.css" rel="stylesheet">
+  <link href="thanks.css" rel="stylesheet">
 </head>
 <body>
 <div>
@@ -55,7 +61,7 @@ $stmt->bindValue(':a9', $movie, PDO::PARAM_STR);
 $stmt->bindValue(':a10', $date, PDO::PARAM_STR);
 $stmt->bindValue(':a11', $lastname, PDO::PARAM_STR);
 $stmt->bindValue(':a12', $firstname, PDO::PARAM_STR);
-$stmt->bindValue(':a13', $sex, PDO::PARAM_INT);
+$stmt->bindValue(':a13', $sex, PDO::PARAM_STR);
 $stmt->bindValue(':a14', $age, PDO::PARAM_INT);
 $stmt->bindValue(':a15', $zip31, PDO::PARAM_STR);
 $stmt->bindValue(':a16', $zip32, PDO::PARAM_STR);
@@ -164,13 +170,59 @@ if (isset($_POST['lastname'])){
     <p>迅速な対応を心がけておりますが、条件次第によってはご連絡までお時間がかかる場合がございます。</p>
     <p>予めご了承ください。</p>
     
-  <form method="POST" action="http://www.symply.jp">
-    <input type="submit" value="TOPに戻る">
-  </form>
+  <?php
+if (isset($_SESSION['facebook_access_token'])) {
+	try {
+				
+	} catch(Facebook\Exceptions\FacebookResponseException $e) {
+		// When Graph returns an error
+		echo 'Graph returned an error: ' . $e->getMessage();
+		exit;
+	} catch(Facebook\Exceptions\FacebookSDKException $e) {
+		// When validation fails or other local issues
+		echo 'Facebook SDK returned an error: ' . $e->getMessage();
+		exit;
+	}
+	
+	$id=$profile['id'];
+	$name=$profile['name'];
+	$first_name=(isset($profile['first_name'])) ? $profile['first_name'] : '';
+	$last_name=(isset($profile['last_name'])) ? $profile['last_name'] : '';
+	$email=$profile['email'];
+	$gender=(isset($profile['gender'])) ? $profile['gender'] : '';
+	$picture_url = $picture['url'];
+    
+   
+//	echo "<p>アクセストークン：".$accessToken."</p>";
+//	echo "<p>ID：".$id."</p>";
+//	echo "<p>名前：".$name."</p>";
+//	echo "<p>性別：".$gender."</p>";
+//	echo "<p>ファーストネーム：".$first_name."</p>";
+//	echo "<p>ラストネーム：".$last_name."</p>";
+//	echo "<p>メール：".$email."</p>";//ユーザが未公開・未設定の場合は表示されない
+//	echo "<p><img src=".$picture_url."></p>";
+	
+	echo "<centre><p><a href='index.php'>ログアウト</a></p></center>";
+ 
+}
+?>
+      <a class="dating2" href="index.php">TOPに戻る</a>
   </div>
   </span>
 <?php endif; ?>
 
 </div>
+    
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nw1ss');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
 </body>
 </html>
