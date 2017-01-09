@@ -16,9 +16,9 @@ session_start();
   <link rel="alternate" hreflang="ja" href="http://www.symply.jp">
 <!--  <link rel="stylesheet" href="css/reset.css">-->
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?20160109">
   <link rel="shortcut icon" href="images/logo.jpg">
-  <script src="jquery-3.1.1.min.js"></script> 
+
 </head>
 <body>
 <span itemscope itemtype="http://schema.org/Product">
@@ -64,49 +64,6 @@ session_start();
 
     　</script>
 <!--Google Analytics-->
-<!--
-        <div id="cat_cover_box">
-   <div id="cat_cover">
-      <div id="slideshow">
-        <img src="images/tennis_header.jpg" alt="Slideshow Image 1" class="active" />
-        <img src="images/trip_header.jpg" alt="Slideshow Image 2" class="active2" />
-        <img src="images/gurume_header.jpg" alt="Slideshow Image 3" class="active3" />
-        <img src="images/kansen_soccer_header.jpg" alt="Slideshow Image 4" class="active4" />
-    </div>
-    <script>
-            function slideSwitch() {
-        var $active = $('#slideshow IMG.active');
-        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
-        // use this to pull the images in the order they appear in the markup
-        var $next =  $active.next().length ? $active.next()
-            : $('#slideshow IMG:first');
-        // uncomment the 3 lines below to pull the images in random order
-        // var $sibs  = $active.siblings();
-        // var rndNum = Math.floor(Math.random() * $sibs.length );
-        // var $next  = $( $sibs[ rndNum ] );
-        $active.addClass('last-active');
-        $next.css({opacity: 0.0})
-            .addClass('active')
-            .animate({opacity: 1.0}, 1000, function() {
-                $active.removeClass('active last-active');
-            });
-    }
-    $(function() {
-        setInterval( "slideSwitch()", 4000 );
-    });
-    </script>
-
-    <div id="top_title">
-        <p class="main">どんな人と出会えるかな</p>
-            <a class="subtitle2">4種類の趣味デートから気の合う異性を見つけよう</a>
-            <p class="subtitle">
-            <a href="index2.php"><img src="images/shumi_header2.png" class="choice_a"></a>
-            <a href="index2.php"><img src="images/kiltukake2.png" class="choice_b"></a>
-            </p>
-        </div>
-        </div>
-    </div>
--->
   </header>
     
     <table cellpadding="0" cellspacing="0" class="header_table"><tbody>
@@ -219,19 +176,6 @@ if (isset($_SESSION['facebook_access_token'])) {
 }
   ?>
     <br>Facebookには一切投稿されません。</p></div>
-
-<!--        <img src="images/header_lady.jpg"><br>
-        <img src="images/header_couple.jpg"><br>-->
-        
-<!-- <a href="index2.php"><img src="images/button_header2.png" width="10%"></a><br><br>-->
-        
-<!--
-        <table cellpadding="0" cellspacing="0" class="header_table">
-            <tr><td><a href="index2.php"><img src="images/tennis_icon.png"></a></td><td><a href="index2.php"><img src="images/aqua_icon.png"></a></td></tr><tr>
-                <td><a href="index2.php"><img src="images/run_icon.png"></a></td><td><a href="index2.php"><img src="images/bowling_icon.png"></a></td>
-        </tr>
-        </table>
--->
     
     <table cellpadding="0" cellspacing="0" class="header_table"><tbody>
         <tr><td><img src="images/run.jpg" class="header_pic2"></td><td><img src="images/golf.jpg" class="header_pic2"></td><td><img src="images/trip2.jpg" class="header_pic2"></td><td><img src="images/kansen_baseball2.jpg" class="header_pic2"></td><td><img src="images/cooking.jpg" class="header_pic2"></td><td><img src="images/movie.jpg" class="header_pic2"></td>
@@ -241,21 +185,21 @@ if (isset($_SESSION['facebook_access_token'])) {
     <span itemprop="description"><h2>おすすめポイント</h2>
     <div class="skills-wrapper_sp">
       <div class="skill-box_sp">  
-          <h2><img style="vertical-align:top;" src="images/one.png" width="10%"/><span style="display:inline-block;">いきなりデート</span></h2>
-        <p><img src ="images/dating_mono.png" class ="user"></p>
+          <h2><img style="vertical-align:top;" src="images/one.png" width="8%"/><span style="display:inline-block;">いきなりデート</span></h2>
+        <p><img src ="images/2nd.png" class ="user"></p>
         <p class="skill-text">
           マッチングアプリや街コンと違い、二人でデートするまでの駆け引き不要。まずは、会って相性を確かめましょう
         </p>
       </div>
       <div class="skill-box_sp">
-          <h2><img style="vertical-align:top;" src="images/two.png" width="10%"/><span style="display:inline-block;">趣味つながり</span></h2><br>
+          <h2><img style="vertical-align:top;" src="images/two.png" width="8%"/><span style="display:inline-block;">趣味つながり</span></h2><br>
         <p><img src ="images/ban5.png" class = "matching2"></p><br>
         <p class="skill-text">
           見た目やトーク力ではなく、趣味つながりで気軽に異性とデート
         </p>
       </div>
       <div class="skill-box_sp">
-          <h2><img style="vertical-align:top;" src="images/three.png" width="10%"/><span style="display:inline-block;">告白不要</span></h2><p><img src ="images/couple_mono.png" class = "user"></p>
+          <h2><img style="vertical-align:top;" src="images/three.png" width="8%"/><span style="display:inline-block;">告白不要</span></h2><p><img src ="images/couple_mono.png" class = "user"></p>
         <p class="skill-text">
             デート後に「もう一度会いたい」「付き合いたい」などの評価を導入。両思いでカップル誕生
         </p>
@@ -388,7 +332,7 @@ if (isset($_SESSION['facebook_access_token'])) {
           </div>
       <div class="skill-box">
         <div class="skill-title"><img style="vertical-align:top;" src="images/three.png" width="10%" /><span style="display:inline-block;">2ndデート</span>
-        <p><img src ="images/2nd.png" class = "user"></p>
+        <p><img src ="images/love.png" class = "user"></p>
         <p class="skill-text">
           デート後に「もう一度会いたいか」回答。両想い限定でセカンドデート
         </p>
@@ -426,7 +370,7 @@ if (isset($_SESSION['facebook_access_token'])) {
       <div class="skills-wrapper_a">
       <div class="skill-box">
           <div class="skill-title"><img style="vertical-align:top;" src="images/three.png" width="15%"/><span style="display:inline-block;">2ndデート</span></div>
-        <p><img src ="images/matching.png" class = "user"></p>
+        <p><img src ="images/love.png" class = "user"></p>
         <p class="skill-text">
           デート後に「もう一度会いたいか」回答。両想い限定でセカンドデート
         </p>
@@ -440,6 +384,65 @@ if (isset($_SESSION['facebook_access_token'])) {
       </div>
     </div>
   </section>
+    
+  <section class="uservoice">
+        
+        <h2 class="heading">お客様の声</h2>
+        
+        <p class="about-text2"><img style="vertical-align:top;" src="images/one.png" width="1.5%" height="1.5%"/>【水族館デート】男性・27歳・上場企業勤務・KMさん</p><br>
+        <img src="images/man2.png" class="man">
+    <div id="balloon-3-left">
+        待ち合わせのときは、心臓がバクバクしてましたが、中学・高校の入学式のような期待感が蘇りました。
+        あまり話すのが得意ではなかったのですが、たくさんの魚たちと幻想的な雰囲気で自然にお相手の方と楽しむことができました。
+        また、機会があれば利用させて頂きます。
+    </div>
+        
+        <p class="about-text2"><img style="vertical-align:top;" src="images/two.png" width="1.5%" height="1.5%"/>【料理デート】女性・25歳・丸の内OL・AKさん</p>
+    <div id="balloon-3-right">
+        料理は日頃から自炊していたので、問題なく楽しめました。
+        いきなりデートは少し不安でしたが、材料も場所も用意されていたので、取り越し苦労でした。今は、「他のデートも試してみようかな〜」と思ってます。
+    </div>
+        <img src="images/woman1.png" class="man">
+        
+        <p class="about-text2"><img style="vertical-align:top;" src="images/three.png" width="1.5%" height="1.5%"/>【テニスデート】男性・23歳・社会人1年目・YYさん</p><br>
+        <img src="images/man1.png" class="man">
+    <div id="balloon-3-left">
+        テニスデート、とても楽しかったです。中学からテニスをしていたので、自信がありました！お相手の方は、大学生でサークルで練習していたみたいです。ボレー教えてあげたら、喜んでました笑。職場で異性と接する機会がないので有難いです。
+    </div>
+        <p class="about-text2"><img style="vertical-align:top;" src="images/four.png" width="1.5%" height="1.5%"/>【ウォーキングデート】女性・19歳・大学生・ETさん</p>
+        <div id="balloon-3-right">
+        趣味があまり思い浮かばなかったので、ウォーキングデートを選びました。少し寒かったですが(笑)、吉祥寺の井の頭公園を歩いてたら犬の散歩に遭遇したり、癒しポイントが多かったです。友達にもオススメします！
+    </div>
+        <img src="images/woman2.png" class="man">
+    </section>
+    
+    <section class="uservoice_sp">
+        <h2 class="heading">お客様の声</h2>
+        <p class="about-text2"><img style="vertical-align:top;" src="images/one.png" width="5%"/>【水族館デート】<br>男性・27歳・上場企業勤務・KMさん</p><br>
+        <img src="images/man2.png" class="man">
+    <div id="balloon-2-left">
+        <p class="txt">
+        待ち合わせのときは、心臓がバクバクしてましたが、中学・高校の入学式のような期待感が蘇りました。あまり話すのが得意ではなかったのですが、たくさんの魚たちと幻想的な雰囲気で自然にお相手の方と楽しむことができました。また、機会があれば利用させて頂きます。
+        </p>
+    </div>
+        <br><br><p class="about-text2"><img style="vertical-align:top;" src="images/two.png" width="5%"/>【料理デート】<br>女性・25歳・丸の内OL・AKさん</p><br>
+        <img src="images/woman1.png" class="man">
+    <div id="balloon-2-left">
+        <p class="txt">料理は日頃から自炊していたので、問題なく楽しめました。
+            いきなりデートは少し不安でしたが、材料も場所も用意されていたので、取り越し苦労でした。今は、「他のデートも試してみようかな〜」と思ってます。</p>
+    </div>
+        <br><br><p class="about-text2"><img style="vertical-align:top;" src="images/three.png" width="5%"/>【テニスデート】<br>男性・23歳・社会人1年目・YYさん</p><br>
+        <img src="images/man1.png" class="man">
+    <div id="balloon-2-left">
+        <p class="txt">テニスデート、とても楽しかったです。中学からテニスをしていたので、自信がありました！お相手の方は、大学生でサークルで練習していたみたいです。ボレー教えてあげたら、喜んでました笑。職場で異性と接する機会がないので有難いです。</p>
+    </div>
+        <br><br><p class="about-text2"><img style="vertical-align:top;" src="images/four.png" width="5%"/>【ウォーキングデート】<br>女性・19歳・大学生・ETさん</p><br>
+        <img src="images/woman2.png" class="man">
+        <div id="balloon-2-left">
+            <p class="txt">趣味があまり思い浮かばなかったので、ウォーキングデートを選びました。少し寒かったですが(笑)、吉祥寺の井の頭公園を歩いてたら犬の散歩に遭遇したり、癒しポイントが多かったです。友達にもオススメします！</p>
+    </div>
+        
+    </section>
     
 　<section class="about_symply">
 　　 <h2 class="heading">FAQ</h2>
@@ -511,7 +514,6 @@ if (isset($_SESSION['facebook_access_token'])) {
   <footer class="footer">
     <span itemprop="name">Symply</span> © 2016 
   </footer></span>
-  <script src="lib/placeholders.min.js"></script>
 
 <!-- Twitter universal website tag code -->
 <script>

@@ -111,7 +111,7 @@ session_start();
         <div id="ans2">
             <table border=1 class="table" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=3 align=center height=40 style="color:black">ランニング</td>　 
+                <td colspan=2 align=center height=40 style="color:black">ランニング</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="run[]" value="駒沢オリンピック公園" checked></label>&nbsp;&nbsp;駒沢オリンピック公園(2km)</td>
@@ -235,19 +235,19 @@ session_start();
                 <td colspan=2 align=center style="color:black">日程一覧</td>　 
             </tr>　
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="1月14日" checked><label for="chk1"></label>&nbsp;&nbsp;1月14日&nbsp;(<font color="blue">土</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月14日" checked>&nbsp;&nbsp;1月14日&nbsp;(<font color="blue">土</font>)</td>
                  
-                <td height=40><input type="checkbox" name="date[]" value="1月15日" checked><label for="chk2"></label>&nbsp;&nbsp;1月15日&nbsp;(<font color="red">日</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月15日" checked>&nbsp;&nbsp;1月15日&nbsp;(<font color="red">日</font>)</td>
             </tr>
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="1月21日" checked><label for="chk1"></label>&nbsp;&nbsp;1月21日&nbsp;(<font color="blue">土</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月21日" checked>&nbsp;&nbsp;1月21日&nbsp;(<font color="blue">土</font>)</td>
                  
-                <td height=40><input type="checkbox" name="date[]" value="1月22日" checked><label for="chk2"></label>&nbsp;&nbsp;1月22日&nbsp;(<font color="red">日</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月22日" checked>&nbsp;&nbsp;1月22日&nbsp;(<font color="red">日</font>)</td>
             </tr>
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="1月28日" checked><label for="chk1"></label>&nbsp;&nbsp;1月28日&nbsp;(<font color="blue">土</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月28日" checked>&nbsp;&nbsp;1月28日&nbsp;(<font color="blue">土</font>)</td>
                  
-                <td height=40><input type="checkbox" name="date[]" value="1月29日" checked><label for="chk2"></label>&nbsp;&nbsp;1月29日&nbsp;(<font color="red">日</font>)</td>
+                <td height=40><input type="checkbox" name="date[]" value="1月29日" checked>&nbsp;&nbsp;1月29日&nbsp;(<font color="red">日</font>)</td>
             </tr>        
         </table></center><br><br> 
          
