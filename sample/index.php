@@ -2,6 +2,8 @@
 session_start();
 ?>
 
+
+
 <!DOCTYPE html>
 <!-- microdata マークアップを Google 構造化データ マークアップ支援ツールで追加 -->
 <html lang="ja">
@@ -16,9 +18,9 @@ session_start();
   <link rel="alternate" hreflang="ja" href="http://www.symply.jp">
 <!--  <link rel="stylesheet" href="css/reset.css">-->
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css?20160109">
+  <link rel="stylesheet" href="style.css?201601192">
   <link rel="shortcut icon" href="images/logo.jpg">
-
+  <script src="jquery-3.1.1.min.js"></script> 
 </head>
 <body>
 <span itemscope itemtype="http://schema.org/Product">
@@ -29,9 +31,9 @@ session_start();
         <div id="header_logo">
             <div id="toggle"><a class="header_pic"><center><img src ="images/symply.png" width="110px"></center></a></div>
                 <ul id="menu" class="">
-                <li style="display:inline"><a href="http://symply.jp/" class="header_pic"><img src ="images/symply.png" width="180px"></a></li>
-                <li style="display:inline"><a class ="home" href="index.html">&nbsp;&nbsp;&nbsp;HOME&nbsp;</a></li>
-                <li style="display:inline"><a class ="home" href="http://symply.jp/column/">|&nbsp;&nbsp;Symplyコラム&nbsp;</a></li>
+                <li style="display:inline"><a href="index.php" class="header_pic"><img src ="images/symply.png" width="180px"></a></li>
+                <li style="display:inline"><a class ="home" href="index.php">&nbsp;&nbsp;&nbsp;HOME&nbsp;</a></li>
+                <li style="display:inline"><a class ="home" href="http://www.symply.jp/column/">|&nbsp;&nbsp;Symplyコラム&nbsp;</a></li>
                 </ul>
         </div>
     </div>
@@ -213,7 +215,7 @@ if (isset($_SESSION['facebook_access_token'])) {
         </p><br>
             <center><table border=1 class="table2">
              <tr>
-                 <td rowspan=4 align=center style="color:black" bgcolor = #B0E0E6><strong>スポーツ</strong></td>
+                 <td rowspan=4 align=center style="color:black" bgcolor = #B0E0E6><b>スポーツ</b></td>
                 <td align=center><img src="images/tennis_icon.png" class="icon4">テニス</td>
              </tr>
              <tr>
@@ -227,7 +229,7 @@ if (isset($_SESSION['facebook_access_token'])) {
              </tr>  
                 
              <tr>
-                 <td rowspan=4 align=center style="color:black" bgcolor = #B0E0E6><strong>観光</strong></td>
+                 <td rowspan=4 align=center style="color:black" bgcolor = #B0E0E6><b>観光</b></td>
                 <td align=center><img src="images/trip_icon.png" class="icon4">プチ旅行</td>
              </tr>　
              <tr>
@@ -241,7 +243,7 @@ if (isset($_SESSION['facebook_access_token'])) {
              </tr>
                 
              <tr>
-                 <td rowspan=3 align=center style="color:black" bgcolor = #B0E0E6><strong>文化</strong></td>
+                 <td rowspan=3 align=center style="color:black" bgcolor = #B0E0E6><b>文化</b></td>
                 <td align=center><img src="images/movie_icon.png" class="icon4">映画</td>
              </tr>　
              <tr>
@@ -252,7 +254,7 @@ if (isset($_SESSION['facebook_access_token'])) {
              </tr>
                 
              <tr>
-                 <td rowspan=3 align=center style="color:black" bgcolor = #B0E0E6><strong>グルメ</strong></td>
+                 <td rowspan=3 align=center style="color:black" bgcolor = #B0E0E6><b>グルメ</b></td>
                 <td align=center><img src="images/cooking_icon.png" class="icon4">料理</td>
              </tr>　
              <tr>
@@ -444,6 +446,136 @@ if (isset($_SESSION['facebook_access_token'])) {
         
     </section>
     
+<!--
+       <div>
+    <img src="images/couple_different.jpg" class="sa">
+    </div>
+-->
+    
+<!--
+        <section class="skills_pc"> 
+　  <h2 class="heading">Symplyコラム</h2>
+    <p class="skill-text">
+      Symply運営事務局が監修の恋愛コンテンツ。Symplyでパートナーが見つかる秘訣も大公開。
+    </p>
+      <ol class="ranking">
+        <div id="pc_ranking">
+        <li class="ranking-item" style="float:left;">
+         <div id="ranking_solid">
+          <a href="http://symply.jp/column/2017/01/07/%E6%AC%A1%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88%E3%81%AB%E3%81%A4%E3%81%AA%E3%81%92%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%EF%BC%9F%E3%80%8C%E3%81%BE%E3%81%9F%E4%BC%9A%E3%81%84%E3%81%9F%E3%81%84/">
+            <img class="image2" src="images/young_couple_kiss.jpg" alt="次のデートへの愛情表現">
+              <br><p class="text3"><b>次のデートにつなげるためには？「また会いたい！」という気持ちをシンプルに伝える方法を紹介！</b></p>
+          </a>
+         </div>
+        </li>
+        <li class="ranking-item" style="float:right;">
+         <div id="ranking_solid">
+          <a href="http://symply.jp/column/2017/01/07/%E3%83%87%E3%83%BC%E3%83%88%E3%81%A7%E7%94%B7%E6%80%A7%E3%82%A6%E3%82%B1%E3%81%8C%E6%8A%9C%E7%BE%A4%E3%81%AE%E6%9C%8D%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%87%E3%82%84%E9%81%B8%E3%81%B3%E6%96%B9%E3%81%A8/">
+            <img class="image" src="images/dating_for_fashion.jpg" alt="グラフの画像">
+            <p class="text"><b>デートで男性ウケが抜群の服のコーデや選び方とは？</b></p>
+          </a>
+         </div>
+        
+        </li>
+        <li class="ranking-item" style="float:right;">
+         <div id="ranking_solid">
+          <a href="http://symply.jp/column/2017/01/07/%E8%B6%A3%E5%91%B3%E3%83%87%E3%83%BC%E3%83%88%E3%81%8C%E7%9B%9B%E3%82%8A%E4%B8%8A%E3%81%8C%E3%82%8B%E7%90%86%E7%94%B1%E3%81%A8%E3%81%AF%EF%BC%9F%E5%AE%9A%E7%95%AA%E3%83%87%E3%83%BC%E3%83%88%E3%81%AB/">
+            <img class="image" src="images/hobby_dating_recommend.jpg" alt="グラフの画像">
+            <p class="text"><b>趣味デートが盛り上がる理由とは？定番デートに飽きがきたら、趣味デートがおすすめ！</b></p>
+          </a>
+         </div>
+        </li>
+        </div>
+    </ol>
+    
+    <p><font color="white">
+<font size="2">
+      Symply運営事務局が監修の恋愛コンテンツ。Symplyでパートナーが見つかる秘訣も大公開。
+        </font></font>
+    </p>
+    
+    <ol class="ranking">
+        <div id="pc_ranking">
+        <li class="ranking-item" style="float:left;">
+         <div id="ranking_solid">
+          <a href="http://symply.jp/column/2017/01/08/%E3%83%87%E3%83%BC%E3%83%88%E3%81%A7%E6%B2%88%E9%BB%99%E3%81%AB%E5%9B%B0%E3%81%A3%E3%81%9F%E4%BA%BA%E3%81%A7%E3%82%82%E5%A4%A7%E4%B8%88%E5%A4%AB%EF%BC%81%E8%81%9E%E3%81%8B%E3%82%8C%E3%81%9F%E3%82%89/">
+            <img class="image" src="images/dating_communication.jpg" alt="グラフの画像">
+            <p class="text"><b>デートで沈黙に困った人でも大丈夫！聞かれたら嬉しい話題を一挙紹介！</b></p>
+          </a>
+         </div>
+        </li>
+        <li class="ranking-item" style="float:right;">
+         <div id="ranking_solid">
+          <a href="http://symply.jp/column/2017/01/10/%E6%81%8B%E6%B4%BB%E3%83%BB%E5%A9%9A%E6%B4%BB%E3%83%BB%E3%81%8A%E8%A6%8B%E5%90%88%E3%81%84%E3%83%BB%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC/">
+            <img class="image" src="images/couple_different.jpg" alt="グラフの画像">
+            <p class="text"><b>恋活・婚活・お見合い・カップリングパーティー・街コンの違いとは？</b></p>
+          </a>
+         </div>
+        </li>
+        </div>
+
+    </ol>
+    </section>
+-->
+
+    <section class="skills_sp"> 
+  <h2 class="heading">Symplyコラム</h2>
+        <p class="skill-text">
+      <br>Symply運営事務局が監修の恋愛コンテンツ。<br>Symplyでパートナーが見つかる秘訣も大公開。<br>
+    </p>
+      <div class="ranking">
+        <li class="ranking-item">
+        <div id="ranking_solid2">
+          <a href="http://symply.jp/column/2017/01/07/%E6%AC%A1%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88%E3%81%AB%E3%81%A4%E3%81%AA%E3%81%92%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%EF%BC%9F%E3%80%8C%E3%81%BE%E3%81%9F%E4%BC%9A%E3%81%84%E3%81%9F%E3%81%84/">
+            <img class="image" src="images/young_couple_kiss.jpg" alt="次のデートへの愛情表現">
+            <p class="text"><b>次のデートにつなげるためには？「また会いたい！」という気持ちをシンプルに伝える方法を紹介！</b></p>
+          </a>
+        </div>
+        </li>
+        <li class="ranking-item">
+        <div id="ranking_solid2">
+          <a href="http://symply.jp/column/2017/01/07/%E3%83%87%E3%83%BC%E3%83%88%E3%81%A7%E7%94%B7%E6%80%A7%E3%82%A6%E3%82%B1%E3%81%8C%E6%8A%9C%E7%BE%A4%E3%81%AE%E6%9C%8D%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%87%E3%82%84%E9%81%B8%E3%81%B3%E6%96%B9%E3%81%A8/">
+            <img class="image" src="images/dating_for_fashion.jpg" alt="グラフの画像">
+            <p class="text"><b>デートで男性ウケが抜群の服のコーデや選び方とは？</b></p>
+          </a>
+        </div>
+        </li>
+        <li class="ranking-item">
+        <div id="ranking_solid2">
+          <a href="http://symply.jp/column/2017/01/07/%E8%B6%A3%E5%91%B3%E3%83%87%E3%83%BC%E3%83%88%E3%81%8C%E7%9B%9B%E3%82%8A%E4%B8%8A%E3%81%8C%E3%82%8B%E7%90%86%E7%94%B1%E3%81%A8%E3%81%AF%EF%BC%9F%E5%AE%9A%E7%95%AA%E3%83%87%E3%83%BC%E3%83%88%E3%81%AB/">
+            <img class="image" src="images/hobby_dating_recommend.jpg" alt="グラフの画像">
+            <span class="order"></span>
+            <p class="text"><b>趣味デートが盛り上がる理由とは？定番デートに飽きがきたら、趣味デートがおすすめ！</b></p>
+          </a>
+        </div>
+        </li>
+        <li class="ranking-item">
+        <div id="ranking_solid2">
+          <a href="http://symply.jp/column/2017/01/08/%E3%83%87%E3%83%BC%E3%83%88%E3%81%A7%E6%B2%88%E9%BB%99%E3%81%AB%E5%9B%B0%E3%81%A3%E3%81%9F%E4%BA%BA%E3%81%A7%E3%82%82%E5%A4%A7%E4%B8%88%E5%A4%AB%EF%BC%81%E8%81%9E%E3%81%8B%E3%82%8C%E3%81%9F%E3%82%89/">
+            <img class="image" src="images/dating_communication.jpg" alt="グラフの画像">
+            <span class="order"></span>
+            <p class="text"><b>デートで沈黙に困った人でも大丈夫！聞かれたら嬉しい話題を一挙紹介！</b></p>
+          </a>
+        </div>
+        </li>
+        <li class="ranking-item">
+        <div id="ranking_solid2">
+          <a href="http://symply.jp/column/2017/01/10/%E6%81%8B%E6%B4%BB%E3%83%BB%E5%A9%9A%E6%B4%BB%E3%83%BB%E3%81%8A%E8%A6%8B%E5%90%88%E3%81%84%E3%83%BB%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC/">
+            <img class="image" src="images/couple_different.jpg" alt="グラフの画像">
+            <span class="order"></span>
+            <p class="text"><b>恋活・婚活・お見合い・カップリングパーティー・街コンの違いとは？</b></p>
+          </a>
+        </div>
+        </li>
+      </div>
+    </section>
+    
+    <div id="as">
+     <a href="http://www.symply.jp/column/">
+        <div class="text2">もっと読む</div>
+      </a>
+    </div>
+        
 　<section class="about_symply">
 　　 <h2 class="heading">FAQ</h2>
      <div id="qa">
@@ -452,7 +584,7 @@ if (isset($_SESSION['facebook_access_token'])) {
         <p class="txt">Q.　クレジットカード払いのみでしょうか？<br>
         A.　年齢確認も兼ねているため、クレジットカード払いのみとさせていただいております。<br><br></p>
         <p class="txt">Q.　1回目のデートの後、両想いにならなかった場合はどうなりますか？<br>
-        A.　その時点で、デート終了となります。なお、両想いの場合の2ndデートは無料となります。<br><br></p>
+        A.　その時点で、デート終了となります。両想いの場合のみ、ご連絡します。2ndデートは無料です。<br><br></p>
         <p class="txt">Q.　ドタキャンされないか心配です…。<br>
         A.　事前払いにより、ドタキャンの心配はほとんどございません。<br><br></p>
         <p class="txt">Q.　マッチング費用である男性2,980円、女性980円以外は料金が発生しないですか？<br>
@@ -528,3 +660,4 @@ twq('track','PageView');
     
 </body>
 </html>
+ 

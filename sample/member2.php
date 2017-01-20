@@ -11,7 +11,7 @@ session_start();
   <title>お申し込み画面 | Symply[シンプリー]</title>   
   <link rel="shortcut icon" href="images/logo.jpg">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?201701091">
 <!--Google Analytics-->
       <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -157,7 +157,7 @@ session_start();
          <div id="ansdiv">
         <div id="ans8"> <table border=1 class="table" width="40%">
              <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=2 align=center width=500 height=40 style="color:black">水族館</td>　 
+                <td colspan=2 align=center height=40 style="color:black">水族館</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="aqua[]" value="サンシャイン" checked></label>&nbsp;&nbsp;サンシャイン水族館</td>
@@ -187,17 +187,17 @@ session_start();
         </div>
         
        <div id="ansdiv">
-        <div id="ans13"> <table border=1 class="table" width="40%">
+        <div id="ans13"> <table border=1 class="table2" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
-                <td colspan=3 align=center width=500 height=40 style="color:black">ウォーキング</td>　 
+                <td colspan=3 align=center height=40 style="color:black">ウォーキング</td>　 
              </tr>　
              <tr>
                  <td height=40><label><input type="checkbox" name="walking[]" value="下町散歩" checked></label>&nbsp;&nbsp;下町散歩(上野～お茶の水)</td>
-             </tr>　
-             <tr>
+            </tr>
+            <tr>
                  <td height=40><label><input type="checkbox" name="walking[]" value="伝統×モダン散歩" checked></label>&nbsp;&nbsp;伝統×モダン散歩(神楽坂)</td>
-             </tr>　
-             <tr>
+            </tr>
+            <tr>
                  <td height=40><label><input type="checkbox" name="walking[]" value="自然癒し系散歩" checked></label>&nbsp;&nbsp;自然癒し系散歩(吉祥寺)</td>
              </tr>　　
             </table><br><br> 
@@ -205,7 +205,7 @@ session_start();
         </div>
         
         <div id="ansdiv">
-        <div id="ans11"> <table border=1 class="table" width="40%">
+        <div id="ans11"> <table border=1 class="table2" width="40%">
                 <tr bgcolor = #B0E0E6>　　　　　　　
                 <td colspan=3 align=center width=500 height=40 style="color:black">映画</td>　 
              </tr>　
@@ -235,11 +235,6 @@ session_start();
                 <td colspan=2 align=center style="color:black">日程一覧</td>　 
             </tr>　
             <tr>
-                <td height=40><input type="checkbox" name="date[]" value="1月14日" checked>&nbsp;&nbsp;1月14日&nbsp;(<font color="blue">土</font>)</td>
-                 
-                <td height=40><input type="checkbox" name="date[]" value="1月15日" checked>&nbsp;&nbsp;1月15日&nbsp;(<font color="red">日</font>)</td>
-            </tr>
-            <tr>
                 <td height=40><input type="checkbox" name="date[]" value="1月21日" checked>&nbsp;&nbsp;1月21日&nbsp;(<font color="blue">土</font>)</td>
                  
                 <td height=40><input type="checkbox" name="date[]" value="1月22日" checked>&nbsp;&nbsp;1月22日&nbsp;(<font color="red">日</font>)</td>
@@ -248,7 +243,12 @@ session_start();
                 <td height=40><input type="checkbox" name="date[]" value="1月28日" checked>&nbsp;&nbsp;1月28日&nbsp;(<font color="blue">土</font>)</td>
                  
                 <td height=40><input type="checkbox" name="date[]" value="1月29日" checked>&nbsp;&nbsp;1月29日&nbsp;(<font color="red">日</font>)</td>
-            </tr>        
+            </tr>
+            <tr>
+                <td height=40><input type="checkbox" name="date[]" value="2月4日" checked>&nbsp;&nbsp;2月4日&nbsp;(<font color="blue">土</font>)</td>
+                 
+                <td height=40><input type="checkbox" name="date[]" value="2月5日" checked>&nbsp;&nbsp;2月5日&nbsp;(<font color="red">日</font>)</td>
+            </tr> 
         </table></center><br><br> 
          
     <h2 class="heading">ユーザー登録</h2>
@@ -295,11 +295,11 @@ session_start();
             </tr>
             <!-- ▼住所入力フィールド(都道府県) -->
             <tr>
-                <td height=40 class="item" style="color:black">都道府県</td><td height=40 class="answer"><input type="text" name="pref31" size="20"></td>
+                <td height=40 class="item" style="color:black">都道府県</td><td height=40 class="answer"><input type="text" name="pref31"></td>
             </tr>
             <!-- ▼住所入力フィールド(都道府県以降の住所) -->
             <tr>
-                <td height=40 class="item" style="color:black">都道府県以降の住所</td><td height=40 class="answer"><input type="text" name="addr31" size="30"></td>
+                <td height=40 class="item" style="color:black">都道府県以降の住所</td><td height=40 class="answer"><input type="text" name="addr31"></td>
             </tr>
              <tr>
                  <td height=40 class="item" style="color:black">大学名（男性のみ）</td>
@@ -307,11 +307,11 @@ session_start();
              </tr>　
             <tr>
                  <td height=40 class="item" style="color:black">Email</td>
-                 <td height=40 class="answer"><input type="text" id="email" size="30" name="email"></td>
+                 <td height=40 class="answer"><input type="text" id="email" name="email"></td>
              </tr>　
             <tr>
                  <td height=40 class="item" style="color:black">Email（確認用）</td>
-                 <td height=40 class="answer"><input type="text" id="email" size="30" name="email2"></td>
+                 <td height=40 class="answer"><input type="text" id="email" name="email2"></td>
              </tr>　
              <tr>
                  <td height=40 class="item" style="color:black">電話番号</td>

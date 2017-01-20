@@ -508,8 +508,17 @@ position: absolute;
 .heading{
   color: black
 }
+@media screen and (min-width: 480px) {
+.about_symply .image{
+    width: 35%;
+}
+}
 
-
+@media screen and (min-width: 320px) and (max-width: 479px) {
+.about_symply .image{
+    width: 100%;
+}
+}
 .about_symply h3 {
     color: black;
 /*    width: 30%;*/
@@ -545,9 +554,16 @@ position: absolute;
   }
 
 .table{
+    table-layout: fixed;
     margin-left: auto;
     margin-right: auto;
 }
+
+.table2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .table2 td{
       line-height: 2em;
@@ -728,6 +744,113 @@ display:none;
 .heading{
   color: white;
 }
+
+/* --------------------------------
+ * ranking
+ * -------------------------------- */
+
+.ranking {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ranking .ranking-item {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.sa{
+    display: none;
+}
+.ranking .ranking-item a:hover {
+  opacity: 0.8;
+}
+.ranking .image {
+  width: 120px;
+  height: 120px;
+}
+.ranking #pc_ranking{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ranking #ranking_solid a{
+   font-size: 0; 
+}
+#as a{
+    font-size: 0;
+}
+
+@media screen and (min-width: 480px) {
+    #as{
+        display: none;
+    }
+}
+
+.ranking .image2 {
+  width: 440px;
+  height: 180px;
+}
+.ranking .text3 {
+  display: inline-block;
+  width: 440px;
+  color: #000;
+  font-size: 1.0rem;
+}
+.ranking #ranking_solid{
+  border: solid 1px Gainsboro;
+  width: 440px
+  height: 120px;
+}
+
+.ranking .text {
+  display: inline-block;
+  width: 320px;
+  padding-top: 18px;
+  color: #000;
+  vertical-align: top;
+  font-size: 1.0rem;
+}
+
+ .text2 {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: pink;
+  width: 320px;
+  padding: 8px;
+  color: white;
+  vertical-align: top;
+  font-size: 1.0rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 479px) and (min-width: 320px){
+.skills_sp{
+  width: 100%;
+}    
+.ranking .image {
+  width: 90px;
+  height: 90px;
+}
+  .ranking .text {
+  float: right;
+  display: inline-block;
+  width: 220px;
+  padding-top: 1px;
+  color: #000;
+  vertical-align: top;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+ .ranking #ranking_solid2{
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px gray;
+  width: 315px;
+  height: 90px;
+}    
+}
+
 
 /* --------------------------------
  * uservoice
@@ -1275,7 +1398,7 @@ border-color: transparent transparent #19283C transparent;
 
 /*    --- table ---*/
     .table{
-        width: 100%;
+        width: 90%;
         font-size: 1.2ex;
     }
     
@@ -1591,7 +1714,7 @@ border-color: transparent transparent #19283C transparent;
 
 /*    --- table ---*/
     .table{
-        width: 100%;
+        width: 90%;
         font-size: 1.4ex;
     }
     
