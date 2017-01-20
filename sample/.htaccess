@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.symply\.jp
+RewriteRule ^(.*)$ https://symply.jp/$1 [R=301,L]
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP:X-SAKURA-FORWARDED-FOR} ^$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

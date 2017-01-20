@@ -1,0 +1,244 @@
+body {
+	background-color:white;
+    font-family: "メイリオ", sans-serif;
+}
+/*スマホ対応*/
+/*
+@media screen and(min-width: 500px) {
+    .sidecontent_r{ 
+    background: url(../images/background.PNG) no-repeat;   
+    background-size: 320px 500px;
+}
+}
+*/
+    
+.sidecontent_r{
+	background: url(../images/background.PNG) no-repeat;   
+	height: 670px;
+	width: 640px;
+}
+.sidecontent_l{
+    max-width: 600px;
+	width: 55%;
+	height: 300px;
+}
+.input{
+    max-width: 600px;
+}
+.sr_name {
+	font-size: 5px;
+}
+
+.chatarea {
+	height: 670px;
+	width: 100%;
+	overflow: auto;
+}
+
+.historyarea {
+	height: 500px;
+	width: 100%;
+	overflow: auto;
+}
+
+/*ボタン*/
+#button:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+
+#button {
+    border:0.2;
+    cursor:pointer;
+	height: 30px;
+	width: 200px;
+	background: #19283C;
+	border-width:0.5px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* ふきだし */
+
+* {
+   box-sizing: border-box;
+}
+
+.box {
+   position: relative;
+   background: #19283C;
+   width: 240px;
+   margin-bottom: 20px;
+   padding: 5px;
+   color: #fff;
+}
+
+.box:before,
+.box:after {
+   content: '';
+   position: absolute;
+   display: block;
+}
+
+.box.top:after {
+   top: -9px;
+   left: 5px;
+   border-bottom: 10px solid #19283C;
+   border-right: 5px solid transparent;
+   border-left: 5px solid transparent;
+}
+
+.box.bottom:after {
+   bottom: -9px;
+   left: 5px;
+   border-top: 10px solid #19283C;
+   border-right: 5px solid transparent;
+   border-left: 5px solid transparent;
+}
+
+.box.left:after {
+   top: 10px;
+   left: -9px;
+   border-top: 5px solid transparent;
+   border-right: 10px solid #19283C;
+   border-bottom: 5px solid transparent;
+}
+
+.box.right:after {
+   top: 10px;
+   right: -9px;
+   border-top: 5px solid transparent;
+   border-left: 10px solid #19283C;
+   border-bottom: 5px solid transparent;
+}
+
+.fukidashi-line {
+   width: 340px;
+   display:table;
+}
+
+.icon {
+   width: 100px;
+   position: relative;
+   display: table-cell;
+   vertical-align: middle;
+   padding-top: 30px;
+}
+
+.fukidashi_right {
+   position: relative;
+   display: table-cell;
+   vertical-align: bottom;
+   padding-left:175px;
+   padding-right:25px;
+   padding-top: 30px;
+}
+
+.fukidashi_left {
+   position: relative;
+   display: table-cell;
+   vertical-align: bottom;
+   padding-left:25px;
+   padding-right:175px;
+   padding-top: 30px;
+}
+
+.line_font {
+	font-size: 5px;
+	color: blue;
+	margin: 0px 15px; 
+}
+
+.line_his_font {
+	font-size: 5px;
+	color: #D2B48C;
+	margin: 0px 5px; 
+}
+
+.line {
+	margin: 0px 5px; 
+}
+
+.line_rigth {
+	margin-left: 500px;
+}
+
+.img_left {
+	margin-left: 40px;
+}
+
+/*タブ*/
+.tab{
+	overflow: hidden;
+	background: #505050;
+	width: 40%;
+	padding: 0px 10px;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+.tab li{
+	background: #d2bdaa;
+	padding: 5px;
+	float: left;
+	margin-right: 1px;
+	margin-top: 2px;
+}
+
+.tab li.select{
+	background: #d2bdaa;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+}
+
+#main li.select{
+	background-color: #B0C4DE;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+
+.content li{
+	padding: 20px 20px;
+    padding-left: 200px;
+	width: 615px;
+/*	background-color: #B0C4DE;*/
+}
+
+.hide {
+	display:none;
+}
+
+/*入力領域*/
+#user{
+    padding-bottom: 5px;
+}
+#message{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#button2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#chara{
+    padding-bottom: 5px;
+}
+.img {
+	margin: 2px;
+}
+
+#msg{
+    width: 200px;
+}
+
+input {
+	width: 200px;
+	padding: 2px 0px;;
+}
+
+select {
+	width: 200px;
+	font-weight: bold;
+}
